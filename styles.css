@@ -79,11 +79,32 @@ input {
 }
 
 .hero {
+  position: relative;
   min-height: calc(100vh - 58px);
   padding: 18px 0 48px;
 }
 
+.float-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.float-field span {
+  position: absolute;
+  left: var(--x);
+  bottom: -40px;
+  color: rgba(27, 122, 91, 0.18);
+  font-size: var(--s);
+  font-weight: 900;
+  animation: floatUp 12s linear infinite;
+  animation-delay: var(--d);
+}
+
 .ticker {
+  position: relative;
+  z-index: 1;
   width: 100%;
   overflow: hidden;
   border-block: 1px solid rgba(217, 221, 212, 0.72);
@@ -112,6 +133,8 @@ input {
 }
 
 .hero-inner {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
   gap: 42px;
@@ -246,7 +269,7 @@ h3 {
   border-radius: 50%;
   background:
     conic-gradient(var(--green) 0deg, var(--green) 22deg, #e5e9df 22deg 360deg);
-  animation: rotateGlow 8s linear infinite;
+  animation: rotateGlow 8s linear infinite, breathe 2.8s ease-in-out infinite;
 }
 
 .ring-core {
@@ -290,8 +313,7 @@ h3 {
 .journey,
 .rule-grid,
 .story-grid,
-.record-grid,
-.simulator-box {
+.record-grid {
   max-width: 1120px;
   margin-inline: auto;
 }
@@ -327,9 +349,7 @@ h3 {
 .journey-step,
 .rule-grid article,
 .record-card,
-.next-preview,
-.dialogue,
-.simulator-box {
+.dialogue {
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--panel);
@@ -348,6 +368,11 @@ h3 {
 .rule-grid article:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
+}
+
+.journey-step:hover span,
+.record-card:hover .record-date {
+  transform: scale(1.08);
 }
 
 .journey-step span {
@@ -370,8 +395,7 @@ h3 {
 
 .journey-step p,
 .rule-grid p,
-.record-card p,
-.next-preview p {
+.record-card p {
   margin-bottom: 0;
   color: var(--muted);
 }
@@ -395,7 +419,7 @@ h3 {
 
 .story-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
 }
 
@@ -431,14 +455,6 @@ h3 {
   background: #edf2f9;
 }
 
-.next-preview {
-  padding: 20px;
-}
-
-.next-preview p {
-  margin-top: 12px;
-}
-
 .record-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -459,49 +475,6 @@ h3 {
   color: #8c5519;
   font-size: 13px;
   font-weight: 900;
-}
-
-.simulator {
-  background: linear-gradient(180deg, transparent, rgba(45, 95, 154, 0.07));
-}
-
-.simulator-box {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
-  gap: 22px;
-  align-items: center;
-  padding: 22px;
-}
-
-label {
-  display: grid;
-  gap: 14px;
-  color: var(--green-dark);
-  font-weight: 900;
-}
-
-input[type="range"] {
-  width: 100%;
-  accent-color: var(--green);
-}
-
-.sim-result {
-  border-left: 4px solid var(--green);
-  padding: 14px 18px;
-  background: #edf4ef;
-}
-
-.sim-result span {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--green-dark);
-  font-size: 34px;
-  font-weight: 900;
-}
-
-.sim-result p {
-  margin-bottom: 0;
-  color: var(--muted);
 }
 
 .footer {
@@ -569,13 +542,39 @@ input[type="range"] {
   }
 }
 
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateY(-105vh) rotate(28deg);
+    opacity: 0;
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.035);
+  }
+}
+
 @media (max-width: 940px) {
   .hero-inner,
   .journey,
   .rule-grid,
   .story-grid,
-  .record-grid,
-  .simulator-box {
+  .record-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -605,8 +604,7 @@ input[type="range"] {
   .journey,
   .rule-grid,
   .story-grid,
-  .record-grid,
-  .simulator-box {
+  .record-grid {
     grid-template-columns: 1fr;
   }
 

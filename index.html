@@ -25,6 +25,13 @@
 
     <main id="top">
       <section class="hero">
+        <div class="float-field" aria-hidden="true">
+          <span style="--x: 12%; --d: 0s; --s: 18px;">¥</span>
+          <span style="--x: 24%; --d: 2s; --s: 12px;">+</span>
+          <span style="--x: 42%; --d: 4s; --s: 16px;">¥</span>
+          <span style="--x: 68%; --d: 1s; --s: 14px;">+</span>
+          <span style="--x: 86%; --d: 3s; --s: 18px;">¥</span>
+        </div>
         <div class="ticker" aria-label="チャレンジの流れ">
           <div class="ticker-track">
             <span>Webで1円を作る</span>
@@ -133,19 +140,12 @@
         </div>
 
         <div class="dialogue reveal">
-          <p><strong>私</strong><span>Webで稼いだお金だけで投資してみたいです。</span></p>
+          <p><strong>翔</strong><span>Webで稼いだお金だけで投資してみたいです。</span></p>
           <p><strong>先生</strong><span>いいですね。ただし生活費は絶対に使わないルールにしましょう。</span></p>
-          <p><strong>私</strong><span>最初は何を目標にすればいいですか？</span></p>
+          <p><strong>翔</strong><span>最初は何を目標にすればいいですか？</span></p>
           <p><strong>先生</strong><span>まずは1円のWeb収益です。投資より先に、資金の入口を作ります。</span></p>
-          <p><strong>私</strong><span>1円でも進んだことになるんですね。</span></p>
+          <p><strong>翔</strong><span>1円でも進んだことになるんですね。</span></p>
         </div>
-
-        <aside class="next-preview reveal">
-          <h3>次に追うこと</h3>
-          <p>最初の1円がどこから生まれるのか。</p>
-          <p>そのお金で何を買う候補にするのか。</p>
-          <p>買う前に、どんな不安が出てくるのか。</p>
-        </aside>
       </section>
 
       <section id="records" class="band">
@@ -174,24 +174,6 @@
         </div>
       </section>
 
-      <section class="section simulator">
-        <div class="section-heading reveal">
-          <p class="eyebrow">What if</p>
-          <h2>もし収益が出たら</h2>
-          <p>金額を動かすと、この挑戦で投資に回せる額が変わります。</p>
-        </div>
-
-        <div class="simulator-box reveal">
-          <label>
-            Web収益
-            <input id="incomeRange" type="range" min="0" max="10000" step="100" value="0">
-          </label>
-          <div class="sim-result">
-            <span id="rangeValue">0円</span>
-            <p id="rangeText">まだ投資はしません。まずはWeb収益の発生を待ちます。</p>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
