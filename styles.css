@@ -327,7 +327,7 @@ h3 {
 .journey-step,
 .rule-grid article,
 .record-card,
-.agent-note,
+.next-preview,
 .dialogue,
 .simulator-box {
   border: 1px solid var(--line);
@@ -371,7 +371,7 @@ h3 {
 .journey-step p,
 .rule-grid p,
 .record-card p,
-.agent-note p {
+.next-preview p {
   margin-bottom: 0;
   color: var(--muted);
 }
@@ -431,16 +431,12 @@ h3 {
   background: #edf2f9;
 }
 
-.agent-note {
+.next-preview {
   padding: 20px;
 }
 
-.agent-note p {
+.next-preview p {
   margin-top: 12px;
-}
-
-.agent-note strong {
-  color: var(--blue);
 }
 
 .record-grid {
