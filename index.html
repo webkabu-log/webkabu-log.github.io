@@ -6,7 +6,7 @@
     <title>Web収益だけで株を買う日記</title>
     <meta
       name="description"
-      content="生活費を使わず、Webで稼いだお金だけで少額投資に挑戦する学習記録サイト。"
+      content="生活費を使わず、Webで生まれた収益だけで少額投資に挑戦するリアルな学習記録。"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -15,173 +15,182 @@
       <nav class="nav" aria-label="メインメニュー">
         <a class="brand" href="#top">Web収益だけで株を買う日記</a>
         <div class="nav-links">
-          <a href="#rule">ルール</a>
-          <a href="#log">記録</a>
-          <a href="#articles">記事</a>
-          <a href="#report">月次メモ</a>
+          <a href="#challenge">現在地</a>
+          <a href="#rules">ルール</a>
+          <a href="#story">はじまり</a>
+          <a href="#records">記録</a>
         </div>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Web income to small investing</p>
-          <h1>Webで稼いだお金だけで、株を買ってみる。</h1>
-          <p class="lead">
-            生活費や貯金は使わない。広告や紹介で生まれた収益だけを投資に回して、
-            何を学んだかを正直に記録していくサイトです。
-          </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="#log">現在の記録を見る</a>
-            <a class="secondary-button" href="#articles">最初の記事へ</a>
+        <div class="ticker" aria-label="チャレンジの流れ">
+          <div class="ticker-track">
+            <span>Webで1円を作る</span>
+            <span>その収益だけを投資へ</span>
+            <span>生活費は使わない</span>
+            <span>勝っても負けても記録</span>
+            <span>少額で学ぶ</span>
+            <span>Webで1円を作る</span>
+            <span>その収益だけを投資へ</span>
+            <span>生活費は使わない</span>
           </div>
         </div>
 
-        <div class="hero-board" aria-label="サイト運営の流れ">
-          <div class="board-row">
-            <span>Web収益</span>
-            <strong id="incomeTotal">0円</strong>
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Personal challenge</p>
+            <h1>Webで生まれたお金だけで、株を買えるのか。</h1>
+            <p class="lead">
+              生活費も貯金も使わない。サイトから生まれた小さな収益だけを投資に回して、
+              どこまで進めるのかを追いかける実験記録です。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#challenge">今の進み具合を見る</a>
+              <a class="secondary-button" href="#story">はじまりを読む</a>
+            </div>
           </div>
-          <div class="board-flow">
-            <span>記事を書く</span>
-            <span>収益化</span>
-            <span>投資する</span>
-            <span>記録する</span>
-          </div>
-          <div class="mini-chart" aria-hidden="true">
-            <span style="--h: 34%"></span>
-            <span style="--h: 48%"></span>
-            <span style="--h: 42%"></span>
-            <span style="--h: 63%"></span>
-            <span style="--h: 58%"></span>
-            <span style="--h: 76%"></span>
-          </div>
+
+          <aside class="live-panel reveal" aria-label="現在のチャレンジ状況">
+            <div class="panel-top">
+              <span>現在のWeb収益</span>
+              <strong class="count-up" data-target="0">0円</strong>
+            </div>
+            <div class="ring" aria-hidden="true">
+              <div class="ring-core">
+                <span>STEP</span>
+                <strong>0</strong>
+              </div>
+            </div>
+            <p>最初の目標は「1円のWeb収益」。ここを突破したら、初めての少額投資を考えます。</p>
+          </aside>
         </div>
       </section>
 
-      <section id="rule" class="band">
-        <div class="section-heading">
-          <p class="eyebrow">Simple rules</p>
-          <h2>最初の約束</h2>
-          <p>難しいことは後でいい。まずはこの5つだけ守ります。</p>
+      <section id="challenge" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Challenge map</p>
+          <h2>今どこにいるか</h2>
+          <p>このサイトは、収益が投資に変わるまでの道のりをそのまま見せます。</p>
+        </div>
+
+        <div class="journey">
+          <article class="journey-step active reveal">
+            <span>01</span>
+            <h3>Webで収益を作る</h3>
+            <p>まずは1円。大きく稼ぐ前に、小さく発生させるところから。</p>
+          </article>
+          <article class="journey-step reveal">
+            <span>02</span>
+            <h3>投資候補を調べる</h3>
+            <p>何となく買わず、理由を言葉にできるものだけを見る。</p>
+          </article>
+          <article class="journey-step reveal">
+            <span>03</span>
+            <h3>収益だけで買う</h3>
+            <p>生活費には手をつけず、Web収益の範囲だけで試す。</p>
+          </article>
+          <article class="journey-step reveal">
+            <span>04</span>
+            <h3>結果を公開する</h3>
+            <p>うまくいった話だけでなく、迷ったことや失敗も残す。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="rules" class="band">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Safety rules</p>
+          <h2>守るルール</h2>
+          <p>投資っぽい話だけど、最初に大事なのは増やすことよりも危なくしないこと。</p>
         </div>
         <div class="rule-grid">
-          <article>
-            <span>01</span>
-            <h3>自分のお金は使わない</h3>
-            <p>生活費、貯金、学費には手をつけません。</p>
+          <article class="reveal">
+            <strong>自分のお金は使わない</strong>
+            <p>生活費、貯金、学費はこの挑戦から切り離します。</p>
           </article>
-          <article>
-            <span>02</span>
-            <h3>Web収益は全部投資へ</h3>
-            <p>サイトから生まれた収益だけを投資資金にします。</p>
+          <article class="reveal">
+            <strong>Web収益は全部投資へ</strong>
+            <p>このサイトから生まれた収益だけを投資資金にします。</p>
           </article>
-          <article>
-            <span>03</span>
-            <h3>借金はしない</h3>
-            <p>クレジットカードの分割払いや借入は使いません。</p>
+          <article class="reveal">
+            <strong>借金はしない</strong>
+            <p>借入、分割払い、無理な支払いは使いません。</p>
           </article>
-          <article>
-            <span>04</span>
-            <h3>信用取引はしない</h3>
-            <p>最初は現物の少額投資だけにします。</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>勝っても負けても書く</h3>
-            <p>損益よりも、考えたことと学びを残します。</p>
+          <article class="reveal">
+            <strong>信用取引はしない</strong>
+            <p>最初は少額の現物だけ。背伸びはしません。</p>
           </article>
         </div>
       </section>
 
-      <section id="log" class="content-grid">
-        <div class="section-heading">
-          <p class="eyebrow">Current log</p>
-          <h2>今の状態</h2>
-          <p>まずは1円のWeb収益を作るところから始めます。</p>
+      <section id="story" class="section story-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">First story</p>
+          <h2>はじまり</h2>
+          <p>まだ何もわからないところから始めるので、会話の形で残します。</p>
         </div>
-        <div class="stats">
-          <article>
-            <span>Web収益</span>
-            <strong>0円</strong>
-            <p>広告・紹介・記事から得た合計。</p>
+
+        <div class="dialogue reveal">
+          <p><strong>私</strong><span>Webで稼いだお金だけで投資してみたいです。</span></p>
+          <p><strong>先生</strong><span>いいですね。ただし生活費は絶対に使わないルールにしましょう。</span></p>
+          <p><strong>私</strong><span>最初は何を目標にすればいいですか？</span></p>
+          <p><strong>先生</strong><span>まずは1円のWeb収益です。投資より先に、資金の入口を作ります。</span></p>
+          <p><strong>私</strong><span>1円でも進んだことになるんですね。</span></p>
+        </div>
+
+        <aside class="agent-note reveal">
+          <h3>Agentsの見立て</h3>
+          <p><strong>Content</strong> 読者が追いたいのは、成功談よりも「どう進むか」。</p>
+          <p><strong>Risk</strong> 投資助言ではなく、個人の学習記録として見せる。</p>
+          <p><strong>Growth</strong> 収益メーターと進行マップで、次回も見たくなる形にする。</p>
+        </aside>
+      </section>
+
+      <section id="records" class="band">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Open records</p>
+          <h2>公開記録</h2>
+          <p>まだ始まったばかり。増えたらここに時系列で並びます。</p>
+        </div>
+
+        <div class="record-grid">
+          <article class="record-card reveal">
+            <span class="record-date">Day 0</span>
+            <h3>サイトの土台を作った</h3>
+            <p>テーマは「Web収益だけで株を買う」。最初の資金は0円。</p>
           </article>
-          <article>
-            <span>投資に使った額</span>
-            <strong>0円</strong>
-            <p>Web収益から実際に回した金額。</p>
+          <article class="record-card reveal">
+            <span class="record-date">Next</span>
+            <h3>最初の1円を目指す</h3>
+            <p>大きな金額より、まずは収益が発生する仕組みを確認する。</p>
           </article>
-          <article>
-            <span>保有中</span>
-            <strong>なし</strong>
-            <p>収益が出るまでは仮想トレードだけ。</p>
+          <article class="record-card reveal">
+            <span class="record-date">After</span>
+            <h3>初めての投資候補を選ぶ</h3>
+            <p>買う前に、なぜそれを選ぶのかを言葉にしてから判断する。</p>
           </article>
         </div>
       </section>
 
-      <section id="articles" class="band">
-        <div class="section-heading">
-          <p class="eyebrow">First articles</p>
-          <h2>最初に書く記事</h2>
-          <p>読者にも自分にもわかりやすい順番で進めます。</p>
+      <section class="section simulator">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What if</p>
+          <h2>もし収益が出たら</h2>
+          <p>金額を動かすと、この挑戦で投資に回せる額が変わります。</p>
         </div>
-        <div class="article-list">
-          <article>
-            <p class="article-label">記事 1</p>
-            <h3>なぜWeb収益だけで投資をするのか</h3>
-            <p>生活費を使わない理由と、このサイトのルールを説明します。</p>
-            <a href="#dialogue">下書きを読む</a>
-          </article>
-          <article>
-            <p class="article-label">記事 2</p>
-            <h3>まずはWebサイトを作ってみた</h3>
-            <p>何を作ったか、なぜこのテーマにしたかを記録します。</p>
-          </article>
-          <article>
-            <p class="article-label">記事 3</p>
-            <h3>初めての収益はいくらだったか</h3>
-            <p>1円でも発生したら、何が起きたかをそのまま書きます。</p>
-          </article>
-          <article>
-            <p class="article-label">記事 4</p>
-            <h3>その収益で何を買うか考える</h3>
-            <p>買う前に、理由と不安を書いてから判断します。</p>
-          </article>
-        </div>
-      </section>
 
-      <section id="dialogue" class="dialogue-section">
-        <div class="section-heading">
-          <p class="eyebrow">Dialogue draft</p>
-          <h2>対話形式の下書き</h2>
-        </div>
-        <div class="dialogue">
-          <p><strong>私</strong><span>Webで稼いだお金を全部投資に使いたいです。</span></p>
-          <p><strong>先生</strong><span>いいですね。ただし生活費は使わないルールにしましょう。</span></p>
-          <p><strong>私</strong><span>Webで稼いだ分だけなら大丈夫ですか？</span></p>
-          <p><strong>先生</strong><span>はい。失敗しても生活に影響しにくいです。最初の目標は1円の収益です。</span></p>
-          <p><strong>私</strong><span>じゃあ、まずはサイトを育てるところからですね。</span></p>
-        </div>
-      </section>
-
-      <section id="report" class="content-grid report">
-        <div class="section-heading">
-          <p class="eyebrow">Monthly memo</p>
-          <h2>月次メモ</h2>
-          <p>毎月、収益と投資の動きを短くまとめます。</p>
-        </div>
-        <form class="memo-tool">
+        <div class="simulator-box reveal">
           <label>
-            今月のWeb収益
-            <input id="incomeInput" type="number" min="0" value="0" inputmode="numeric">
+            Web収益
+            <input id="incomeRange" type="range" min="0" max="10000" step="100" value="0">
           </label>
-          <label>
-            今月買いたいもの
-            <input id="assetInput" type="text" value="まだ決めない">
-          </label>
-          <output id="memoOutput">今月は0円を投資候補にします。買うもの: まだ決めない。</output>
-        </form>
+          <div class="sim-result">
+            <span id="rangeValue">0円</span>
+            <p id="rangeText">まだ投資はしません。まずはWeb収益の発生を待ちます。</p>
+          </div>
+        </div>
       </section>
     </main>
 
