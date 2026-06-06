@@ -522,6 +522,7 @@ h3 {
 }
 
 .record-card {
+  display: block;
   min-height: 190px;
   padding: 20px;
 }
