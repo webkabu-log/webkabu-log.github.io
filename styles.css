@@ -80,8 +80,7 @@ input {
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 58px);
-  padding: 18px 0 48px;
+  padding: 18px 0 72px;
 }
 
 .float-field {
@@ -141,7 +140,7 @@ input {
   align-items: center;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 74px 22px 22px;
+  padding: 58px 22px 0;
 }
 
 .eyebrow {
