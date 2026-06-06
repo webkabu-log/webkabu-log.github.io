@@ -45,6 +45,8 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - ヒーロー背景にチャート風の流れるライン、記録レーンに控えめなスキャン演出、カードにホバー時の光沢と矢印を追加
 - プロフィールは基本匿名で運営する方針。個人が特定される情報や投資と関係のない詳しい属性は出しすぎない
 - Google Analytics 4 を導入（Measurement ID: G-3GL6HZ2CBB）
+- Google Search Console に URL プレフィックス `https://shoya5.github.io/trader/` を登録済み
+- 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
 
 ## サイトの基本方針
 
@@ -94,7 +96,8 @@ Webで1円を作る
 - 広告やPRを使う場合は、読者にわかる場所へ明記する
 - Google Analyticsでアクセス状況を確認する
 - まだ広告コードは入れない
-- Search Consoleは未導入。HTMLタグ確認コードを受け取ったら `<head>` に追加する
+- Search Consoleは登録済み。データ反映には時間がかかるので、サマリーや検索パフォーマンスは翌日以降に確認する
+- Search Console の「サイトマップ」に `sitemap.xml` を送信する
 - 投資系アフィリエイトは、投資助言に見えやすいので急がない
 - 収益が出るまでは株の実取引には進まない
 - Dayは「実際にやったこと・進み具合」、Studyは「投資やWeb収益化の学習」として分ける
@@ -109,6 +112,8 @@ study-investing-01.html
 privacy.html
 monetization.html
 profile.html
+sitemap.xml
+robots.txt
 ```
 
 最新の主なコミット:
@@ -133,8 +138,9 @@ e26075f Add day one revenue strategy record
 5. 学習内容を公開用に整えて `study-investing-02.html` として追加する
 6. お問い合わせページまたは連絡手段を検討する
 7. 読まれる記事テーマを決める
-8. アクセス解析を入れるか検討する
-9. 広告サービスの公式ポリシーを確認してから導入可否を判断する
+8. Search Console の「サイトマップ」に `sitemap.xml` を送信する
+9. Google Analytics と Search Console の初期データを数日後に確認する
+10. 広告サービスの公式ポリシーを確認してから導入可否を判断する
 
 ## 次に作るページ案
 
