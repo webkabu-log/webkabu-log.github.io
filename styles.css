@@ -540,12 +540,21 @@ h3 {
 
 .footer {
   display: grid;
-  gap: 5px;
+  gap: 8px;
   padding: 28px 22px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 14px;
   text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  color: var(--green-dark);
+  font-weight: 900;
 }
 
 .footer p {
