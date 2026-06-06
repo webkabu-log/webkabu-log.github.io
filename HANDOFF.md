@@ -46,6 +46,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - プロフィールは基本匿名で運営する方針。個人が特定される情報や投資と関係のない詳しい属性は出しすぎない
 - Google Analytics 4 を導入（Measurement ID: G-3GL6HZ2CBB）
 - Google Search Console に URL プレフィックス `https://shoya5.github.io/trader/` を登録済み
+- Google Search Console のHTMLタグ確認コードを `index.html` に追加済み
 - 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
 
 ## サイトの基本方針
