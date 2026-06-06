@@ -101,6 +101,25 @@ input {
   animation-delay: var(--d);
 }
 
+.signal-field {
+  position: absolute;
+  inset: 58px 0 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.signal-field span {
+  position: absolute;
+  top: var(--y);
+  left: -40%;
+  width: var(--w);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(45, 95, 154, 0.28), rgba(27, 122, 91, 0.34), transparent);
+  transform: rotate(-8deg);
+  animation: signalSweep 9s ease-in-out infinite;
+  animation-delay: var(--d);
+}
+
 .ticker {
   position: relative;
   z-index: 1;
@@ -521,10 +540,130 @@ h3 {
   gap: 16px;
 }
 
+.records-band {
+  position: relative;
+  overflow: hidden;
+}
+
+.records-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(27, 122, 91, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(45, 95, 154, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, transparent, #000 16%, #000 78%, transparent);
+  pointer-events: none;
+}
+
+.record-lanes {
+  position: relative;
+  display: grid;
+  gap: 22px;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.record-lane {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(217, 221, 212, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 253, 250, 0.78);
+}
+
+.record-lane::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -45%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.46), transparent);
+  transform: skewX(-18deg);
+  animation: laneScan 8s ease-in-out infinite;
+}
+
+.study-lane::before {
+  animation-delay: 1.8s;
+}
+
+.lane-heading {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.lane-heading h3 {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.lane-heading span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.lane-grid {
+  position: relative;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.study-lane .lane-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .record-card {
+  position: relative;
   display: block;
+  overflow: hidden;
   min-height: 190px;
   padding: 20px;
+}
+
+.record-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0 38%, rgba(27, 122, 91, 0.08) 48%, transparent 60%);
+  opacity: 0;
+  transform: translateX(-34%);
+  transition: opacity 220ms ease, transform 420ms ease;
+}
+
+a.record-card::after {
+  content: "→";
+  position: absolute;
+  right: 18px;
+  bottom: 14px;
+  color: var(--green-dark);
+  font-weight: 900;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.record-card:hover::before {
+  opacity: 1;
+  transform: translateX(28%);
+}
+
+a.record-card:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.study-card .record-date {
+  background: #e6edf7;
+  color: #244e82;
+}
+
+.day-card .record-date {
+  background: #e7f1eb;
+  color: var(--green-dark);
 }
 
 .record-date {
@@ -578,6 +717,38 @@ h3 {
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes signalSweep {
+  0% {
+    transform: translateX(0) rotate(-8deg);
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0.65;
+  }
+  100% {
+    transform: translateX(180vw) rotate(-8deg);
+    opacity: 0;
+  }
+}
+
+@keyframes laneScan {
+  0%,
+  48% {
+    transform: translateX(0) skewX(-18deg);
+    opacity: 0;
+  }
+  58% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(330%) skewX(-18deg);
+    opacity: 0;
   }
 }
 
@@ -655,6 +826,11 @@ h3 {
   .hero-inner {
     padding-top: 46px;
   }
+
+  .lane-grid,
+  .study-lane .lane-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 680px) {
@@ -700,6 +876,15 @@ h3 {
 
   .next-links a {
     width: 100%;
+  }
+
+  .record-lane {
+    padding: 16px;
+  }
+
+  .lane-grid,
+  .study-lane .lane-grid {
+    grid-template-columns: 1fr;
   }
 }
 

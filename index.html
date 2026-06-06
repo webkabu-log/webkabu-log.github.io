@@ -33,6 +33,11 @@
           <span style="--x: 68%; --d: 1s; --s: 14px;">+</span>
           <span style="--x: 86%; --d: 3s; --s: 18px;">¥</span>
         </div>
+        <div class="signal-field" aria-hidden="true">
+          <span style="--y: 22%; --w: 34%; --d: 0s;"></span>
+          <span style="--y: 46%; --w: 26%; --d: 1.4s;"></span>
+          <span style="--y: 72%; --w: 38%; --d: 2.8s;"></span>
+        </div>
         <div class="ticker" aria-label="チャレンジの流れ">
           <div class="ticker-track">
             <span>Webで1円を作る</span>
@@ -59,7 +64,8 @@
               Webで読まれるものを作り、収益が生まれる流れから学ぶ実験記録です。
             </p>
             <div class="hero-actions">
-              <a class="primary-button" href="#challenge">今の進み具合を見る</a>
+              <a class="primary-button" href="#day-records">進捗を見る</a>
+              <a class="secondary-button" href="#study-notes">学習ノートを見る</a>
               <a class="secondary-button" href="hajimari.html">はじまりを読む</a>
             </div>
           </div>
@@ -156,34 +162,58 @@
         </div>
       </section>
 
-      <section id="records" class="band">
+      <section id="records" class="band records-band">
         <div class="section-heading reveal">
           <p class="eyebrow">Open records</p>
           <h2>公開記録</h2>
-          <p>まだ始まったばかり。増えたらここに時系列で並びます。</p>
+          <p>行動の記録と、学びの記録を分けて残します。</p>
         </div>
 
-        <div class="record-grid">
-          <a class="record-card reveal" href="hajimari.html">
-            <span class="record-date">Day 0</span>
-            <h3>サイトの土台を作った</h3>
-            <p>テーマは「Web収益だけで株を買う」。最初の資金は0円。</p>
-          </a>
-          <a class="record-card reveal" href="day1.html">
-            <span class="record-date">Day 1</span>
-            <h3>読まれる流れを考える</h3>
-            <p>株より先に、Webで1円を作るための入口を整理する。</p>
-          </a>
-          <a class="record-card reveal" href="study-investing-01.html">
-            <span class="record-date">Study 01</span>
-            <h3>投資とは何かを確認</h3>
-            <p>投資、株、貯金の違いを1から学ぶ。</p>
-          </a>
-          <a class="record-card reveal" href="monetization.html">
-            <span class="record-date">Next</span>
-            <h3>収益化の準備を進める</h3>
-            <p>広告を急がず、ポリシーと読まれる導線を整える。</p>
-          </a>
+        <div class="record-lanes">
+          <section id="day-records" class="record-lane reveal" aria-labelledby="day-records-title">
+            <div class="lane-heading">
+              <p class="eyebrow">Day records</p>
+              <h3 id="day-records-title">Day 記録</h3>
+              <span>実際に進めたことと、収益化までの動き</span>
+            </div>
+            <div class="record-grid lane-grid">
+              <a class="record-card day-card reveal" href="hajimari.html">
+                <span class="record-date">Day 0</span>
+                <h3>サイトの土台を作った</h3>
+                <p>テーマは「Web収益だけで株を買う」。最初の資金は0円。</p>
+              </a>
+              <a class="record-card day-card reveal" href="day1.html">
+                <span class="record-date">Day 1</span>
+                <h3>読まれる流れを考える</h3>
+                <p>株より先に、Webで1円を作るための入口を整理する。</p>
+              </a>
+              <a class="record-card day-card reveal" href="monetization.html">
+                <span class="record-date">Next</span>
+                <h3>収益化の準備を進める</h3>
+                <p>広告を急がず、ポリシーと読まれる導線を整える。</p>
+              </a>
+            </div>
+          </section>
+
+          <section id="study-notes" class="record-lane study-lane reveal" aria-labelledby="study-notes-title">
+            <div class="lane-heading">
+              <p class="eyebrow">Study notes</p>
+              <h3 id="study-notes-title">Study 学習</h3>
+              <span>株・投資・Web収益化を1から整理するメモ</span>
+            </div>
+            <div class="record-grid lane-grid">
+              <a class="record-card study-card reveal" href="study-investing-01.html">
+                <span class="record-date">Study 01</span>
+                <h3>投資とは何かを確認</h3>
+                <p>投資、株、貯金の違いを1から学ぶ。</p>
+              </a>
+              <article class="record-card study-card reveal">
+                <span class="record-date">Study 02</span>
+                <h3>株価が動く理由を学ぶ</h3>
+                <p>価格が変わる仕組みを、売買判断ではなく知識として確認する。</p>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
 
