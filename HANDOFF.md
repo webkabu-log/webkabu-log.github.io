@@ -6,11 +6,11 @@
 
 公開URL:
 
-https://shoya5.github.io/trader/
+https://webkabu-log.github.io/
 
 GitHubリポジトリ:
 
-https://github.com/shoya5/trader
+https://github.com/webkabu-log/webkabu-log.github.io
 
 ローカル作業場所:
 
@@ -23,7 +23,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 ## ここまでやったこと
 
 - `C:\trader` に作業場所を移動
-- GitHubリポジトリ `shoya5/trader` と連携
+- GitHubリポジトリ `webkabu-log/webkabu-log.github.io` と連携
 - GitHub Pagesでサイトを公開
 - トップページを作成
 - サイト名を「Web収益だけで株を買う日記」に設定
@@ -46,7 +46,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - ヒーロー背景にチャート風の流れるライン、記録レーンに控えめなスキャン演出、カードにホバー時の光沢と矢印を追加
 - プロフィールは基本匿名で運営する方針。個人が特定される情報や投資と関係のない詳しい属性は出しすぎない
 - Google Analytics 4 を導入（Measurement ID: G-3GL6HZ2CBB）
-- Google Search Console に URL プレフィックス `https://shoya5.github.io/trader/` を登録済み
+- 旧URLでGoogle Search Consoleを登録済み。新URL `https://webkabu-log.github.io/` で登録し直す
 - Google Search Console のHTMLタグ確認コードを `index.html` に追加済み
 - 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
 
@@ -99,8 +99,8 @@ Webで1円を作る
 - 広告やPRを使う場合は、読者にわかる場所へ明記する
 - Google Analyticsでアクセス状況を確認する
 - まだ広告コードは入れない
-- Search Consoleは登録済み。データ反映には時間がかかるので、サマリーや検索パフォーマンスは翌日以降に確認する
-- Search Console の「サイトマップ」に `sitemap.xml` を送信する
+- Search Consoleは旧URLで登録済み。新URL `https://webkabu-log.github.io/` でプロパティを作り直す
+- 新URLのSearch Console登録後、「サイトマップ」に `sitemap.xml` を送信する
 - 投資系アフィリエイトは、投資助言に見えやすいので急がない
 - 収益が出るまでは株の実取引には進まない
 - Dayは「実際にやったこと・進み具合」、Studyは「投資やWeb収益化の学習」として分ける
@@ -141,7 +141,7 @@ e26075f Add day one revenue strategy record
 4. Google AnalyticsでXからのアクセスが見えるか確認する
 5. 公開サイトをスマホで確認する
 6. トップ、はじまり、Day 1、Study 01、Study 02、広告・運営方針、プライバシーポリシーの表示確認
-7. Search Console の「サイトマップ」が取得できるか再確認する
+7. 新URLでSearch Consoleを登録し直し、「サイトマップ」に `sitemap.xml` を送信する
 8. 広告まわりを進める。いきなり広告コードを入れず、まず公式ポリシー、審査条件、サイト上の表示ルールを確認する
 9. 広告を使う場合に必要な表記を「広告・運営方針」ページとフッターで十分か確認する
 10. 投資系アフィリエイトは、投資助言に見えやすいので後回しにする
@@ -276,5 +276,5 @@ git push
 公開URL:
 
 ```text
-https://shoya5.github.io/trader/
+https://webkabu-log.github.io/
 ```
