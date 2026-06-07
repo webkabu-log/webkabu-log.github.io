@@ -39,3 +39,37 @@ document.querySelectorAll(".count-up").forEach((item) => {
 
   requestAnimationFrame(tick);
 });
+
+document.querySelectorAll(".nav").forEach((nav) => {
+  const toggle = nav.querySelector(".nav-toggle");
+  const links = nav.querySelectorAll(".nav-links a");
+
+  if (!toggle) {
+    return;
+  }
+
+  function closeMenu() {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "メニューを開く");
+    nav.classList.remove("nav-open");
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "メニューを開く" : "メニューを閉じる");
+    nav.classList.toggle("nav-open", !isOpen);
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+});

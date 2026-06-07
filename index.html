@@ -29,7 +29,12 @@
     <header class="site-header">
       <nav class="nav" aria-label="メインメニュー">
         <a class="brand" href="#top">Web収益だけで株を買う日記</a>
-        <div class="nav-links">
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="site-menu" class="nav-links">
           <a href="#challenge">現在地</a>
           <a href="#rules">ルール</a>
           <a href="roadmap.html">ロードマップ</a>
@@ -80,8 +85,8 @@
               Webで読まれるものを作り、収益が生まれる流れから学ぶ挑戦記録です。
             </p>
             <div class="hero-actions">
-              <a class="primary-button" href="#day-records">進捗を見る</a>
-              <a class="secondary-button" href="#study-notes">学習ノートを見る</a>
+              <a class="primary-button" href="#day-records">作業の記録を見る</a>
+              <a class="secondary-button" href="#study-notes">投資前の学習を見る</a>
               <a class="secondary-button" href="roadmap.html">ロードマップを見る</a>
               <a class="secondary-button" href="hajimari.html">はじまりを読む</a>
             </div>
@@ -106,7 +111,7 @@
       <section id="challenge" class="section">
         <div class="section-heading reveal">
           <p class="eyebrow">Challenge map</p>
-          <h2>今どこにいるか</h2>
+          <h2>現在の進め方</h2>
           <p>このサイトは、Webで読まれるものを作り、収益と投資を学ぶ道のりをそのまま見せます。</p>
         </div>
 
@@ -182,7 +187,7 @@
       <section id="records" class="band records-band">
         <div class="section-heading reveal">
           <p class="eyebrow">Progress and notes</p>
-          <h2>進み具合と学び</h2>
+          <h2>作業の記録と投資前の学習</h2>
           <p>実際に進めたことと、投資を始める前に整理したことを分けて残します。</p>
         </div>
 
@@ -190,7 +195,7 @@
           <section id="day-records" class="record-lane reveal" aria-labelledby="day-records-title">
             <div class="lane-heading">
               <p class="eyebrow">Progress</p>
-              <h3 id="day-records-title">進み具合</h3>
+              <h3 id="day-records-title">作業の記録</h3>
               <span>実際に進めたことと、収益化までの動き</span>
             </div>
             <div class="record-grid lane-grid">
@@ -215,7 +220,7 @@
           <section id="study-notes" class="record-lane study-lane reveal" aria-labelledby="study-notes-title">
             <div class="lane-heading">
               <p class="eyebrow">Learning</p>
-              <h3 id="study-notes-title">学びのメモ</h3>
+              <h3 id="study-notes-title">投資前の学習</h3>
               <span>株・投資・Web収益化を1から整理するメモ</span>
             </div>
             <div class="record-grid lane-grid">
