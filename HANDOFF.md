@@ -45,8 +45,8 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - トップの公開記録を「Day 記録」と「Study 学習」の2レーンに分割
 - ヒーロー背景にチャート風の流れるライン、記録レーンに控えめなスキャン演出、カードにホバー時の光沢と矢印を追加
 - プロフィールは基本匿名で運営する方針。個人が特定される情報や投資と関係のない詳しい属性は出しすぎない
-- Google Analytics 4 を導入（Measurement ID: G-3GL6HZ2CBB）
-- GitHub PagesのURLを `https://webkabu-log.github.io/` に移行済み。Analyticsの測定タグは同じIDを継続利用し、GA管理画面のデータストリームURLだけ新URLに直す
+- Google Analytics 4 を新URL用に作成し直し、Measurement ID を `G-FZVKWGP9SH` に変更
+- GitHub PagesのURLを `https://webkabu-log.github.io/` に移行済み
 - 旧URLでGoogle Search Consoleを登録済み。新URL `https://webkabu-log.github.io/` で登録し直す
 - Google Search Console のHTMLタグ確認コードを `index.html` に追加済み
 - 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
