@@ -51,6 +51,24 @@
         </header>
 
         <div class="article-body reveal">
+          <section class="roadmap-overview" aria-label="ロードマップの要点">
+            <article>
+              <span>Goal</span>
+              <strong>Web収益が出るまで買わない</strong>
+              <p>投資候補を見る前に、まず収益の入口と学習の順番を作ります。</p>
+            </article>
+            <article>
+              <span>Focus</span>
+              <strong>似た言葉を分ける</strong>
+              <p>証券会社、証券口座、NISA口座、Prime市場を別のものとして整理します。</p>
+            </article>
+            <article>
+              <span>Rule</span>
+              <strong>おすすめにしない</strong>
+              <p>銘柄や証券会社の推奨ではなく、仕組みを理解するためのメモです。</p>
+            </article>
+          </section>
+
           <h2>まず分けて考えること</h2>
           <p>
             このサイトでは、投資を急ぎません。
@@ -61,74 +79,149 @@
             たとえばPrime市場は証券会社のランクではなく、東京証券取引所の市場区分です。
           </p>
 
-          <h2>学ぶ順番</h2>
-          <div class="roadmap-list">
-            <article>
-              <span>01</span>
-              <h3>投資とは何か</h3>
-              <p>投資、貯金、株、投資信託の違いを確認します。まず「必ず増えるものではない」と理解します。</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>株価が動く理由</h3>
-              <p>株価は会社が決めるものではなく、買いたい人と売りたい人のバランスで動くと整理します。</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>リスクとは何か</h3>
-              <p>危ないという感覚だけでなく、結果がぶれること、値動きに耐えられるかを学びます。</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>証券会社と証券口座</h3>
-              <p>証券会社は売買の窓口、証券口座は株や投資信託を持つための入れ物として分けます。</p>
-            </article>
-            <article>
-              <span>05</span>
-              <h3>一般口座・特定口座・NISA口座</h3>
-              <p>税金の扱いと制度の違いを整理します。制度は変わるため、公開前に公式情報を確認します。</p>
-            </article>
-            <article>
-              <span>06</span>
-              <h3>Prime・Standard・Growth市場</h3>
-              <p>東証の市場区分を学びます。Prime市場は「大きそうな会社」ではなく、上場市場の区分として理解します。</p>
-            </article>
-            <article>
-              <span>07</span>
-              <h3>買う前のチェックリスト</h3>
-              <p>Web収益が出ているか、生活費を使っていないか、買う理由を言葉にできるかを確認します。</p>
-            </article>
-          </div>
-
           <h2>混乱しやすい言葉</h2>
           <div class="term-grid">
             <article>
               <strong>証券会社</strong>
-              <p>株を買うために使う窓口。SBI証券や楽天証券などは市場ではありません。</p>
+              <dl>
+                <div>
+                  <dt>これは</dt>
+                  <dd>株を売買するために使う会社やサービス</dd>
+                </div>
+                <div>
+                  <dt>これは違う</dt>
+                  <dd>市場区分、口座の種類、買うべき銘柄</dd>
+                </div>
+              </dl>
             </article>
             <article>
               <strong>証券口座</strong>
-              <p>証券会社に作る投資用の口座。銀行口座とは役割が違います。</p>
+              <dl>
+                <div>
+                  <dt>これは</dt>
+                  <dd>株や投資信託を持つために証券会社へ作る口座</dd>
+                </div>
+                <div>
+                  <dt>これは違う</dt>
+                  <dd>銀行口座、証券会社そのもの、市場区分</dd>
+                </div>
+              </dl>
             </article>
             <article>
               <strong>NISA口座</strong>
-              <p>一定の範囲で利益が非課税になる制度を使うための口座です。</p>
+              <dl>
+                <div>
+                  <dt>これは</dt>
+                  <dd>NISA制度を使うための口座</dd>
+                </div>
+                <div>
+                  <dt>これは違う</dt>
+                  <dd>投資商品そのもの、利益保証、証券会社の名前</dd>
+                </div>
+              </dl>
             </article>
             <article>
               <strong>Prime市場</strong>
-              <p>東京証券取引所の市場区分のひとつ。証券会社のサービス名ではありません。</p>
+              <dl>
+                <div>
+                  <dt>これは</dt>
+                  <dd>東京証券取引所の市場区分のひとつ</dd>
+                </div>
+                <div>
+                  <dt>これは違う</dt>
+                  <dd>証券会社のランク、口座の種類、安全な投資先という意味</dd>
+                </div>
+              </dl>
             </article>
           </div>
 
+          <div class="relation-flow" aria-label="投資までの関係">
+            <span>証券会社を使う</span>
+            <span>証券口座を作る</span>
+            <span>NISAを使うか考える</span>
+            <span>市場区分を確認する</span>
+          </div>
+
+          <h2>学ぶ順番</h2>
+          <div class="roadmap-list">
+            <article class="roadmap-card active">
+              <span>01</span>
+              <div>
+                <p class="roadmap-stage">基礎</p>
+                <h3>投資とは何か</h3>
+                <p>投資、貯金、株、投資信託の違いを確認します。まず「必ず増えるものではない」と理解します。</p>
+              </div>
+            </article>
+            <article class="roadmap-card active">
+              <span>02</span>
+              <div>
+                <p class="roadmap-stage">基礎</p>
+                <h3>株価が動く理由</h3>
+                <p>株価は会社が決めるものではなく、買いたい人と売りたい人のバランスで動くと整理します。</p>
+              </div>
+            </article>
+            <article class="roadmap-card next">
+              <span>03</span>
+              <div>
+                <p class="roadmap-stage">次に学ぶ</p>
+                <h3>株・市場・証券会社・証券口座</h3>
+                <p>株そのもの、売買の窓口、口座、市場区分を分けます。Prime市場もここで扱います。</p>
+              </div>
+            </article>
+            <article class="roadmap-card">
+              <span>04</span>
+              <div>
+                <p class="roadmap-stage">制度</p>
+                <h3>一般口座・特定口座・NISA口座</h3>
+                <p>税金の扱いと制度の違いを整理します。制度は変わるため、公開前に公式情報を確認します。</p>
+              </div>
+            </article>
+            <article class="roadmap-card">
+              <span>05</span>
+              <div>
+                <p class="roadmap-stage">市場区分</p>
+                <h3>Prime・Standard・Growth市場</h3>
+                <p>東証の市場区分を学びます。Prime市場を安全性や買う理由と混同しないようにします。</p>
+              </div>
+            </article>
+            <article class="roadmap-card">
+              <span>06</span>
+              <div>
+                <p class="roadmap-stage">守り</p>
+                <h3>リスクとは何か</h3>
+                <p>危ないという感覚だけでなく、結果がぶれること、値動きに耐えられるかを学びます。</p>
+              </div>
+            </article>
+            <article class="roadmap-card">
+              <span>07</span>
+              <div>
+                <p class="roadmap-stage">実行前</p>
+                <h3>買う前のチェックリスト</h3>
+                <p>Web収益が出ているか、生活費を使っていないか、買う理由を言葉にできるかを確認します。</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="roadmap-warning">
+            <strong>Prime市場は「安全な投資先」という意味ではありません。</strong>
+            <p>市場区分は確認材料のひとつですが、それだけで買う理由にはしません。</p>
+          </div>
+
           <h2>Web収益化の進め方</h2>
-          <p>
-            AdSenseは審査待ちです。結果が出るまでは広告枠を増やさず、
-            Xからの導線、Day記録、Study記事を増やします。
-          </p>
-          <p>
-            収益が出る前に投資候補を選び始めると、ルールが崩れやすくなります。
-            まずは「読まれる入口」と「学習の順番」を整えることを優先します。
-          </p>
+          <div class="action-steps">
+            <article>
+              <span>1</span>
+              <p>AdSense審査中は広告枠を増やさず、読みやすい記事と学びのメモを増やします。</p>
+            </article>
+            <article>
+              <span>2</span>
+              <p>Xから来た人が、はじまり、進み具合、学びのメモへ自然に移動できる導線を整えます。</p>
+            </article>
+            <article>
+              <span>3</span>
+              <p>収益が出る前に投資候補を選び込まず、まずは用語と制度の理解を優先します。</p>
+            </article>
+          </div>
 
           <h2>確認に使う公式情報</h2>
           <ul>
@@ -142,7 +235,7 @@
           </p>
 
           <nav class="next-links" aria-label="次に読む">
-            <a class="secondary-button" href="study-investing-02.html">Study 02を読む</a>
+            <a class="secondary-button" href="study-investing-01.html">Study 01を読む</a>
             <a class="primary-button" href="index.html#records">記録一覧へ戻る</a>
           </nav>
         </div>
