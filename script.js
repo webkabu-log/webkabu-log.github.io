@@ -73,3 +73,32 @@ document.querySelectorAll(".nav").forEach((nav) => {
     }
   });
 });
+
+document.querySelectorAll(".journey, .lane-grid").forEach((scroller) => {
+  scroller.addEventListener(
+    "wheel",
+    (event) => {
+      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+        return;
+      }
+
+      const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
+
+      if (maxScrollLeft <= 0) {
+        return;
+      }
+
+      const nextScrollLeft = scroller.scrollLeft + event.deltaY;
+      const canScrollLeft = event.deltaY < 0 && scroller.scrollLeft > 0;
+      const canScrollRight = event.deltaY > 0 && scroller.scrollLeft < maxScrollLeft;
+
+      if (!canScrollLeft && !canScrollRight) {
+        return;
+      }
+
+      event.preventDefault();
+      scroller.scrollLeft = Math.max(0, Math.min(maxScrollLeft, nextScrollLeft));
+    },
+    { passive: false }
+  );
+});
