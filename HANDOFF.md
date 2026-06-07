@@ -46,6 +46,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - ヒーロー背景にチャート風の流れるライン、記録レーンに控えめなスキャン演出、カードにホバー時の光沢と矢印を追加
 - プロフィールは基本匿名で運営する方針。個人が特定される情報や投資と関係のない詳しい属性は出しすぎない
 - Google Analytics 4 を導入（Measurement ID: G-3GL6HZ2CBB）
+- GitHub PagesのURLを `https://webkabu-log.github.io/` に移行済み。Analyticsの測定タグは同じIDを継続利用し、GA管理画面のデータストリームURLだけ新URLに直す
 - 旧URLでGoogle Search Consoleを登録済み。新URL `https://webkabu-log.github.io/` で登録し直す
 - Google Search Console のHTMLタグ確認コードを `index.html` に追加済み
 - 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
@@ -135,10 +136,10 @@ e26075f Add day one revenue strategy record
 
 優先順は以下。
 
-1. X運用を始める。匿名方針を守り、投資助言ではなく学習記録として発信する
-2. Xプロフィール文、固定ポスト、初回投稿セットを決める
+1. Xプロフィールは設定済み。「実験中」ではなく「挑戦中」の表現を使う
+2. 固定ポスト、初回投稿セットを決める
 3. サイトへの導線はトップ、はじまり、Study 02のどれに流すか確認する
-4. Google AnalyticsでXからのアクセスが見えるか確認する
+4. Google AnalyticsのデータストリームURLを新URL `https://webkabu-log.github.io/` に変更し、Xからのアクセスが見えるか確認する
 5. 公開サイトをスマホで確認する
 6. トップ、はじまり、Day 1、Study 01、Study 02、広告・運営方針、プライバシーポリシーの表示確認
 7. 新URLでSearch Consoleを登録し直し、「サイトマップ」に `sitemap.xml` を送信する
@@ -167,7 +168,7 @@ e26075f Add day one revenue strategy record
 
 最初に作るもの:
 
-- プロフィール文
+- プロフィール文（設定済み。「挑戦中」表記）
 - 固定ポスト
 - 初回投稿 3本
 - サイトへのリンク導線
