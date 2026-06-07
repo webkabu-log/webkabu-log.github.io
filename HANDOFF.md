@@ -48,7 +48,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - Google Analytics 4 を新URL用に作成し直し、Measurement ID を `G-FZVKWGP9SH` に変更
 - GitHub PagesのURLを `https://webkabu-log.github.io/` に移行済み
 - 旧URLでGoogle Search Consoleを登録済み。新URL `https://webkabu-log.github.io/` で登録し直す
-- Google Search Console のHTMLタグ確認コードを `index.html` に追加済み
+- 新URLのGoogle Search Console確認用HTMLファイル `google84bdc80c78eef64d.html` を追加
 - 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
 
 ## サイトの基本方針
