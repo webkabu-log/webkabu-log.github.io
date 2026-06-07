@@ -207,7 +207,7 @@ e26075f Add day one revenue strategy record
 - Study 05: NISAの基本と注意点を整理する
 - Study 06: Prime・Standard・Growth市場を整理する
 - Study 07: リスクとは何かを1から確認する
-- Study 08: 買う前のチェックリストを作る
+- Study 08: 少額投資を考える前の確認を整理する
 - Day 0: はじまり
 - Day 1: Webで1円を作る前に、まず読まれる流れを考える
 - Day 2: 読まれる入口と広告審査の準備を進める
