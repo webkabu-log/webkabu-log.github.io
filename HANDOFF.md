@@ -55,6 +55,8 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - 新URLの `https://webkabu-log.github.io/sitemap.xml` は公開URLでHTTP 200を確認済み
 - Xプロフィール設定と初回投稿を実施済み
 - Google AdSense サイト確認用コードを通常HTMLページの `<head>` に追加（publisher: `ca-pub-9424993744252378`）
+- 全ページ共通フッターとプロフィールにXリンク `https://x.com/webkabu_log` を控えめに追加
+- AdSense確認コード設置に合わせ、プライバシーポリシーと広告・運営方針の表記を更新
 
 ## サイトの基本方針
 
