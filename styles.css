@@ -514,6 +514,28 @@ h3 {
   color: var(--muted);
 }
 
+.article-body pre {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #f3f7f4;
+  color: var(--green-dark);
+  line-height: 1.7;
+}
+
+.article-body code {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+.text-link {
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .compact-dialogue {
   margin: 16px 0;
   box-shadow: none;
@@ -838,7 +860,7 @@ h3 {
 }
 
 .study-lane .lane-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .record-card {
