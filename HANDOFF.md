@@ -49,6 +49,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - GitHub PagesのURLを `https://webkabu-log.github.io/` に移行済み
 - 旧URLでGoogle Search Consoleを登録済み。新URL `https://webkabu-log.github.io/` で登録し直す
 - 新URLのGoogle Search Console確認用HTMLファイル `google84bdc80c78eef64d.html` を追加
+- 新URLのGoogle Search Console確認用metaタグを `index.html` に追加
 - 検索エンジン向けに `sitemap.xml` と `robots.txt` を追加
 
 ## サイトの基本方針
