@@ -527,6 +527,41 @@ h3 {
   font-weight: 800;
 }
 
+.roadmap-list,
+.term-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.roadmap-list article,
+.term-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fffdfa;
+}
+
+.roadmap-list span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  padding: 3px 9px;
+  background: #e7f1eb;
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.term-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.term-grid strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green-dark);
+}
+
 .next-links {
   display: flex;
   flex-wrap: wrap;
@@ -613,7 +648,7 @@ h3 {
 }
 
 .study-lane .lane-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .record-card {
@@ -884,6 +919,10 @@ a.record-card:hover::after {
 
   .lane-grid,
   .study-lane .lane-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .term-grid {
     grid-template-columns: 1fr;
   }
 }
