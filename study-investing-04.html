@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>一般口座・特定口座・NISA口座の違いを整理する | Web収益だけで株を買う日記</title>
+    <meta name="description" content="大学生がAIとWeb制作を使って0円から収益化に挑戦し、その収益だけで少額株投資を学ぶ実験ログ。一般口座、特定口座（源泉徴収あり/なし）、NISA口座の違いと税金の扱いを初心者向けに整理。">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FZVKWGP9SH");
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインメニュー">
+        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="site-menu" class="nav-links">
+          <a href="index.html#challenge">現在地</a>
+          <a href="index.html#rules">ルール</a>
+          <a href="roadmap.html">ロードマップ</a>
+          <a href="tools.html">ツール</a>
+          <a href="hajimari.html">はじまり</a>
+          <a href="index.html#records">記録</a>
+          <a href="profile.html">プロフィール</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="article-page">
+        <header class="article-hero reveal">
+          <p class="eyebrow">Study 04</p>
+          <h1>一般口座・特定口座・NISA口座の違いを整理する</h1>
+          <p class="lead">
+            証券会社で口座を作る際に、一般口座、特定口座（源泉徴収あり/なし）、NISA口座の選択肢が出てきます。
+            今回は、それぞれの税金の扱いや確定申告の手間を比較し、初心者が知っておくべき違いを整理します。
+          </p>
+        </header>
+
+        <div class="article-body reveal">
+          <h2>今回学ぶこと</h2>
+          <p>
+            今回の目的は、証券口座を開設する際に直面する「口座区分の違い」を理解することです。
+            口座の種類によって、利益が出たときの税金や、確定申告（国に税金を計算して申告する手続き）の手間が大きく変わります。
+          </p>
+          <p>
+            何となく口座を選んでしまうと、後から自分で複雑な損益計算をして確定申告をする必要が出てきたり、
+            受けられるはずの税制優遇が受けられなくなったりする可能性があります。
+          </p>
+
+          <h2>まず結論</h2>
+          <p>
+            もっとも税金の優遇が大きいのは**NISA口座**です。
+            課税される口座の中では、税金の計算と納税を証券会社が代行してくれる**特定口座（源泉徴収あり）**が最も手続きが簡便です。
+          </p>
+
+          <div class="table-container" style="overflow-x: auto; margin: 24px 0;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 2px solid var(--border-color); background-color: rgba(0,0,0,0.02);">
+                  <th style="padding: 12px; font-weight: bold;">口座の種類</th>
+                  <th style="padding: 12px; font-weight: bold;">税金（利益に対して）</th>
+                  <th style="padding: 12px; font-weight: bold;">確定申告</th>
+                  <th style="padding: 12px; font-weight: bold;">特徴・選び方</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px; font-weight: bold;">NISA口座</td>
+                  <td style="padding: 12px; color: var(--accent-green); font-weight: bold;">非課税（0%）</td>
+                  <td style="padding: 12px;">不要</td>
+                  <td style="padding: 12px;">利益に税金がかからない最大の優遇口座。まず優先して検討されます。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px; font-weight: bold;">特定口座<br>(源泉徴収あり)</td>
+                  <td style="padding: 12px;">課税（20.315%）</td>
+                  <td style="padding: 12px; color: var(--accent-blue);">原則不要</td>
+                  <td style="padding: 12px;">証券会社が税金を差し引き、代わりに納税してくれるため初心者に適しています。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px; font-weight: bold;">特定口座<br>(源泉徴収なし)</td>
+                  <td style="padding: 12px;">課税（20.315%）</td>
+                  <td style="padding: 12px;">必要</td>
+                  <td style="padding: 12px;">証券会社が「年間取引報告書」を作成してくれますが、申告は自分で行います。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 12px; font-weight: bold;">一般口座</td>
+                  <td style="padding: 12px;">課税（20.315%）</td>
+                  <td style="padding: 12px;">必要</td>
+                  <td style="padding: 12px;">損益計算から申告書の作成まで、すべて自分で行う必要があります。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>会話で整理</h2>
+          <div class="dialogue compact-dialogue">
+            <p><strong>私</strong><span>口座を作るときに、いろいろ選択肢があって迷いました。やっぱりNISA口座が良いんですか？</span></p>
+            <p><strong>AI</strong><span>はい、まずは税制優遇が受けられるNISA口座の活用を考えるのが一般的です。利益に税金がかからないのは大きなメリットです。</span></p>
+            <p><strong>私</strong><span>じゃあ他の口座は作らなくていいんですか？</span></p>
+            <p><strong>AI</strong><span>基本的にはNISA口座を開設する場合も、ベースとなる課税口座（特定口座または一般口座）を同時に作る必要があります。NISAの投資枠を超えた取引や、NISA対象外の取引をするときにそれらの課税口座が使われます。</span></p>
+            <p><strong>私</strong><span>特定口座の「源泉徴収あり」と「なし」はどう違うんでしょう？</span></p>
+            <p><strong>AI</strong><span>「源泉徴収あり」は、証券会社が利益から税金（通常20.315%）を自動的に引いて代わりに納税してくれるため、確定申告が原則不要になります。「なし」は、証券会社が年間の利益をまとめて報告書を作ってくれますが、確定申告は自分で行う必要があります。</span></p>
+            <p><strong>私</strong><span>一般口座というのは？</span></p>
+            <p><strong>AI</strong><span>取引の計算から書類作成、納税手続きまですべて自分で行う口座です。初心者があえて選ぶ理由は基本的にありません。</span></p>
+          </div>
+
+          <h2>税金の基本</h2>
+          <p>
+            通常、日本の株式投資で得られた利益（売却益や配当金など）には、所得税・住民税などを合わせて**20.315%**の税金が課されます。
+            1万円の利益が出た場合、約2,031円が税金として差し引かれます。
+          </p>
+          <p>
+            NISA（少額投資非課税制度）口座は、この20.315%の税金が一定枠内で**非課税（0%）**になる国が設けた制度です。
+          </p>
+
+          <h2>特定口座と確定申告</h2>
+          <p>
+            株の税金を納めるには確定申告が必要ですが、特定口座制度を利用すると、その手続きを簡略化できます。
+          </p>
+          <ul>
+            <li>
+              <strong>特定口座（源泉徴収あり）:</strong>
+              利益が出た時点で自動的に20.315%が引かれ、損をした場合は自動的に税金が還付されます。
+              会社員や学生など、確定申告の手続きを避けたい場合に最も選ばれている口座です。
+            </li>
+            <li>
+              <strong>特定口座（源泉徴収なし）:</strong>
+              証券会社が「年間取引報告書」を作ってくれるため、計算自体は楽になりますが、確定申告の手続きは自分でする必要があります。他の証券会社との損益通算や繰越控除を自分で行いたい場合などに選択されます。
+            </li>
+          </ul>
+
+          <h2>注意すべきこと</h2>
+          <p>
+            NISAは税金がかからない非常に有利な制度ですが、「絶対に損をしない口座」ではありません。
+            投資商品は元本保証がなく、値下がりして損失が出るリスクは常に存在します。
+          </p>
+          <p>
+            また、NISA口座で生じた損失は、特定口座などの課税口座で得た他の利益と相殺（損益通算）することができない、
+            といった特有のルールもあります。
+          </p>
+
+          <h2>今回のミニ確認</h2>
+          <p>以下のクイズで、仕組みの理解を確認しましょう。</p>
+
+          <div class="quiz-container" style="background-color: rgba(0,0,0,0.02); padding: 20px; border-radius: 8px; margin: 24px 0;">
+            <p style="margin-top: 0; font-weight: bold;">【クイズ 1】 株式投資の通常課税（20.315%）に対して、NISA口座で得た利益にかかる税率は何％でしょうか？</p>
+            <ul style="list-style: none; padding-left: 0;">
+              <li>A. 10.315%</li>
+              <li>B. 0%（非課税）</li>
+              <li>C. 20.315%</li>
+            </ul>
+            <details style="margin-top: 12px; cursor: pointer;">
+              <summary style="font-weight: bold; color: var(--accent-blue);">正解と解説を見る</summary>
+              <p style="margin-top: 8px;"><strong>正解: B</strong></p>
+              <p>NISAは税制優遇制度であり、決められた非課税保有期間や投資枠内において、利益にかかる税金は一切かかりません（0%）。</p>
+            </details>
+          </div>
+
+          <div class="quiz-container" style="background-color: rgba(0,0,0,0.02); padding: 20px; border-radius: 8px; margin: 24px 0;">
+            <p style="margin-top: 0; font-weight: bold;">【クイズ 2】 特定口座（源泉徴収あり）の最も大きなメリットは何でしょうか？</p>
+            <ul style="list-style: none; padding-left: 0;">
+              <li>A. 投資したお金の元本が保証されること</li>
+              <li>B. 証券会社が代わりに税金の計算と納税を行ってくれるため、確定申告が原則不要になること</li>
+              <li>C. 税金が非課税になること</li>
+            </ul>
+            <details style="margin-top: 12px; cursor: pointer;">
+              <summary style="font-weight: bold; color: var(--accent-blue);">正解と解説を見る</summary>
+              <p style="margin-top: 8px;"><strong>正解: B</strong></p>
+              <p>特定口座（源泉徴収あり）は課税口座ですが、証券会社が損益の計算と納税手続きを代行するため、原則として確定申告の必要がなくなります。元本保証や非課税のメリットはありません。</p>
+            </details>
+          </div>
+
+          <h2>確認に使った公式情報</h2>
+          <ul>
+            <li><a href="https://www.fsa.go.jp/policy/nisa2/" target="_blank" rel="noopener noreferrer">金融庁: NISA特設ウェブサイト</a></li>
+            <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1476.htm" target="_blank" rel="noopener noreferrer">国税庁: タックスアンサー No.1476 特定口座制度</a></li>
+          </ul>
+
+          <h2>次に学ぶこと</h2>
+          <p>
+            口座の違いと税金の基礎が整理できました。
+            次は、もっとも優先度の高い「NISA制度」自体の詳細ルールや注意点を「Study 05」で学びます。
+          </p>
+
+          <p class="article-note">
+            このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。口座開設にあたっては、各証券会社の案内や公式の最新税制情報を必ず確認してください。
+          </p>
+
+          <nav class="next-links" aria-label="次に読む">
+            <a class="secondary-button" href="study-investing-03.html">Study 03へ戻る</a>
+            <a class="primary-button" href="roadmap.html">ロードマップへ戻る</a>
+          </nav>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="profile.html">プロフィール</a>
+        <a href="roadmap.html">ロードマップ</a>
+        <a href="tools.html">ツール</a>
+        <a href="monthly-report-2026-06.html">月次レポート</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="monetization.html">広告・運営方針</a>
+        <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
+      </nav>
+      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
+      <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

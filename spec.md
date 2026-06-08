@@ -41,6 +41,7 @@
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
 | [study-investing-03.html](file:///c:/trader/study-investing-03.html) | Study 03: 株・市場・口座の整理 | 金融市場と口座、市場区分の基本 |
+| [study-investing-04.html](file:///c:/trader/study-investing-04.html) | Study 04: 口座の種類と税金の違い | 一般口座・特定口座・NISA口座の違いと税金の仕組みの整理 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -68,6 +69,16 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第7期：新規学習記事（Study 04）の追加と関連情報の同期（2026年6月8日実施）
+* **新規記事「一般口座・特定口座・NISA口座の違いを整理する」（Study 04）の追加**:
+  - 証券口座開設時に選択する、一般口座、特定口座（源泉徴収あり/なし）、NISA口座の違いを解説した記事 [study-investing-04.html](file:///c:/trader/study-investing-04.html) を作成。
+  - 通常税率（20.315%）とNISAの非課税優遇、確定申告の手間の違いを初心者向けに整理。またNISAの元本保証なしや損益通算不可などの注意点を解説。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **13本** にインクリメント。Study 04のカードから準備中表示を除去し、新規記事へリンク。
+  - [roadmap.html](file:///c:/trader/roadmap.html) のStudy 04を公開済みにし、リンクを付与。Study 05を「次に学ぶ（準備中）」にアップデート。
+  - [study-investing-03.html](file:///c:/trader/study-investing-03.html) のナビゲーションを、ロードマップ戻りから新規記事への「Study 04へ進む」へ変更。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) へ新規記事URLを自動同期。
 
 ### 第6期：成長方向性の強化とAI就活フローの洗練（2026年6月8日実施）
 * **「3つの柱」の並び順とストーリー連携の強化**:

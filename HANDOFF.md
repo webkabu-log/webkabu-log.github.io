@@ -129,13 +129,22 @@ Webで1円を作る
 hajimari.html
 day1.html
 day2.html
+job-log-01.html
+job-log-02.html
+job-log-03.html
+job-log-04.html
+study-ai-jobhunting-01.html
 roadmap.html
 study-investing-01.html
 study-investing-02.html
 study-investing-03.html
+study-investing-04.html
+tools.html
+monthly-report-2026-06.html（準備中）
+contact.html
+profile.html
 privacy.html
 monetization.html
-profile.html
 sitemap.xml
 robots.txt
 ```
@@ -160,9 +169,10 @@ e26075f Add day one revenue strategy record
 3. Search Console のサイトマップは送信済み。`sitemap.xml` は公開URLで取得できるため、Search Console側の再処理を待つ
 4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす
 5. 学習記録「株・市場・証券会社・証券口座の違い」を `study-investing-03.html` として追加済み
-6. 証券会社、証券口座、NISA、Prime市場などの制度・用語は、公開前に公式情報で確認する
-7. 次回は「一般口座・特定口座・NISA口座の違い」を会話内で進める
-8. お問い合わせページまたは連絡手段を検討する
+6. 学習記録「一般口座・特定口座・NISA口座の違い」を `study-investing-04.html` として追加済み
+7. 証券会社、証券口座、NISA、Prime市場などの制度・用語は、公開前に公式情報で確認する
+8. 次回は「Study 05: NISAの基本と注意点（つみたて投資枠・成長投資枠の併用、非課税枠ルールなど）」を会話内で進める
+9. お問い合わせページまたは連絡手段を検討する
 
 ## X運用方針
 
