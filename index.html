@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web収益だけで株を買う日記</title>
-    <meta
-      name="description"
-      content="生活費を使わず、Webで生まれた収益だけで少額投資に挑戦するリアルな学習記録。"
-    >
+    <meta name="description" content="大学3年がAIとWeb制作を使って0円から収益化に挑戦し、その収益だけで少額株投資を学ぶ実験ログ。就活、AI活用、Web収益化、投資学習の記録を公開。">
     <meta name="google-site-verification" content="-TwItmPPol9Jvv10bvxWM1zaED6br4Fw7VJCLrAIrSk">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
     <script
@@ -28,18 +25,19 @@
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="メインメニュー">
-        <a class="brand" href="#top">Web収益だけで株を買う日記</a>
+        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
         <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div id="site-menu" class="nav-links">
-          <a href="#challenge">現在地</a>
-          <a href="#rules">ルール</a>
+          <a href="index.html#challenge">現在地</a>
+          <a href="index.html#rules">ルール</a>
           <a href="roadmap.html">ロードマップ</a>
+          <a href="tools.html">ツール</a>
           <a href="hajimari.html">はじまり</a>
-          <a href="#records">記録</a>
+          <a href="index.html#records">記録</a>
           <a href="profile.html">プロフィール</a>
         </div>
       </nav>
@@ -81,8 +79,7 @@
             <p class="eyebrow">Personal challenge</p>
             <h1>Webで生まれたお金だけで、株を買えるのか。</h1>
             <p class="lead">
-              何もわからないまま株を始めるのは怖い。だから生活費も貯金も使わず、
-              Webで読まれるものを作り、収益が生まれる流れから学ぶ挑戦記録です。
+              大学3年がAIとWebで0円から収益を作り、そのお金だけで株投資を学ぶ実験ログ。生活費や貯金は一切使わず、手探りで進めるリアルな記録です。
             </p>
             <div class="hero-actions">
               <a class="primary-button" href="#day-records">作業の記録を見る</a>
@@ -93,18 +90,55 @@
           </div>
 
           <aside class="live-panel reveal" aria-label="現在のチャレンジ状況">
-            <div class="panel-top">
-              <span>現在のWeb収益</span>
-              <strong class="count-up" data-target="0">0円</strong>
+            <div class="panel-header">
+              <span class="live-indicator" aria-hidden="true"></span>
+              <span class="panel-tag">LIVE DASHBOARD</span>
+              <h3>現在の状況</h3>
             </div>
-            <div class="ring" aria-hidden="true">
-              <div class="ring-core">
-                <span>STEP</span>
-                <strong>0</strong>
+            <div class="stats-container">
+              <div class="stat-item">
+                <span class="stat-label">Web収益</span>
+                <strong class="stat-value highlight-green count-up" data-target="0">0円</strong>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">投資に回した金額</span>
+                <strong class="stat-value count-up" data-target="0">0円</strong>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">公開記事数</span>
+                <strong class="stat-value">8本</strong>
               </div>
             </div>
-            <p>最初の目標は「1円のWeb収益」。ここを突破したら、初めての少額投資を考えます。</p>
+            <div class="next-goal">
+              <span class="goal-badge">次の目標</span>
+              <p class="goal-text">Webで1円の収益を作る</p>
+            </div>
           </aside>
+        </div>
+      </section>
+
+      <section id="pillars" class="band pillars-band">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Three Pillars</p>
+          <h2>3つの柱</h2>
+          <p>この実験ログは、主に以下3つのテーマを軸に手探りで進めています。</p>
+        </div>
+        <div class="pillars-grid">
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">📝</div>
+            <h3>Web収益化ログ</h3>
+            <p>ブログ運営、集客動線設計、広告・アフィリエイト準備などの0円からの収益化の足跡。</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">🤖</div>
+            <h3>AI・就活活用ログ</h3>
+            <p>ChatGPTやAIツールを使った自己分析、ES作成、面接研究、就活サービス比較の実験記録。</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-icon" aria-hidden="true">📈</div>
+            <h3>投資前の学習ログ</h3>
+            <p>証券会社、証券口座、NISA、東証Prime市場の違いなど、制度理解からリスク管理まで自分のお金を使わずに学ぶ投資学習。</p>
+          </article>
         </div>
       </section>
 
@@ -187,8 +221,8 @@
       <section id="records" class="band records-band">
         <div class="section-heading reveal">
           <p class="eyebrow">Progress and notes</p>
-          <h2>作業の記録と投資前の学習</h2>
-          <p>実際に進めたことと、投資を始める前に整理したことを分けて残します。</p>
+          <h2>作業の記録・AI就活・投資前の学習</h2>
+          <p>実際に進めたこと、AIを活用した就活準備、そして投資を始める前に整理したことを分けて残します。</p>
         </div>
 
         <div class="record-lanes">
@@ -199,21 +233,64 @@
               <span>実際に進めたことと、収益化までの動き</span>
             </div>
             <div class="record-grid lane-grid">
-              <a class="record-card day-card reveal" href="hajimari.html">
-                <span class="record-date">Day 0</span>
+              <div class="record-card day-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">Day 0</span>
+                  <span class="card-post-date">投稿日: 2026/06/06</span>
+                </div>
                 <h3>サイトの土台を作った</h3>
-                <p>テーマは「Web収益だけで株を買う」。最初の資金は0円。</p>
-              </a>
-              <a class="record-card day-card reveal" href="day1.html">
-                <span class="record-date">Day 1</span>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">生活費を1円も使わずにWeb収益のみで株を始める基本方針と、絶対に守るべき安全ルールがわかります。</p>
+                </div>
+                <a class="read-button" href="hajimari.html">読む</a>
+              </div>
+              <div class="record-card day-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">Day 1</span>
+                  <span class="card-post-date">投稿日: 2026/06/07</span>
+                </div>
                 <h3>読まれる流れを考える</h3>
-                <p>株より先に、Webで1円を作るための入口を整理する。</p>
-              </a>
-              <a class="record-card day-card reveal" href="day2.html">
-                <span class="record-date">Day 2</span>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">広告を貼る前に、読者が集まる動線設計と収益の入口をどう整えるべきか、その具体的な準備手順がわかります。</p>
+                </div>
+                <a class="read-button" href="day1.html">読む</a>
+              </div>
+              <div class="record-card day-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">Day 2</span>
+                  <span class="card-post-date">投稿日: 2026/06/07</span>
+                </div>
                 <h3>読まれる入口を作る</h3>
-                <p>X、解析、広告審査の準備を進め、収益化の入口を整える。</p>
-              </a>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">X（旧Twitter）の運用開始から、アナリティクス・アドセンス審査の具体的な設定方法と注意点がわかります。</p>
+                </div>
+                <a class="read-button" href="day2.html">読む</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="ai-records" class="record-lane ai-lane reveal" aria-labelledby="ai-records-title">
+            <div class="lane-heading">
+              <p class="eyebrow">AI & Careers</p>
+              <h3 id="ai-records-title">AI就活ログ</h3>
+              <span>大学3年がAIツールや就活サービスを試す実験記録</span>
+            </div>
+            <div class="record-grid lane-grid">
+              <div class="record-card ai-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">AI就活 01</span>
+                  <span class="card-post-date">投稿日: 2026/06/08</span>
+                </div>
+                <h3>ChatGPTで自己PRを磨き上げる</h3>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">ChatGPTを使ってエントリーシートの自己PRをブラッシュアップするための、具体的なプロンプトや使い方のコツがわかります。</p>
+                </div>
+                <a class="read-button" href="study-ai-jobhunting-01.html">読む</a>
+              </div>
             </div>
           </section>
 
@@ -224,26 +301,54 @@
               <span>株・投資・Web収益化を1から整理するメモ</span>
             </div>
             <div class="record-grid lane-grid">
-              <a class="record-card study-card reveal" href="roadmap.html">
-                <span class="record-date">最初に読む</span>
+              <div class="record-card study-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">最初に読む</span>
+                  <span class="card-post-date">投稿日: 2026/06/07</span>
+                </div>
                 <h3>投資学習ロードマップ</h3>
-                <p>証券会社、証券口座、NISA、Prime市場を混同しないための地図。</p>
-              </a>
-              <a class="record-card study-card reveal" href="study-investing-01.html">
-                <span class="record-date">Study 01</span>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">証券会社、口座、NISA、東証Prime市場の違いを混同せず、混乱せずに学び進めるためのロードマップが手に入ります。</p>
+                </div>
+                <a class="read-button" href="roadmap.html">読む</a>
+              </div>
+              <div class="record-card study-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">Study 01</span>
+                  <span class="card-post-date">投稿日: 2026/06/07</span>
+                </div>
                 <h3>投資とは何かを確認</h3>
-                <p>投資、株、貯金の違いを1から学ぶ。</p>
-              </a>
-              <a class="record-card study-card reveal" href="study-investing-02.html">
-                <span class="record-date">Study 02</span>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">投資、貯金、株式、投資信託の基本的な役割の違いと、初心者が最初に理解すべきリスクの概念がわかります。</p>
+                </div>
+                <a class="read-button" href="study-investing-01.html">読む</a>
+              </div>
+              <div class="record-card study-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">Study 02</span>
+                  <span class="card-post-date">投稿日: 2026/06/07</span>
+                </div>
                 <h3>株価が動く理由を学ぶ</h3>
-                <p>価格が変わる仕組みを、売買判断ではなく知識として確認する。</p>
-              </a>
-              <a class="record-card study-card reveal" href="study-investing-03.html">
-                <span class="record-date">Study 03</span>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">株価が変動する本質的な仕組み（需要と供給のバランス）を、難しい専門用語を使わずに理解できます。</p>
+                </div>
+                <a class="read-button" href="study-investing-02.html">読む</a>
+              </div>
+              <div class="record-card study-card reveal">
+                <div class="card-meta">
+                  <span class="record-date">Study 03</span>
+                  <span class="card-post-date">投稿日: 2026/06/07</span>
+                </div>
                 <h3>株・市場・口座を整理</h3>
-                <p>Prime市場、証券会社、証券口座、NISAを混同しないように分ける。</p>
-              </a>
+                <div class="card-benefits">
+                  <span class="benefits-heading">この記事で得られること</span>
+                  <p class="benefits-text">金融市場の全体像と、取引を行う窓口・口座の種類、そしてPrime市場などの区分をすっきり整理して理解できます。</p>
+                </div>
+                <a class="read-button" href="study-investing-03.html">読む</a>
+              </div>
             </div>
           </section>
         </div>
@@ -259,7 +364,7 @@
         <a href="monetization.html">広告・運営方針</a>
         <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
       </nav>
-      <p>このサイトは投資助言ではなく、Web収益と少額投資の個人学習記録です。</p>
+      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
       <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
     </footer>
 
