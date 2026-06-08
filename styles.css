@@ -386,7 +386,7 @@ h3 {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   gap: 16px;
-  padding-bottom: 8px;
+  padding: 12px 4px 20px;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
 }
 
@@ -931,7 +931,7 @@ h3 {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  padding: 0 4px 10px;
+  padding: 12px 4px 24px;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
 }
 
@@ -942,7 +942,7 @@ h3 {
   flex: 0 0 clamp(300px, 34vw, 370px);
   scroll-snap-align: start;
   overflow: hidden;
-  min-height: 290px;
+  min-height: 330px;
   padding: 22px;
 }
 
