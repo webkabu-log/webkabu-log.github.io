@@ -42,7 +42,7 @@
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
 | [study-investing-03.html](file:///c:/trader/study-investing-03.html) | Study 03: 株・市場・口座の整理 | 金融市場と口座、市場区分の基本 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
-| [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | 記事数、PV、収益、当月学んだこと、来月のアクション |
+| [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月上旬 運営レポート | 記事数、PV、収益、振り返り、今後のアクション |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
 | [profile.html](file:///c:/trader/profile.html) | プロフィール | 運営者（大学生）について、基本匿名での学習姿勢 |
 | [privacy.html](file:///c:/trader/privacy.html) | プライバシーポリシー | 個人情報保護方針、Analytics・広告に関する記述 |
