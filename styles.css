@@ -386,7 +386,8 @@ h3 {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   gap: 16px;
-  padding: 12px 4px 20px;
+  padding: 12px 4px 24px;
+  align-items: stretch;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
 }
 
@@ -932,6 +933,7 @@ h3 {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   padding: 12px 4px 24px;
+  align-items: stretch;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
 }
 
@@ -973,6 +975,7 @@ h3 {
   font-size: 12px;
   color: var(--muted);
   font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .card-benefits {
@@ -1048,6 +1051,7 @@ h3 {
 
 .record-date {
   display: inline-flex;
+  align-self: flex-start;
   margin-bottom: 18px;
   border-radius: 999px;
   padding: 4px 10px;
@@ -1196,7 +1200,8 @@ h3 {
   .rule-grid,
   .story-grid,
   .record-grid,
-  .pillars-grid {
+  .pillars-grid,
+  .status-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1258,7 +1263,8 @@ h3 {
   .rule-grid,
   .story-grid,
   .record-grid,
-  .pillars-grid {
+  .pillars-grid,
+  .status-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1524,4 +1530,75 @@ h3 {
   font-size: 14px;
   font-weight: 800;
   color: var(--ink);
+}
+
+/* --- Current Status Section --- */
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.status-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 221, 212, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(28, 37, 33, 0.04);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 220ms ease, border-color 220ms ease;
+  text-align: center;
+}
+
+.status-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--green);
+  box-shadow: 0 16px 36px rgba(27, 122, 91, 0.08);
+}
+
+.status-label {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.status-value {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.status-value.highlight-green {
+  color: var(--green);
+}
+
+/* Bold highlighted styling for the "次の目標" card */
+.status-card.target-card {
+  background: rgba(253, 249, 237, 0.85); /* Warm light gold/yellow glassmorphism background */
+  border: 2px solid rgba(189, 123, 43, 0.5);
+  box-shadow: 0 8px 32px rgba(189, 123, 43, 0.08);
+}
+
+.status-card.target-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 16px 36px rgba(189, 123, 43, 0.15);
+}
+
+.status-card.target-card .status-label {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.status-card.target-card .status-value {
+  color: var(--gold);
+  font-size: 22px;
 }
