@@ -35,7 +35,8 @@
 | [job-log-01.html](file:///c:/trader/job-log-01.html) | AI就活 01: 就活で最初に整理すること | 就活で最初に整理すべき5大要素と文理の具体例 |
 | [job-log-02.html](file:///c:/trader/job-log-02.html) | AI就活 02: 理系学生の経験を整理する | 理系向けに「課題・行動・学び」に分けるアプローチ |
 | [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
-| [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) | AI就活 04: ChatGPTで自己PRを磨く | 生成AIをESに二人三脚で活用するガイドライン |
+| [job-log-04.html](file:///c:/trader/job-log-04.html) | AI就活 04: STAR法で経験を整理する | 自己分析・ESで必須のSTAR法と文理別の具体的な整理例 |
+| [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) | AI就活 05: ChatGPTで自己PRを磨く | 生成AIをESに二人三脚で活用するガイドライン |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -67,6 +68,14 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第5期：STAR法による経験整理記事の追加と順序整理（2026年6月8日実施）
+* **新規記事「STAR法で経験を整理する」（AI就活 04）の追加**:
+  - 自己分析やガクチカで必須となる「S・T・A・R」のフレームワーク解説記事 [job-log-04.html](file:///c:/trader/job-log-04.html) を新規に執筆。文系・理系・チーム開発別の具体的な当てはめ例を網羅。
+* **記事順序の再構築（ChatGPT記事のシフト）**:
+  - 既存の「ChatGPTで自己PRを磨き上げる」を `AI就活 05` に更新し、前後のリンク（`03 ➔ 04 ➔ 05`）を正しく再接続。
+  - トップページのカードレーン、学習ロードマップ、およびサイトマップの記述を完全に同期。
+  - 公開記事数の総数を `13本` に更新。
 
 ### 第4期：情報設計の整理と見出し・カード説明文の最適化（2026年6月8日実施）
 * **ヒーローエリアの統合とセンタリング**:
