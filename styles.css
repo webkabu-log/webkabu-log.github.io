@@ -186,11 +186,11 @@ input {
 .hero-inner {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
-  gap: 42px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 1120px;
+  text-align: center;
+  max-width: 800px;
   margin: 0 auto;
   padding: 58px 22px 0;
 }
@@ -243,6 +243,7 @@ h3 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -379,44 +380,93 @@ h3 {
   color: var(--muted);
 }
 
-.journey {
+/* --- Compact Timeline Stepper --- */
+.journey-steps-compact {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.journey-compact-item {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
   gap: 16px;
-  padding: 12px 4px 24px;
-  align-items: stretch;
-  scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition: background 220ms ease, border-color 220ms ease, transform 220ms ease;
 }
 
-.journey::after {
-  content: "";
-  flex: 0 0 16px;
+.journey-compact-item:hover {
+  background: #fff;
+  border-color: var(--green);
+  transform: translateY(-2px);
 }
 
-.journey::before {
-  display: none;
+.step-num {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #edf4ef;
+  color: var(--green-dark);
+  font-weight: 900;
+  font-size: 15px;
+  flex-shrink: 0;
 }
 
-.journey::-webkit-scrollbar,
+.journey-compact-item.active {
+  border-color: var(--green);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.journey-compact-item.active .step-num {
+  background: var(--green);
+  color: #fff;
+  animation: dotPulse 1.8s ease-in-out infinite;
+}
+
+.step-content h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: var(--green-dark);
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.step-arrow {
+  color: var(--line);
+  font-size: 20px;
+  font-weight: bold;
+  user-select: none;
+}
+
 .lane-grid::-webkit-scrollbar {
   height: 8px;
 }
 
-.journey::-webkit-scrollbar-track,
 .lane-grid::-webkit-scrollbar-track {
   border-radius: 999px;
   background: rgba(217, 221, 212, 0.42);
 }
 
-.journey::-webkit-scrollbar-thumb,
 .lane-grid::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: rgba(27, 122, 91, 0.42);
 }
 
-.journey-step,
 .rule-grid article,
 .record-card,
 .dialogue {
@@ -426,46 +476,16 @@ h3 {
   box-shadow: 0 12px 30px rgba(28, 37, 33, 0.06);
 }
 
-.journey-step {
-  position: relative;
-  flex: 0 0 clamp(240px, 25vw, 270px);
-  scroll-snap-align: start;
-  min-height: 210px;
-  padding: 18px;
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.journey-step:hover,
 .record-card:hover,
 .rule-grid article:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
 }
 
-.journey-step:hover span,
 .record-card:hover .record-date {
   transform: scale(1.08);
 }
 
-.journey-step span {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  margin-bottom: 28px;
-  border-radius: 50%;
-  background: #edf4ef;
-  color: var(--green-dark);
-  font-weight: 900;
-}
-
-.journey-step.active span {
-  background: var(--green);
-  color: #fff;
-  animation: dotPulse 1.8s ease-in-out infinite;
-}
-
-.journey-step p,
 .rule-grid p,
 .record-card p {
   margin-bottom: 0;
@@ -1216,22 +1236,12 @@ h3 {
 }
 
 @media (max-width: 940px) {
-  .hero-inner,
-  .journey,
   .rule-grid,
   .story-grid,
   .record-grid,
   .pillars-grid,
   .status-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .journey::before {
-    display: none;
-  }
-
-  .hero-inner {
-    padding-top: 46px;
   }
 
   .lane-grid,
@@ -1279,8 +1289,6 @@ h3 {
     background: rgba(255, 253, 250, 0.68);
   }
 
-  .hero-inner,
-  .journey,
   .rule-grid,
   .story-grid,
   .record-grid,
@@ -1322,13 +1330,18 @@ h3 {
     gap: 12px;
   }
 
-  .journey-step,
   .record-card {
     flex-basis: min(72vw, 300px);
   }
 
-  .journey-step {
-    flex-basis: min(78vw, 320px);
+  .journey-steps-compact {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .step-arrow {
+    display: none;
   }
 
   .roadmap-overview {
