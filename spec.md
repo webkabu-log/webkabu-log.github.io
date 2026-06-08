@@ -32,7 +32,10 @@
 | [hajimari.html](file:///c:/trader/hajimari.html) | Day 0: 挑戦のはじまり | なぜこの挑戦を始めるのかの対話記録 |
 | [day1.html](file:///c:/trader/day1.html) | Day 1: 読まれる流れを考える | ブログ集客設計とX運用の基本方針 |
 | [day2.html](file:///c:/trader/day2.html) | Day 2: 読まれる入口を作る | Google Analytics, Search Console, AdSense設定 |
-| [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) | AI就活 01: ChatGPTで自己PRを磨く | 新カテゴリ「AI就活ログ」の第1弾記事 |
+| [job-log-01.html](file:///c:/trader/job-log-01.html) | AI就活 01: 就活で最初に整理すること | 就活で最初に整理すべき5大要素と文理の具体例 |
+| [job-log-02.html](file:///c:/trader/job-log-02.html) | AI就活 02: 理系学生の経験を整理する | 理系向けに「課題・行動・学び」に分けるアプローチ |
+| [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
+| [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) | AI就活 04: ChatGPTで自己PRを磨く | 生成AIをESに二人三脚で活用するガイドライン |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -64,6 +67,18 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第2期：AI就活ログ新カテゴリ追加（2026年6月8日実施）
+* **新規記事の作成**:
+  * [job-log-01.html](file:///c:/trader/job-log-01.html)（AI就活 01）：就活で最初に整理すべき5大要素と文理別アプローチの整理。
+  * [job-log-02.html](file:///c:/trader/job-log-02.html)（AI就活 02）：理系学生向けの「課題・行動・学び」に着目した経験整理法。
+  * [job-log-03.html](file:///c:/trader/job-log-03.html)（AI就活 03）：チーム開発におけるプロセス管理と手戻り対策の学習。
+* **トップページの更新**:
+  * 公開記事数を `9本` から `12本` に更新。
+  * 「AI就活ログ」レーンの説明文を更新し、新規3カードを追加。既存の `study-ai-jobhunting-01.html` を `AI就活 04` としてスライド統合。
+* **ロードマップ・サイトマップの同期**:
+  * `roadmap.html` の「AI・就活のロードマップ」を全4記事の公開済み状態に更新し、リンクを設定。
+  * `sitemap.xml` に新規3ページのURLを追加。
 
 ### 第1期：機能・レイアウト拡張（2026年6月8日実施）
 * **ファーストビュー改善**: コピーを「大学生がAIとWebで0円から〜」の形式にリニューアル。
