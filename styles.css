@@ -383,6 +383,7 @@ h3 {
   position: relative;
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   gap: 16px;
   padding-bottom: 8px;
@@ -928,6 +929,7 @@ h3 {
   display: flex;
   gap: 16px;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   padding: 0 4px 10px;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
