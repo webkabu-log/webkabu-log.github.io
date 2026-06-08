@@ -89,8 +89,9 @@ document.querySelectorAll(".journey, .lane-grid").forEach((scroller) => {
       }
 
       const nextScrollLeft = scroller.scrollLeft + event.deltaY;
-      const canScrollLeft = event.deltaY < 0 && scroller.scrollLeft > 0;
-      const canScrollRight = event.deltaY > 0 && scroller.scrollLeft < maxScrollLeft;
+      const tolerance = 2.5; // px (to account for subpixel rendering variations)
+      const canScrollLeft = event.deltaY < 0 && scroller.scrollLeft > tolerance;
+      const canScrollRight = event.deltaY > 0 && scroller.scrollLeft < maxScrollLeft - tolerance;
 
       if (!canScrollLeft && !canScrollRight) {
         return;
