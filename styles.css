@@ -380,7 +380,6 @@ h3 {
 }
 
 .journey {
-  position: relative;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
@@ -389,6 +388,11 @@ h3 {
   padding: 12px 4px 24px;
   align-items: stretch;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
+}
+
+.journey::after {
+  content: "";
+  flex: 0 0 16px;
 }
 
 .journey::before {
@@ -937,6 +941,11 @@ h3 {
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
 }
 
+.lane-grid::after {
+  content: "";
+  flex: 0 0 16px;
+}
+
 .record-card {
   position: relative;
   display: flex;
@@ -946,21 +955,13 @@ h3 {
   overflow: hidden;
   min-height: 330px;
   padding: 22px;
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 300ms ease, border-color 300ms ease;
 }
 
-.record-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, transparent 0 38%, rgba(27, 122, 91, 0.08) 48%, transparent 60%);
-  opacity: 0;
-  transform: translateX(-34%);
-  transition: opacity 220ms ease, transform 420ms ease;
-}
-
-.record-card:hover::before {
-  opacity: 1;
-  transform: translateX(28%);
+.record-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 42px rgba(28, 37, 33, 0.12);
+  border-color: rgba(28, 37, 33, 0.35);
 }
 
 .card-meta {
@@ -1016,16 +1017,41 @@ h3 {
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
-.day-card .read-button:hover {
+.read-button::after {
+  content: " →";
+  opacity: 0.8;
+  transform: translateX(0);
+  transition: transform 180ms ease;
+  margin-left: 4px;
+  font-weight: normal;
+}
+
+.record-card:hover .read-button::after {
+  transform: translateX(4px);
+}
+
+.day-card:hover .read-button {
   background: var(--green);
   border-color: var(--green);
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(27, 122, 91, 0.25);
 }
 
-.study-card .read-button:hover {
+.study-card:hover .read-button {
   background: var(--blue);
   border-color: var(--blue);
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 95, 154, 0.25);
+}
+
+.ai-card:hover .read-button {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(189, 123, 43, 0.25);
 }
 
 .study-card .record-date {
@@ -1036,12 +1062,6 @@ h3 {
 .day-card .record-date {
   background: #e7f1eb;
   color: var(--green-dark);
-}
-
-.ai-card .read-button:hover {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: #fff;
 }
 
 .ai-card .record-date {
@@ -1059,6 +1079,7 @@ h3 {
   color: #8c5519;
   font-size: 13px;
   font-weight: 900;
+  transition: transform 220ms ease;
 }
 
 .footer {
@@ -1535,8 +1556,8 @@ h3 {
 /* --- Current Status Section --- */
 .status-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -1579,6 +1600,10 @@ h3 {
 
 .status-value.highlight-green {
   color: var(--green);
+}
+
+.status-value.highlight-blue {
+  color: var(--blue);
 }
 
 /* Bold highlighted styling for the "次の目標" card */
