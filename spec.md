@@ -42,7 +42,7 @@
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
 | [study-investing-03.html](file:///c:/trader/study-investing-03.html) | Study 03: 株・市場・口座の整理 | 金融市場と口座、市場区分の基本 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
-| [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月上旬 運営レポート | 記事数、PV、収益、振り返り、今後のアクション |
+| [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
 | [profile.html](file:///c:/trader/profile.html) | プロフィール | 運営者（大学生）について、基本匿名での学習姿勢 |
 | [privacy.html](file:///c:/trader/privacy.html) | プライバシーポリシー | 個人情報保護方針、Analytics・広告に関する記述 |
@@ -75,7 +75,9 @@
 * **記事順序の再構築（ChatGPT記事のシフト）**:
   - 既存の「ChatGPTで自己PRを磨き上げる」を `AI就活 05` に更新し、前後のリンク（`03 ➔ 04 ➔ 05`）を正しく再接続。
   - トップページのカードレーン、学習ロードマップ、およびサイトマップの記述を完全に同期。
-  - 公開記事数の総数を `13本` に更新。
+* **運営レポートの非公開化と公開記事数の整理**:
+  - 開設間もない時期（6月上旬）の運営レポート公開は時系列として不自然なため、トップページおよびサイトマップから `monthly-report-2026-06.html` を非表示（6月末公開の準備中）に変更。
+  - これに伴い、トップページの「公開記事数」メーターを **12本** に修正。
 
 ### 第4期：情報設計の整理と見出し・カード説明文の最適化（2026年6月8日実施）
 * **ヒーローエリアの統合とセンタリング**:
