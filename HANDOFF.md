@@ -139,6 +139,7 @@ study-investing-01.html
 study-investing-02.html
 study-investing-03.html
 study-investing-04.html
+study-investing-05.html
 tools.html
 monthly-report-2026-06.html（準備中）
 contact.html
@@ -170,9 +171,10 @@ e26075f Add day one revenue strategy record
 4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす
 5. 学習記録「株・市場・証券会社・証券口座の違い」を `study-investing-03.html` として追加済み
 6. 学習記録「一般口座・特定口座・NISA口座の違い」を `study-investing-04.html` として追加済み
-7. 証券会社、証券口座、NISA、Prime市場などの制度・用語は、公開前に公式情報で確認する
-8. 次回は「Study 05: NISAの基本と注意点（つみたて投資枠・成長投資枠の併用、非課税枠ルールなど）」を会話内で進める
-9. お問い合わせページまたは連絡手段を検討する
+7. 学習記録「NISAの基本と注意点」を `study-investing-05.html` として追加済み
+8. 証券会社、証券口座、NISA、Prime市場などの制度・用語は、公開前に公式情報で確認する
+9. 次回は「Study 06: Prime・Standard・Growth市場（各区分ごとの上場基準や役割など）」を会話内で進める
+10. お問い合わせページまたは連絡手段を検討する
 
 ## X運用方針
 
