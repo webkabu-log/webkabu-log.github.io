@@ -11,6 +11,9 @@
   --gold: #bd7b2b;
   --red: #b65b45;
   --shadow: 0 18px 48px rgba(28, 37, 33, 0.1);
+  --accent-green: var(--green);
+  --accent-blue: var(--blue);
+  --accent-gold: var(--gold);
 }
 
 * {

@@ -43,6 +43,7 @@
 | [study-investing-03.html](file:///c:/trader/study-investing-03.html) | Study 03: 株・市場・口座の整理 | 金融市場と口座、市場区分の基本 |
 | [study-investing-04.html](file:///c:/trader/study-investing-04.html) | Study 04: 口座の種類と税金の違い | 一般口座・特定口座・NISA口座の違いと税金の仕組みの整理 |
 | [study-investing-05.html](file:///c:/trader/study-investing-05.html) | Study 05: NISAの基本と注意点 | つみたて投資枠と成長投資枠の併用、非課税枠、生涯投資枠の再利用ルールと注意点の整理 |
+| [study-investing-06.html](file:///c:/trader/study-investing-06.html) | Study 06: 市場区分の役割と違い | 東証のプライム・スタンダード・グロース市場の役割と特徴、注意点の整理 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -70,6 +71,16 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第9期：新規学習記事（Study 06）の追加と関連情報の同期（2026年6月10日実施）
+* **新規記事「市場区分の役割と違い」（Study 06）の追加**:
+  - 東証の新しい3つの市場区分（プライム・スタンダード・グロース）について、役割や時価総額等の基準イメージを整理した記事 [study-investing-06.html](file:///c:/trader/study-investing-06.html) を作成。
+  - 「プライム市場＝絶対安全ではない」という本質的なリスク情報を対話とクイズ形式で分かりやすく整理。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **15本** にインクリメント。Study 06 のカードから準備中表示を除去し、新規記事へリンク。
+  - [roadmap.html](file:///c:/trader/roadmap.html) の Study 06 を公開済みにし、リンクを付与。Study 07（リスクとは何か）を「次に学ぶ（準備中）」にアップデート。
+  - [study-investing-05.html](file:///c:/trader/study-investing-05.html) のナビゲーションを、ロードマップ戻りから新規記事への「Study 06へ進む」へ変更。
+  - `tools/update_sitemap.py` を実行し、[sitemap.xml](file:///c:/trader/sitemap.xml) へ新規記事URLを同期。
 
 ### 第8期：新規学習記事（Study 05）の追加と関連情報の同期（2026年6月10日実施）
 * **新規記事「NISAの基本と注意点」（Study 05）の追加**:
