@@ -37,6 +37,7 @@
 | [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
 | [job-log-04.html](file:///c:/trader/job-log-04.html) | AI就活 04: STAR法で経験を整理する | 自己分析・ESで必須のSTAR法と文理別の具体的な整理例 |
 | [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) | AI就活 05: ChatGPTで自己PRを磨く | 生成AIをESに二人三脚で活用するガイドライン |
+| [job-log-05.html](file:///c:/trader/job-log-05.html) | AI就活 06: ガクチカの作り方 | 自己PRとの違いや、STAR構造に沿ったAI壁打ちプロンプト |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -71,6 +72,18 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第10期：新規就活記事（AI就活 06）の追加と関連情報の同期（2026年6月10日実施）
+* **新規記事「ガクチカの作り方」（AI就活 06）の追加**:
+  - 自己PRとガクチカの違い、AI対話手順、STARプロンプト、ミニクイズを含む記事 [job-log-05.html](file:///c:/trader/job-log-05.html) を作成。
+  - レビュー指摘に基づき、会話内の表現「矛盾が生じる」を「回答のつじつまが合わなくなる」へと修正し、客観性と親しみやすさを両立。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **16本** にインクリメント。AI就活 06 のカードから準備中表示を除去し、新規記事へリンク。
+  - [roadmap.html](file:///c:/trader/roadmap.html) の AI就活 06 を公開済みにし、リンクを付与。07 を「次に学ぶ（準備中）」、08・09を予定としてアップデート。
+  - [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) のナビゲーションを、ロードマップ戻りから新規記事への「AI就活 06へ進む」へ変更。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) へ新規記事URLを同期。
+* **技術的負債の記録**:
+  - ファイル名が一部混在している（`study-ai-jobhunting-01.html`と`job-log-xx.html`）状況について、リンク安定性を重視してそのまま維持し、`spec.md`の今後の改善候補にリファクタリング課題として記録。
 
 ### 第9期：新規学習記事（Study 06）の追加と関連情報の同期（2026年6月10日実施）
 * **新規記事「市場区分の役割と違い」（Study 06）の追加**:
@@ -179,7 +192,10 @@
 1. **お問い合わせフォームの実装**:
    * `contact.html` 内のプレースホルダー部分に、Googleフォーム等の埋め込みコード（`iframe`）またはリンクボタンを設置する。
 2. **Google AdSenseの審査完了対応**:
-   * 審査通過後、`monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
+   * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
 3. **新規学習記事（Study 04以降）の追加**:
    * 「一般口座・特定口座・NISA口座の違いを整理する」の対話作成。
    * 以降、NISAの基本、東証市場区分の深掘り等、ロードマップに従った記事の公開。
+4. **ファイル命名規則の統一（技術的負債）**:
+   * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
+   * GitHub Pagesでのリンク切れやSEOへの影響を避けるため、リリース優先で現状維持としているが、将来的に一貫性のある命名規則（例：`job-log-xx.html`）へのリダイレクト設定を含めた統一リファクタリングを検討する。

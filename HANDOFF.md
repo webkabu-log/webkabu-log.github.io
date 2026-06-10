@@ -133,6 +133,7 @@ job-log-01.html
 job-log-02.html
 job-log-03.html
 job-log-04.html
+job-log-05.html
 study-ai-jobhunting-01.html
 roadmap.html
 study-investing-01.html
