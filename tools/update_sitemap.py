@@ -1,5 +1,6 @@
 import os
 import glob
+import re
 from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -14,6 +15,11 @@ def update_sitemap():
         filename = os.path.basename(file_path)
         # Googleのサーチコンソール確認用ファイルや、テンポラリ・除外ファイルをスキップ
         if filename.startswith("google") or filename.startswith("temp_") or filename.startswith("test_"):
+            continue
+
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as html_file:
+            html = html_file.read()
+        if re.search(r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*noindex', html, re.IGNORECASE):
             continue
 
         # 最終更新日時（YYYY-MM-DD）を取得

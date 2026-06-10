@@ -21,31 +21,35 @@
     </script>
     <link rel="stylesheet" href="styles.css">
     <style>
-      .placeholder-box {
-        border: 2px dashed var(--line);
+      .contact-status {
+        border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 40px 20px;
-        text-align: center;
+        padding: 22px;
         background: #fffdfa;
-        margin: 32px 0;
+        margin: 24px 0;
       }
-      .placeholder-icon {
-        font-size: 48px;
-        margin-bottom: 16px;
+      .contact-status strong {
         display: block;
+        margin-bottom: 6px;
+        color: var(--green-dark);
       }
-      .placeholder-btn {
+      .contact-status p {
+        margin-bottom: 0;
+      }
+      .contact-note-list {
+        margin-bottom: 24px;
+      }
+      .contact-note-list li + li {
+        margin-top: 6px;
+      }
+      .contact-status-badge {
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 46px;
-        border-radius: 7px;
-        padding: 10px 24px;
-        font-weight: 900;
-        background: var(--line);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 3px 9px;
         color: var(--muted);
-        cursor: not-allowed;
-        margin-top: 16px;
+        font-size: 12px;
+        font-weight: 900;
       }
     </style>
   </head>
@@ -81,27 +85,28 @@
         </header>
 
         <div class="article-body reveal">
-          <h2>お問い合わせ方法について</h2>
+          <h2>現在の連絡窓口</h2>
           <p>
-            現在、お問い合わせ窓口として<strong>Googleフォーム</strong>の設置を準備しております。
-            準備が整い次第、以下のプレースホルダー箇所にフォームへのリンクまたは埋め込みを表示いたします。
+            現在、お問い合わせフォームの設置準備を進めています。
+            窓口を用意するまでは、サイト内の表記や運営方針を先に整える期間としています。
           </p>
 
-          <div class="placeholder-box">
-            <span class="placeholder-icon">📝</span>
-            <h3>Googleフォーム（準備中）</h3>
-            <p style="font-size: 14px; margin-bottom: 0;">フォームの設置完了まで今しばらくお待ちください。</p>
-            <span class="placeholder-btn">フォームを開く（準備中）</span>
+          <div class="contact-status">
+            <span class="contact-status-badge">準備中</span>
+            <strong>フォーム公開前の状態です</strong>
+            <p>公開後は、このページにフォームへのリンクを掲載します。</p>
           </div>
 
-          <h2>個人情報保護とメールアドレス非保有の方針について</h2>
+          <h2>連絡時の方針</h2>
           <p>
-            当サイトでは、読者のみなさまの個人情報を保護し、プライバシーに配慮する目的から、<strong>お問い合わせ用の個別メールアドレスを作成・使用しておりません</strong>（メールアドレス非保有のポリシー）。
+            匿名運営のため、運営者個人を特定できる情報や、投資判断に関わる個別相談は扱いません。
+            フォームを設置する場合も、必要最小限の情報だけを受け取る形にします。
           </p>
-          <p>
-            そのため、直接のメール送信によるご連絡には対応いたしかねます。
-            ご不便をおかけいたしますが、ご連絡の際は将来設置されるGoogleフォームをご利用いただきますよう、ご理解とご協力をお願い申し上げます。
-          </p>
+          <ul class="contact-note-list">
+            <li>投資助言や銘柄推奨にあたる相談には対応しません。</li>
+            <li>個人情報を過度に含む内容は送らないでください。</li>
+            <li>広告やPRに関する連絡は、公開時に表記方針を明確にします。</li>
+          </ul>
 
           <p class="article-note">
             ※当サイトは個人による投資学習の記録であり、投資助言や銘柄推奨は行っておりません。そのため、特定の投資先や取引内容に関する個別のご相談にはお答えできませんのでご了承ください。

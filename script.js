@@ -73,33 +73,3 @@ document.querySelectorAll(".nav").forEach((nav) => {
     }
   });
 });
-
-document.querySelectorAll(".journey, .lane-grid").forEach((scroller) => {
-  scroller.addEventListener(
-    "wheel",
-    (event) => {
-      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
-        return;
-      }
-
-      const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
-
-      if (maxScrollLeft <= 0) {
-        return;
-      }
-
-      const nextScrollLeft = scroller.scrollLeft + event.deltaY;
-      const tolerance = 2.5; // px (to account for subpixel rendering variations)
-      const canScrollLeft = event.deltaY < 0 && scroller.scrollLeft > tolerance;
-      const canScrollRight = event.deltaY > 0 && scroller.scrollLeft < maxScrollLeft - tolerance;
-
-      if (!canScrollLeft && !canScrollRight) {
-        return;
-      }
-
-      event.preventDefault();
-      scroller.scrollLeft = Math.max(0, Math.min(maxScrollLeft, nextScrollLeft));
-    },
-    { passive: false }
-  );
-});

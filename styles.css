@@ -1643,9 +1643,9 @@ h3 {
 
 /* --- Pending/Coming Soon Cards --- */
 .record-card.pending-card {
-  opacity: 0.65;
+  opacity: 0.9;
   border-style: dashed;
-  background: rgba(255, 253, 250, 0.5);
+  background: rgba(255, 253, 250, 0.72);
   cursor: default;
 }
 
@@ -1664,10 +1664,60 @@ h3 {
   color: var(--muted) !important;
   border-color: var(--line) !important;
   box-shadow: none !important;
-  cursor: not-allowed;
+  cursor: default;
   pointer-events: none;
 }
 
 .read-button.pending-button::after {
   display: none !important;
+}
+
+@media (max-width: 940px) {
+  .pillars-grid,
+  .status-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .pillars-grid,
+  .status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-bottom: 54px;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 1.16;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .section,
+  .band {
+    padding: 48px 18px;
+  }
+
+  .pillar-card,
+  .status-card {
+    padding: 20px;
+  }
+
+  .record-card {
+    flex-basis: min(84vw, 320px);
+    min-height: 300px;
+  }
+
+  .benefits-text {
+    font-size: 12px;
+  }
 }
