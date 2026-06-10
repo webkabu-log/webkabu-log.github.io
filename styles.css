@@ -607,6 +607,77 @@ h3 {
   font-size: 0.95em;
 }
 
+.table-container {
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.article-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.article-table th,
+.article-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px;
+  vertical-align: top;
+}
+
+.article-table th {
+  background: rgba(27, 122, 91, 0.06);
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.accent-green {
+  color: var(--green);
+}
+
+.accent-blue {
+  color: var(--blue);
+}
+
+.accent-gold {
+  color: var(--gold);
+}
+
+.quiz-container {
+  margin: 24px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: #f7faf6;
+}
+
+.quiz-question {
+  margin-top: 0;
+  font-weight: 900;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.quiz-container details {
+  margin-top: 12px;
+}
+
+.quiz-container summary {
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.answer-line {
+  margin-top: 8px;
+}
+
 .text-link {
   color: var(--green-dark);
   font-weight: 900;

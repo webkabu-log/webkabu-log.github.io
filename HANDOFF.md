@@ -270,7 +270,7 @@ e26075f Add day one revenue strategy record
 - 「記事を書く」など運営者向けの項目
 - 読者が操作できない管理メニューのような表現
 
-Agentsは裏側の相談役として使う。
+Agentsは制作・編集補助として使う。
 
 ## 会話内学習の方針
 
