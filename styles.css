@@ -723,6 +723,35 @@ h3 {
   font-weight: 800;
 }
 
+.summary-panel {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 28px;
+}
+
+.summary-panel div {
+  border: 1px solid rgba(27, 122, 91, 0.22);
+  border-radius: 8px;
+  padding: 14px;
+  background: #f7faf8;
+}
+
+.summary-panel span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.summary-panel strong {
+  display: block;
+  color: var(--green-dark);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
 .roadmap-overview,
 .term-grid,
 .action-steps {
@@ -1486,6 +1515,10 @@ h3 {
 
   .article-body {
     padding: 24px 18px;
+  }
+
+  .summary-panel {
+    grid-template-columns: 1fr 1fr;
   }
 
   .next-links a {
