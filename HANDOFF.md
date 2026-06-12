@@ -148,6 +148,7 @@ study-investing-05.html
 study-investing-06.html
 study-investing-07.html
 study-investing-08.html
+study-investing-09.html
 tools.html
 monthly-report-2026-06.html（準備中）
 contact.html
@@ -185,8 +186,9 @@ e26075f Add day one revenue strategy record
 10. 証券会社、証券口座、NISA、Prime市場、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する
 11. 学習記録「少額投資を考える前の確認」を `study-investing-08.html` として追加済み
 12. 証券口座の開設状況や実取引の検討は、Web収益が実際に発生するまで保留する
-13. 次回は「Study 09: 銘柄を選ばず、企業を観察する練習」または「Day 4: 1円を作るために改善したこと」を進める
-14. お問い合わせページまたは連絡手段を検討する
+13. 学習記録「銘柄を選ばず、企業を観察する練習」を `study-investing-09.html` として追加済み
+14. 次回は「Day 4: 1円を作るために改善したこと」を進める
+15. お問い合わせページまたは連絡手段を検討する
 
 ## X運用方針
 

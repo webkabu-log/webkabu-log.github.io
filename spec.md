@@ -48,6 +48,7 @@
 | [study-investing-06.html](file:///c:/trader/study-investing-06.html) | Study 06: 市場区分の役割と違い | 東証のプライム・スタンダード・グロース市場の役割と特徴、注意点の整理 |
 | [study-investing-07.html](file:///c:/trader/study-investing-07.html) | Study 07: リスクとは何か | 投資におけるリスク（値動きの振れ幅）の定義とリスク許容度の考え方の整理 |
 | [study-investing-08.html](file:///c:/trader/study-investing-08.html) | Study 08: 少額投資を考える前の確認 | 投資を始める前に確認すべき生活防衛資金や安全ルール、チェックリストの整理 |
+| [study-investing-09.html](file:///c:/trader/study-investing-09.html) | Study 09: 銘柄を選ばず、企業を観察する練習 | 企業の事業内容（ビジネスモデル）、売上と利益の違い、株価以外の価値、公式IRの重要性の整理 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -75,6 +76,17 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第14期：新規学習記事（Study 09）の追加と関連情報の同期（2026年6月12日実施）
+* **新規記事「銘柄を選ばず、企業を観察する練習」（Study 09）の追加**:
+  - 特定の銘柄を推奨せず、企業の事業内容、売上と利益の違い、株価の数字以外の価値、企業公式IR情報を見る姿勢などを対話とクイズ形式で解説した記事 [study-investing-09.html](file:///c:/trader/study-investing-09.html) を作成。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **20本** にインクリメント。投資学習ログのレーンへ Study 09 のカードを追加。
+  - [roadmap.html](file:///c:/trader/roadmap.html) の Study 09 を公開済みにし、リンクを付与。
+  - [study-investing-08.html](file:///c:/trader/study-investing-08.html) のナビゲーションを、ロードマップ戻りから新規記事への「Study 09へ進む」へ変更。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) へ新規記事URLおよびその他の最終更新日を同期（自動更新スクリプトを実行）。
+* **仕様書のアップデート**:
+  - `spec.md` に `study-investing-09.html` を追加し、本チェンジログを記録。
 
 ### 第13期：新規作業・運営ログ（Day 3）の追加と関連情報の同期（2026年6月12日実施）
 * **新規記事「広告審査・アクセス解析・収益0円の現状整理」（Day 3）の追加**:
