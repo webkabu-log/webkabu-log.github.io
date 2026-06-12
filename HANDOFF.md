@@ -143,6 +143,7 @@ study-investing-04.html
 study-investing-05.html
 study-investing-06.html
 study-investing-07.html
+study-investing-08.html
 tools.html
 monthly-report-2026-06.html（準備中）
 contact.html
@@ -178,8 +179,9 @@ e26075f Add day one revenue strategy record
 8. 学習記録「東証の市場区分の役割と違い」を `study-investing-06.html` として追加済み
 9. 学習記録「リスクとは何か」を `study-investing-07.html` として追加済み
 10. 証券会社、証券口座、NISA、Prime市場、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する
-11. 次回は「Study 08: 少額投資を考える前の確認（ルールや生活防衛資金のチェックなど）」を会話内で進める
-12. お問い合わせページまたは連絡手段を検討する
+11. 学習記録「少額投資を考える前の確認」を `study-investing-08.html` として追加済み
+12. 証券口座の開設状況や実取引の検討は、Web収益が実際に発生するまで保留する
+13. お問い合わせページまたは連絡手段を検討する
 
 ## X運用方針
 

@@ -46,6 +46,7 @@
 | [study-investing-05.html](file:///c:/trader/study-investing-05.html) | Study 05: NISAの基本と注意点 | つみたて投資枠と成長投資枠の併用、非課税枠、生涯投資枠の再利用ルールと注意点の整理 |
 | [study-investing-06.html](file:///c:/trader/study-investing-06.html) | Study 06: 市場区分の役割と違い | 東証のプライム・スタンダード・グロース市場の役割と特徴、注意点の整理 |
 | [study-investing-07.html](file:///c:/trader/study-investing-07.html) | Study 07: リスクとは何か | 投資におけるリスク（値動きの振れ幅）の定義とリスク許容度の考え方の整理 |
+| [study-investing-08.html](file:///c:/trader/study-investing-08.html) | Study 08: 少額投資を考える前の確認 | 投資を始める前に確認すべき生活防衛資金や安全ルール、チェックリストの整理 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -73,6 +74,17 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第12期：新規学習記事（Study 08）の追加と関連情報の同期（2026年6月12日実施）
+* **新規記事「少額投資を考える前の確認」（Study 08）の追加**:
+  - 投資を始める前に確認すべき「生活防衛資金」の確保、Web収益の原則、少額投資のリスク、事前ルール策定、および公式情報の確認を対話とチェックリスト、クイズで解説した記事 [study-investing-08.html](file:///c:/trader/study-investing-08.html) を作成。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **18本** にインクリメント。Study 08 のカードから準備中表示を除去し、新規記事へリンク。
+  - [roadmap.html](file:///c:/trader/roadmap.html) の Study 08 を公開済みにし、リンクを付与。
+  - [study-investing-07.html](file:///c:/trader/study-investing-07.html) のナビゲーションを、ロードマップ戻りから新規記事への「Study 08へ進む」へ変更。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) へ新規記事URLを同期。
+* **仕様書のアップデート**:
+  - `spec.md` に Study 08 を追加し、本チェンジログを記録。
 
 ### 第11期：新規学習記事（Study 07）の追加と関連情報の同期（2026年6月10日実施）
 * **新規記事「リスクとは何か」（Study 07）の追加**:
