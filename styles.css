@@ -42,6 +42,27 @@ a {
   text-decoration: none;
 }
 
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  transform: translateY(-140%);
+  border: 1px solid var(--green-dark);
+  border-radius: 7px;
+  padding: 8px 12px;
+  background: var(--panel);
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 900;
+  box-shadow: var(--shadow);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 input {
   font: inherit;
 }
@@ -80,6 +101,10 @@ input {
 }
 
 .nav-links a:hover {
+  color: var(--green-dark);
+}
+
+.nav-links a[aria-current="page"] {
   color: var(--green-dark);
 }
 
@@ -947,6 +972,45 @@ h3 {
   margin-top: 26px;
 }
 
+.next-read-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 22px;
+  align-items: center;
+  max-width: 1120px;
+  margin: 24px auto 0;
+  border: 1px solid rgba(27, 122, 91, 0.22);
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 253, 250, 0.82);
+}
+
+.next-read-panel h3 {
+  margin-bottom: 6px;
+  color: var(--green-dark);
+  font-size: 22px;
+}
+
+.next-read-panel p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.read-route {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.read-route a {
+  color: var(--blue);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .record-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -985,6 +1049,18 @@ h3 {
   border-radius: 10px;
   padding: 20px;
   background: rgba(255, 253, 250, 0.78);
+}
+
+#day-records {
+  order: 1;
+}
+
+#study-notes {
+  order: 2;
+}
+
+#ai-records {
+  order: 3;
 }
 
 .record-lane::before {
@@ -1034,6 +1110,21 @@ h3 {
   padding: 12px 4px 24px;
   align-items: stretch;
   scrollbar-color: rgba(27, 122, 91, 0.45) rgba(217, 221, 212, 0.5);
+}
+
+.record-lane::after {
+  content: "横にスクロール";
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  border: 1px solid rgba(27, 122, 91, 0.2);
+  border-radius: 999px;
+  padding: 3px 9px;
+  background: rgba(255, 253, 250, 0.9);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  pointer-events: none;
 }
 
 .lane-grid::after {
@@ -1370,6 +1461,11 @@ h3 {
   .pillars-grid,
   .status-grid {
     grid-template-columns: 1fr;
+  }
+
+  .next-read-panel {
+    grid-template-columns: 1fr;
+    padding: 18px;
   }
 
   h1 {
@@ -1722,6 +1818,20 @@ h3 {
   border-style: dashed;
   background: rgba(255, 253, 250, 0.72);
   cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
 .record-card.pending-card:hover {

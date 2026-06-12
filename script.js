@@ -43,10 +43,20 @@ document.querySelectorAll(".count-up").forEach((item) => {
 document.querySelectorAll(".nav").forEach((nav) => {
   const toggle = nav.querySelector(".nav-toggle");
   const links = nav.querySelectorAll(".nav-links a");
+  const currentFile = window.location.pathname.split("/").pop() || "index.html";
 
   if (!toggle) {
     return;
   }
+
+  links.forEach((link) => {
+    const linkUrl = new URL(link.getAttribute("href"), window.location.href);
+    const linkFile = linkUrl.pathname.split("/").pop() || "index.html";
+
+    if (linkFile === currentFile && !link.hash) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
 
   function closeMenu() {
     toggle.setAttribute("aria-expanded", "false");
