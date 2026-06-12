@@ -32,6 +32,7 @@
 | [hajimari.html](file:///c:/trader/hajimari.html) | Day 0: 挑戦のはじまり | なぜこの挑戦を始めるのかの対話記録 |
 | [day1.html](file:///c:/trader/day1.html) | Day 1: 読まれる流れを考える | ブログ集客設計とX運用の基本方針 |
 | [day2.html](file:///c:/trader/day2.html) | Day 2: 読まれる入口を作る | Google Analytics, Search Console, AdSense設定 |
+| [day3.html](file:///c:/trader/day3.html) | Day 3: 広告審査・アクセス解析・収益0円の現状整理 | 収益0円の現状分析とAdSense広告審査、Analytics、Search Console、X運用の進捗状況、今後の改善項目の整理 |
 | [job-log-01.html](file:///c:/trader/job-log-01.html) | AI就活 01: 就活で最初に整理すること | 就活で最初に整理すべき5大要素と文理の具体例 |
 | [job-log-02.html](file:///c:/trader/job-log-02.html) | AI就活 02: 理系学生の経験を整理する | 理系向けに「課題・行動・学び」に分けるアプローチ |
 | [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
@@ -74,6 +75,16 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第13期：新規作業・運営ログ（Day 3）の追加と関連情報の同期（2026年6月12日実施）
+* **新規記事「広告審査・アクセス解析・収益0円の現状整理」（Day 3）の追加**:
+  - Web収益と投資額がともに「0円」である現状、AdSense審査待ち状況、今後の改善計画（記事数、読みやすさ、内部リンク、Xからの導線）を整理した日記調の記事 [day3.html](file:///c:/trader/day3.html) を作成。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **19本** にインクリメント。作業・運営ログのレーンへ Day 3 のカードを追加。
+  - [day2.html](file:///c:/trader/day2.html) のナビゲーションを、ロードマップ戻りから新規記事への「Day 3へ進む」へ変更。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) へ新規記事URLおよびその他の最終更新日を同期（自動更新スクリプトを実行）。
+* **仕様書のアップデート**:
+  - `spec.md` に `day3.html` を追加し、本チェンジログを記録。
 
 ### 第12期：新規学習記事（Study 08）の追加と関連情報の同期（2026年6月12日実施）
 * **新規記事「少額投資を考える前の確認」（Study 08）の追加**:

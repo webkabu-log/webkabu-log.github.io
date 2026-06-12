@@ -131,6 +131,7 @@ Webで1円を作る
 hajimari.html
 day1.html
 day2.html
+day3.html
 job-log-01.html
 job-log-02.html
 job-log-03.html
@@ -171,10 +172,10 @@ e26075f Add day one revenue strategy record
 
 優先順は以下。
 
-1. 公開サイトでDay 2の表示を確認する
-2. Google AnalyticsのリアルタイムでXからのアクセスが見えるか確認する
+1. 公開サイトでDay 3の表示およびアクセス流入を確認する
+2. Google AnalyticsとSearch Consoleでの動作を引き続き監視する
 3. Search Console のサイトマップは送信済み。`sitemap.xml` は公開URLで取得できるため、Search Console側の再処理を待つ
-4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす
+4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす（Day 3まで追加済み）
 5. 学習記録「株・市場・証券会社・証券口座の違い」を `study-investing-03.html` として追加済み
 6. 学習記録「一般口座・特定口座・NISA口座の違い」を `study-investing-04.html` として追加済み
 7. 学習記録「NISAの基本と注意点」を `study-investing-05.html` として追加済み
