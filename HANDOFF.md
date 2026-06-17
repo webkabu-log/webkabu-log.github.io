@@ -69,6 +69,7 @@ OneDrive内の古い作業フォルダは中身を削除済みです。フォル
 - Day 3追加後に再度ブラッシュアップし、トップの推奨導線をDay 3中心に更新、Day 3に要約ボックス・canonical/OGP・スキップリンク・読後CTAを追加、収益0円の間にやらないことを明記
 - Study 09追加後に3視点で見直し、トップとロードマップで最新導線を強化、Study 09にcanonical/OGP・スキップリンク・要約ボックス・観察メモのチェック項目を追加し、投資助言に見えにくい表現へ調整
 - AI活用Tips記事 `ai-tips-01.html` を追加後、スキップリンク・要約ボックスを追加し、「一緒に試すAI活用メモ」のトーンへ調整。トップのAI活用導線とサイトマップも更新
+- AI活用とAI就活は導線を分離済み。トップは `AI活用メモ`（`index.html#ai-tips`）と `AI就活ログ`（`index.html#ai-records`）を別レーンにし、ロードマップもAI活用メモとAI就活ロードマップを分けている
 
 ## サイトの基本方針
 
@@ -135,11 +136,18 @@ hajimari.html
 day1.html
 day2.html
 day3.html
+day4.html
+day5.html
+day6.html
+day7.html
 job-log-01.html
 job-log-02.html
 job-log-03.html
 job-log-04.html
 job-log-05.html
+job-log-06.html
+job-log-07.html
+job-log-08.html
 study-ai-jobhunting-01.html
 roadmap.html
 study-investing-01.html
@@ -151,6 +159,10 @@ study-investing-06.html
 study-investing-07.html
 study-investing-08.html
 study-investing-09.html
+study-investing-10.html
+study-investing-11.html
+ai-tips-01.html
+ai-tips-02.html
 tools.html
 monthly-report-2026-06.html（準備中）
 contact.html
@@ -164,12 +176,12 @@ robots.txt
 最新の主なコミット:
 
 ```text
-5473171 Add monetization preparation pages
-39b3e1d Refine study dialogue heading
-7af3831 Use current wording in study headings
-0351811 Use current content heading in records
-afd7da2 Add first investing study record
-e26075f Add day one revenue strategy record
+9d72efc Revise Day 7 console notes
+3233917 Add Day 7 and AI job logs 8-9
+6755f40 Add next learning and operations articles
+2c41afa Refine site navigation and tool page tone
+6ad0675 Revise Day 4 article tone
+84174c1 update: day1.html ~ day5.html
 ```
 
 ## 次にやること
@@ -179,7 +191,7 @@ e26075f Add day one revenue strategy record
 1. 公開サイトでDay 3の表示およびアクセス流入を確認する
 2. Google AnalyticsとSearch Consoleでの動作を引き続き監視する
 3. Search Console のサイトマップは送信済み。`sitemap.xml` は公開URLで取得できるため、Search Console側の再処理を待つ
-4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす（Day 3まで追加済み）
+4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす（Day 7まで追加済み）
 5. 学習記録「株・市場・証券会社・証券口座の違い」を `study-investing-03.html` として追加済み
 6. 学習記録「一般口座・特定口座・NISA口座の違い」を `study-investing-04.html` として追加済み
 7. 学習記録「NISAの基本と注意点」を `study-investing-05.html` として追加済み
@@ -189,8 +201,9 @@ e26075f Add day one revenue strategy record
 11. 学習記録「少額投資を考える前の確認」を `study-investing-08.html` として追加済み
 12. 証券口座の開設状況や実取引の検討は、Web収益が実際に発生するまで保留する
 13. 学習記録「銘柄を選ばず、企業を観察する練習」を `study-investing-09.html` として追加済み
-14. 次回は「Day 4: 1円を作るために改善したこと」を進める
+14. 次回は Study 12 以降、または Day 8 以降の記事を進める
 15. お問い合わせページまたは連絡手段を検討する
+16. AI活用メモは就活以外の学習・発信補助も扱い、AI就活ログはガクチカ・自己PR・面接練習など就活準備に絞って増やす
 
 ## X運用方針
 

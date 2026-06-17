@@ -33,12 +33,19 @@
 | [day1.html](file:///c:/trader/day1.html) | Day 1: 読まれる流れを考える | ブログ集客設計とX運用の基本方針 |
 | [day2.html](file:///c:/trader/day2.html) | Day 2: 読まれる入口を作る | Google Analytics, Search Console, AdSense設定 |
 | [day3.html](file:///c:/trader/day3.html) | Day 3: 広告審査・アクセス解析・収益0円の現状整理 | 収益0円の現状分析とAdSense広告審査、Analytics、Search Console、X運用の進捗状況、今後の改善項目の整理 |
+| [day4.html](file:///c:/trader/day4.html) | Day 4: Web収益0円のまま、自分でも読みにくいところを直した日 | サイトを読み返して、導線や読みにくさを改善した運営記録 |
+| [day5.html](file:///c:/trader/day5.html) | Day 5: GA4とSearch Consoleを見たら、ほぼ誰にも読まれていなかった日 | AnalyticsとSearch Consoleで初期の読まれ方を確認した記録 |
+| [day6.html](file:///c:/trader/day6.html) | Day 6: サイト全体のナビとツールページを見直した日 | ナビゲーション、関連リンク、ツールページの見直し記録 |
+| [day7.html](file:///c:/trader/day7.html) | Day 7: 記事を増やす前に次に読む流れを決めた日 | 記事追加前にサイト内導線と次に読む流れを整理した記録 |
 | [job-log-01.html](file:///c:/trader/job-log-01.html) | AI就活 01: 就活で最初に整理すること | 就活で最初に整理すべき5大要素と文理の具体例 |
 | [job-log-02.html](file:///c:/trader/job-log-02.html) | AI就活 02: 理系学生の経験を整理する | 理系向けに「課題・行動・学び」に分けるアプローチ |
 | [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
 | [job-log-04.html](file:///c:/trader/job-log-04.html) | AI就活 04: STAR法で経験を整理する | 自己分析・ESで必須のSTAR法と文理別の具体的な整理例 |
 | [study-ai-jobhunting-01.html](file:///c:/trader/study-ai-jobhunting-01.html) | AI就活 05: ChatGPTで自己PRを磨く | 生成AIをESに二人三脚で活用するガイドライン |
 | [job-log-05.html](file:///c:/trader/job-log-05.html) | AI就活 06: ガクチカの作り方 | 自己PRとの違いや、STAR構造に沿ったAI壁打ちプロンプト |
+| [job-log-06.html](file:///c:/trader/job-log-06.html) | AI就活 07: チーム開発経験の伝え方 | 調整役・課題解決をESで言語化する方法 |
+| [job-log-07.html](file:///c:/trader/job-log-07.html) | AI就活 08: 自己PRを盛りすぎないためにAIに確認してもらったこと | AIで文章を盛るのではなく、説明できる経験か確認する記録 |
+| [job-log-08.html](file:///c:/trader/job-log-08.html) | AI就活 09: 面接練習にChatGPTを使う方法 | ChatGPTを面接官役にして深掘り質問を受ける練習記録 |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -49,6 +56,10 @@
 | [study-investing-07.html](file:///c:/trader/study-investing-07.html) | Study 07: リスクとは何か | 投資におけるリスク（値動きの振れ幅）の定義とリスク許容度の考え方の整理 |
 | [study-investing-08.html](file:///c:/trader/study-investing-08.html) | Study 08: 少額投資を考える前の確認 | 投資を始める前に確認すべき生活防衛資金や安全ルール、チェックリストの整理 |
 | [study-investing-09.html](file:///c:/trader/study-investing-09.html) | Study 09: 銘柄を選ばず、企業を観察する練習 | 企業の事業内容（ビジネスモデル）、売上と利益の違い、株価以外の価値、公式IRの重要性の整理 |
+| [study-investing-10.html](file:///c:/trader/study-investing-10.html) | Study 10: SBI証券の口座開設を大学生がやってみた | 初心者向けの口座開設手順と注意点の整理 |
+| [study-investing-11.html](file:///c:/trader/study-investing-11.html) | Study 11: 口座開設後すぐ買わないための初期設定チェック | 口座開設後にすぐ買わず、安全設定と確認事項を整理する記録 |
+| [ai-tips-01.html](file:///c:/trader/ai-tips-01.html) | AI Tips 01: 大学生向けChatGPT活用術10選 | 学習、就活、ブログ作成の補助として使うAI活用メモ |
+| [ai-tips-02.html](file:///c:/trader/ai-tips-02.html) | AI Tips 02: AIっぽい文章を自分の文章に戻す方法 | 生成AIで整えた文章を本人の記録として自然に見直す方法 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -76,6 +87,36 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第16期：AI活用メモとAI就活ログの導線分離（2026年6月17日実施）
+* **トップページのカテゴリ分離**:
+  - `index.html` の記録一覧で、`AI活用メモ` と `AI就活ログ` を別レーン化。
+  - `AI活用メモ` には `ai-tips-01.html`, `ai-tips-02.html` を配置し、`AI就活ログ` には就活準備に絞った記事を配置。
+* **グローバルナビの整理**:
+  - 全HTMLの共通ナビに `AI活用` と `AI就活` を分けて表示し、`index.html#ai-tips` と `index.html#ai-records` へ誘導。
+* **ロードマップの整理**:
+  - `roadmap.html` に `AI活用メモ` セクションを追加し、従来の「AI・就活のロードマップ」を `AI就活のロードマップ` に変更。
+* **AI活用記事の関連記事整理**:
+  - `ai-tips-01.html`, `ai-tips-02.html` の戻り先と関連記事見出しをAI活用寄りに調整し、就活記事は関連するAI就活ログとして橋渡し。
+
+### 第15期：サイト全体の品質監査と修正（2026年6月17日実施）
+* **セキュリティ・プライバシー修正**:
+  - `blog/operations.md` の個人名を匿名化。GitHub Pagesの公開成果物に `blog/` が含まれないことも確認。
+* **ナビゲーション修正**:
+  - AI就活シリーズの前後リンクを `job-log-04.html` → `study-ai-jobhunting-01.html` → `job-log-05.html` の順に修正。
+  - `hajimari.html` と `day1.html` の article-nav を補完。`day7.html` のシリーズ外 next を削除。
+* **SEOメタタグ追加・修正**:
+  - `tools.html`, `contact.html`, `profile.html`, `privacy.html`, `monetization.html`, `roadmap.html`, `monthly-report-2026-06.html` に OGP/Twitter メタタグを追加。
+  - `day3.html`, `study-investing-09.html` の `og:title` から重複したサイト名を削除。
+  - `monthly-report-2026-06.html` の noindex/canonical 併存を解消し、最新の運営ログリンクを `day7.html` に修正。
+* **アクセシビリティ改善**:
+  - 古い記事16ページに skip-link を追加し、`<main id="article-main">` へ統一。
+* **CSS品質改善**:
+  - `styles.css` の重複ルール（`prefers-reduced-motion`, `.pillars-grid`, `.status-grid`）を整理。
+  - 未使用CSS（`.live-panel`, `.card-meta`, 単独 `.journey`）と無効指定（`.lane-grid` の `grid-template-columns`）を削除。
+  - `contact.html` のインラインCSSを `styles.css` に移動。
+* **仕様書・引き継ぎ文書の同期**:
+  - 実在する追加ページをファイルマップと作成済みリストへ反映し、最新コミット欄と次回作業を更新。
 
 ### 第14期：新規学習記事（Study 09）の追加と関連情報の同期（2026年6月12日実施）
 * **新規記事「銘柄を選ばず、企業を観察する練習」（Study 09）の追加**:
@@ -240,9 +281,9 @@
    * `contact.html` 内のプレースホルダー部分に、Googleフォーム等の埋め込みコード（`iframe`）またはリンクボタンを設置する。
 2. **Google AdSenseの審査完了対応**:
    * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
-3. **新規学習記事（Study 04以降）の追加**:
-   * 「一般口座・特定口座・NISA口座の違いを整理する」の対話作成。
-   * 以降、NISAの基本、東証市場区分の深掘り等、ロードマップに従った記事の公開。
+3. **新規学習記事（Study 12以降）の追加**:
+   * Study 11までは公開済み。次はロードマップに従って、口座開設後の安全確認、制度・用語の深掘り、実取引前の確認項目を増やす。
+   * 証券会社、証券口座、NISA、市場区分、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する。
 4. **ファイル命名規則の統一（技術的負債）**:
    * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
    * GitHub Pagesでのリンク切れやSEOへの影響を避けるため、リリース優先で現状維持としているが、将来的に一貫性のある命名規則（例：`job-log-xx.html`）へのリダイレクト設定を含めた統一リファクタリングを検討する。
