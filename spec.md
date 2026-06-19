@@ -46,6 +46,7 @@
 | [job-log-06.html](file:///c:/trader/job-log-06.html) | AI就活 07: チーム開発経験の伝え方 | 調整役・課題解決をESで言語化する方法 |
 | [job-log-07.html](file:///c:/trader/job-log-07.html) | AI就活 08: 自己PRを盛りすぎないためにAIに確認してもらったこと | AIで文章を盛るのではなく、説明できる経験か確認する記録 |
 | [job-log-08.html](file:///c:/trader/job-log-08.html) | AI就活 09: 面接練習にChatGPTを使う方法 | ChatGPTを面接官役にして深掘り質問を受ける練習記録 |
+| [job-log-09.html](file:///c:/trader/job-log-09.html) | AI就活 10: 企業研究の比較表をAIと作る方法 | 公式情報を比較し、志望理由と逆質問の材料を整理する手順 |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -68,6 +69,10 @@
 | [study-investing-19.html](file:///c:/trader/study-investing-19.html) | Study 19: 分散投資と投資信託・ETFの基本 | 個別株のリスク、投資信託とETFの違い、コストと再投資の整理 |
 | [ai-tips-01.html](file:///c:/trader/ai-tips-01.html) | AI Tips 01: 大学生向けChatGPT活用術10選 | 学習、就活、ブログ作成の補助として使うAI活用メモ |
 | [ai-tips-02.html](file:///c:/trader/ai-tips-02.html) | AI Tips 02: AIっぽい文章を自分の文章に戻す方法 | 生成AIで整えた文章を本人の記録として自然に見直す方法 |
+| [ai-tips-03.html](file:///c:/trader/ai-tips-03.html) | AI Tips 03: AIの回答を公式情報で確かめる方法 | 数字・制度・出典を公式情報と照らし合わせる手順 |
+| [ai-tips-04.html](file:///c:/trader/ai-tips-04.html) | AI Tips 04: AIに個人情報を入力しないためのチェック | 送信前の情報削減、匿名化、画像・ファイル確認 |
+| [ai-tips-05.html](file:///c:/trader/ai-tips-05.html) | AI Tips 05: 授業ノートから要約・理解チェックを作る方法 | AIを理解不足の発見に使う学習手順 |
+| [ai-tips-06.html](file:///c:/trader/ai-tips-06.html) | AI Tips 06: 答えを作る前にAIから質問してもらう方法 | 足りない条件をAIに質問させ、回答のずれを減らす小技 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -308,7 +313,7 @@
    * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
 3. **新規学習記事（Study 20以降）の追加**:
    * Study 19（分散投資と投資信託・ETFの基本）まで公開済み。次は実際の市場観察ワークや、Web収益が実際に発生した段階での少額検証ルールなどを検討する。
-   * 投資制度や最新の数字は、公開前に公式一次情報で確認する姿勢を維持する。
+   * 投資制度や最新の数字は、公開前に公式情報で確認する姿勢を維持する。
 4. **ファイル命名規則の統一（技術的負債）**:
    * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
    * GitHub Pagesでのリンク切れやSEOへの影響を避けるため、リリース優先で現状維持としているが、将来的に一貫性のある命名規則（例：`job-log-xx.html`）へのリダイレクト設定を含めた統一リファクタリングを検討する。

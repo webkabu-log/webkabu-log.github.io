@@ -148,6 +148,7 @@ job-log-05.html
 job-log-06.html
 job-log-07.html
 job-log-08.html
+job-log-09.html
 study-ai-jobhunting-01.html
 roadmap.html
 study-investing-01.html
@@ -171,6 +172,10 @@ study-investing-18.html
 study-investing-19.html
 ai-tips-01.html
 ai-tips-02.html
+ai-tips-03.html
+ai-tips-04.html
+ai-tips-05.html
+ai-tips-06.html
 tools.html
 monthly-report-2026-06.html（準備中）
 contact.html
@@ -204,7 +209,7 @@ robots.txt
 6. 学習記録「売買単位と単元未満株」〜「分散投資と投資信託・ETFの基本」（Study 12〜19）を順次追加済み
 7. 証券会社、証券口座、NISA、Prime市場、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する
 8. 証券口座の開設状況や実取引の検討は、Web収益が実際に発生するまで保留する
-9. 次回は Study 20 以降、または Day 8 以降の記事を進める
+9. AI活用メモ03〜06とAI就活10を追加済み。次回はAI就活11以降、Study 20以降、またはDay 8以降を検討する
 10. お問い合わせページまたは連絡手段を検討する
 11. AI活用メモは就活以外の学習・発信補助も扱い、AI就活ログはガクチカ・自己PR・面接練習など就活準備に絞って増やす
 

@@ -7,25 +7,77 @@ document.addEventListener("DOMContentLoaded", () => {
   const reveals = [...document.querySelectorAll(".atlas-reveal, .atlas-stamp")];
   const chapters = [...document.querySelectorAll(".atlas-chapter[id^='chapter-']")];
   const navLinks = [...document.querySelectorAll(".atlas-nav-link")];
+  const chapterNav = document.querySelector(".atlas-nav");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const supportsObserver = "IntersectionObserver" in window;
+  let activeChapterId = "";
+  let manualNavUntil = 0;
+  let recenterTimer;
 
   const showEverything = () => {
     containers.forEach(container => container.classList.add("is-drawn"));
     reveals.forEach(element => element.classList.add("visible"));
   };
 
+  const centerActiveLink = (link, force = false) => {
+    if (!chapterNav || chapterNav.scrollWidth <= chapterNav.clientWidth + 1) return;
+
+    if (!force && Date.now() < manualNavUntil) {
+      clearTimeout(recenterTimer);
+      recenterTimer = setTimeout(() => {
+        if (link.getAttribute("href") === `#${activeChapterId}`) {
+          centerActiveLink(link, true);
+        }
+      }, manualNavUntil - Date.now() + 30);
+      return;
+    }
+
+    const left = link.offsetLeft - (chapterNav.clientWidth - link.offsetWidth) / 2;
+    chapterNav.scrollTo({
+      left: Math.max(0, left),
+      behavior: reduceMotion.matches ? "auto" : "smooth"
+    });
+  };
+
   const setActiveChapter = id => {
+    if (id === activeChapterId) return;
+    activeChapterId = id;
+
     navLinks.forEach(link => {
       const active = link.getAttribute("href") === `#${id}`;
       link.classList.toggle("active", active);
       if (active) {
         link.setAttribute("aria-current", "location");
+        centerActiveLink(link);
       } else {
         link.removeAttribute("aria-current");
       }
     });
   };
+
+  if (chapterNav) {
+    const pauseAutoCenter = () => {
+      manualNavUntil = Date.now() + 700;
+    };
+
+    chapterNav.addEventListener("pointerdown", pauseAutoCenter, { passive: true });
+    chapterNav.addEventListener("touchstart", pauseAutoCenter, { passive: true });
+    chapterNav.addEventListener("wheel", pauseAutoCenter, { passive: true });
+
+    navLinks.forEach(link => {
+      link.addEventListener("focus", () => centerActiveLink(link, true));
+      link.addEventListener("click", () => centerActiveLink(link, true));
+    });
+
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const activeLink = navLinks.find(link => link.getAttribute("href") === `#${activeChapterId}`);
+        if (activeLink) centerActiveLink(activeLink, true);
+      }, 120);
+    }, { passive: true });
+  }
 
   paths.forEach(path => {
     const length = path.getTotalLength();

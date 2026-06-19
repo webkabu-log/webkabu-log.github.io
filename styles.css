@@ -2003,9 +2003,11 @@ h3 {
   position: sticky;
   top: 66px;
   z-index: 20;
-  background: rgba(245, 242, 233, 0.92);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .atlas-nav-list {
@@ -2036,20 +2038,22 @@ h3 {
   padding: 12px 10px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--panel);
+  background: rgba(255, 253, 250, 0.96);
+  box-shadow: 0 4px 14px rgba(28, 37, 33, 0.07);
   font-size: 13px;
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
 }
 
-.atlas-nav-link:hover,
-.atlas-nav-link:focus-visible {
-  transform: translateY(-2px);
-  border-color: var(--green);
-  box-shadow: 0 4px 12px rgba(27, 122, 91, 0.08);
-  outline: none;
+.atlas-nav-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--line);
+  box-shadow: 0 7px 18px rgba(28, 37, 33, 0.1);
 }
 
 .atlas-nav-link:focus-visible {
+  transform: none;
+  border-color: var(--green);
+  box-shadow: 0 4px 14px rgba(27, 122, 91, 0.1);
   outline: 3px solid var(--green);
   outline-offset: 2px;
 }
@@ -2083,15 +2087,18 @@ h3 {
 }
 
 .atlas-nav-link.active {
-  border-color: var(--green);
-  background: #edf4ef;
+  border-color: var(--line);
+  background: rgba(237, 244, 239, 0.96);
+  box-shadow:
+    inset 0 -3px 0 var(--green),
+    0 8px 20px rgba(27, 122, 91, 0.1);
 }
 
 /* 各章セクション */
 .atlas-chapter {
   position: relative;
   margin-bottom: 56px;
-  scroll-margin-top: 154px;
+  scroll-margin-top: 196px;
 }
 
 .atlas-chapter.is-last {
@@ -2304,28 +2311,6 @@ h3 {
   outline: 3px solid var(--green);
   outline-offset: 4px;
 }
-
-/* 角折れ表現 */
-.atlas-card::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  border-width: 0 14px 14px 0;
-  border-style: solid;
-  border-color: var(--paper) var(--paper) var(--line) var(--line);
-  display: block;
-  width: 0;
-  border-radius: 0 0 0 4px;
-}
-
-/* 各章ごとの角折れアクセント */
-#chapter-1 .atlas-card::before { border-bottom-color: var(--color-ch1); border-left-color: var(--color-ch1); }
-#chapter-2 .atlas-card::before { border-bottom-color: var(--color-ch2); border-left-color: var(--color-ch2); }
-#chapter-3 .atlas-card::before { border-bottom-color: var(--color-ch3); border-left-color: var(--color-ch3); }
-#chapter-4 .atlas-card::before { border-bottom-color: var(--color-ch4); border-left-color: var(--color-ch4); }
-#chapter-5 .atlas-card::before { border-bottom-color: var(--color-ch5); border-left-color: var(--color-ch5); }
-#chapter-6 .atlas-card::before { border-bottom-color: var(--color-ch6); border-left-color: var(--color-ch6); }
 
 /* 自動カード傾き (PCのみ) */
 .atlas-timeline-list .atlas-timeline-item:nth-child(4n+1) .atlas-card {
@@ -2764,10 +2749,17 @@ body.js-active .is-drawn .atlas-timeline-path {
   .atlas-nav {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    scrollbar-width: thin;
-    padding: 10px 22px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-block: 10px;
+    padding-inline: max(14px, calc(50vw - 88px));
     margin-bottom: 24px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 50%;
+  }
+
+  .atlas-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .atlas-nav-list {
@@ -2780,7 +2772,7 @@ body.js-active .is-drawn .atlas-timeline-path {
   }
 
   .atlas-nav-item {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
   }
 
   .atlas-nav-link {
@@ -2852,9 +2844,10 @@ body.js-active .is-drawn .atlas-timeline-path {
   .atlas-nav {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 10px 22px;
+    padding-block: 10px;
+    padding-inline: max(14px, calc(50vw - 82px));
     margin-bottom: 24px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
   }
   .atlas-nav-list {
     grid-template-columns: none;
@@ -2864,14 +2857,14 @@ body.js-active .is-drawn .atlas-timeline-path {
     padding-bottom: 8px;
   }
   .atlas-nav-item {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
   }
   .atlas-nav-link {
     display: grid;
-    grid-template-rows: 1.2em 3em 1.2em;
+    grid-template-rows: 1em 2.7em 1em;
     gap: 4px;
-    padding: 10px 8px;
-    min-height: 104px;
+    padding: 8px;
+    min-height: 88px;
   }
   .atlas-nav-link .ch-num {
     font-size: 12px;
@@ -2906,7 +2899,7 @@ body.js-active .is-drawn .atlas-timeline-path {
 
   .atlas-nav {
     top: 58px;
-    padding-inline: 14px;
+    padding-inline: max(14px, calc(50vw - 76px));
   }
 
   .atlas-nav-link {
