@@ -1904,3 +1904,640 @@ h3 {
   line-height: 1.5;
   color: var(--ink);
 }
+
+/* ==========================================================================
+   投資学習アトラス (INVESTMENT LEARNING ATLAS) スタイル定義
+   ========================================================================== */
+.atlas-container {
+  --color-ch1: var(--green);
+  --color-ch2: var(--blue);
+  --color-ch3: var(--red);
+  --color-ch4: var(--gold);
+  --color-ch5: var(--ink);
+  --color-ch6: var(--blue);
+
+  position: relative;
+  background-image:
+    linear-gradient(rgba(27, 122, 91, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 122, 91, 0.018) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: center;
+  padding: 40px 0;
+}
+
+.atlas-hero-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+.atlas-hero-curve path {
+  stroke: var(--green);
+  stroke-width: 1.5;
+  fill: none;
+  stroke-dasharray: 4, 4;
+}
+
+/* 凡例・路線図ナビ */
+.atlas-nav {
+  max-width: 1120px;
+  margin: 0 auto 40px;
+  padding: 0 22px;
+  position: relative;
+  z-index: 5;
+}
+
+.atlas-nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.atlas-nav-item {
+  flex: 1;
+}
+
+.atlas-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  font-size: 13px;
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+
+.atlas-nav-link:hover,
+.atlas-nav-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--green);
+  box-shadow: 0 4px 12px rgba(27, 122, 91, 0.08);
+  outline: none;
+}
+
+.atlas-nav-link:focus-visible {
+  outline: 2px solid var(--green);
+}
+
+.atlas-nav-link .ch-num {
+  font-family: monospace;
+  font-weight: 900;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.atlas-nav-link .ch-name {
+  font-weight: 900;
+  color: var(--ink);
+  margin: 2px 0;
+}
+
+.atlas-nav-link .ch-range {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.atlas-nav-link.active {
+  border-color: var(--green);
+  background: #edf4ef;
+}
+
+/* 各章セクション */
+.atlas-chapter {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* 背景のデカ文字章番号 */
+.atlas-chapter-bg-num {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(120px, 20vw, 240px);
+  font-weight: 900;
+  color: var(--green);
+  opacity: 0.04;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.atlas-chapter-header {
+  max-width: 800px;
+  margin: 0 auto 48px;
+  text-align: center;
+  padding: 0 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.atlas-chapter-title-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.atlas-chapter-icon {
+  width: 32px;
+  height: 32px;
+}
+
+#chapter-1 .atlas-chapter-icon { color: var(--color-ch1); }
+#chapter-2 .atlas-chapter-icon { color: var(--color-ch2); }
+#chapter-3 .atlas-chapter-icon { color: var(--color-ch3); }
+#chapter-4 .atlas-chapter-icon { color: var(--color-ch4); }
+#chapter-5 .atlas-chapter-icon { color: var(--color-ch5); }
+#chapter-6 .atlas-chapter-icon { color: var(--color-ch6); }
+
+.atlas-chapter h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.atlas-chapter-desc {
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 8px auto 0;
+}
+
+/* 航路のコンテナ */
+.atlas-timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* 中央の縦線(航路) */
+.atlas-timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: var(--line);
+  z-index: 1;
+}
+
+/* スクロールで描画されるSVG航路 */
+.atlas-timeline-svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.atlas-timeline-path {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 3;
+  stroke-dasharray: 8, 4;
+  transition: stroke-dashoffset 100ms linear;
+}
+
+#chapter-1 .atlas-timeline-path { stroke: var(--color-ch1); }
+#chapter-2 .atlas-timeline-path { stroke: var(--color-ch2); }
+#chapter-3 .atlas-timeline-path { stroke: var(--color-ch3); }
+#chapter-4 .atlas-timeline-path { stroke: var(--color-ch4); }
+#chapter-5 .atlas-timeline-path { stroke: var(--color-ch5); }
+#chapter-6 .atlas-timeline-path { stroke: var(--color-ch6); }
+
+/* タイムラインのリスト */
+.atlas-timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.atlas-timeline-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+/* 奇数番目(左寄せ) */
+.atlas-timeline-item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+/* 偶数番目(右寄せ) */
+.atlas-timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+/* 中央のチェックポイントの丸 */
+.atlas-checkpoint-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--panel);
+  border: 4px solid var(--line);
+  z-index: 4;
+  transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
+}
+
+.atlas-timeline-item.completed .atlas-checkpoint-dot {
+  border-color: var(--green);
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* スタンプ風のチェック */
+.atlas-timeline-item.completed .atlas-checkpoint-dot::after {
+  content: "✓";
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* 現在地(最新)の強調 */
+.atlas-timeline-item.current .atlas-checkpoint-dot {
+  border-color: var(--blue);
+  background: var(--panel);
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 0 4px rgba(45, 95, 154, 0.2);
+}
+
+.atlas-timeline-item.current .atlas-checkpoint-dot::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* アトラスカード */
+.atlas-card {
+  width: 44%;
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  background: var(--panel);
+  box-shadow: 0 4px 12px rgba(28, 37, 33, 0.03);
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 300ms ease, border-color 300ms ease;
+  z-index: 3;
+}
+
+.atlas-card:hover {
+  transform: translateY(-3px) scale(1.005) !important;
+  box-shadow: 0 12px 28px rgba(28, 37, 33, 0.08);
+  border-color: rgba(28, 37, 33, 0.35);
+}
+
+/* 角折れ表現 */
+.atlas-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border-width: 0 14px 14px 0;
+  border-style: solid;
+  border-color: var(--paper) var(--paper) var(--line) var(--line);
+  display: block;
+  width: 0;
+  border-radius: 0 0 0 4px;
+}
+
+/* 各章ごとの角折れアクセント */
+#chapter-1 .atlas-card::before { border-bottom-color: var(--color-ch1); border-left-color: var(--color-ch1); }
+#chapter-2 .atlas-card::before { border-bottom-color: var(--color-ch2); border-left-color: var(--color-ch2); }
+#chapter-3 .atlas-card::before { border-bottom-color: var(--color-ch3); border-left-color: var(--color-ch3); }
+#chapter-4 .atlas-card::before { border-bottom-color: var(--color-ch4); border-left-color: var(--color-ch4); }
+#chapter-5 .atlas-card::before { border-bottom-color: var(--color-ch5); border-left-color: var(--color-ch5); }
+#chapter-6 .atlas-card::before { border-bottom-color: var(--color-ch6); border-left-color: var(--color-ch6); }
+
+/* 薄い座標 */
+.atlas-card-coords {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-family: monospace;
+  font-size: 9px;
+  color: var(--muted);
+  opacity: 0.15;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* クリップ風装飾(最新) */
+.atlas-card.current::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  width: 14px;
+  height: 28px;
+  background: rgba(45, 95, 154, 0.85);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: rotate(-5deg);
+  z-index: 4;
+}
+
+/* カード内部 */
+.atlas-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.atlas-card-meta .study-num {
+  font-family: monospace;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.atlas-card-meta .read-time {
+  font-weight: normal;
+}
+
+.atlas-card h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.atlas-card-outcome {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+}
+
+.atlas-card-outcome strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.atlas-card-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--green);
+  transition: color 200ms ease;
+}
+
+.atlas-card-link::after {
+  content: " →";
+  transition: transform 200ms ease;
+  margin-left: 4px;
+}
+
+.atlas-card:hover .atlas-card-link::after {
+  transform: translateX(4px);
+}
+
+/* 章ごとのホバー時のリンク色変更 */
+#chapter-1 .atlas-card:hover .atlas-card-link { color: var(--green-dark); }
+#chapter-2 .atlas-card:hover .atlas-card-link { color: var(--blue); }
+#chapter-3 .atlas-card:hover .atlas-card-link { color: var(--red); }
+#chapter-4 .atlas-card:hover .atlas-card-link { color: var(--gold); }
+#chapter-5 .atlas-card:hover .atlas-card-link { color: var(--ink); }
+#chapter-6 .atlas-card:hover .atlas-card-link { color: var(--blue); }
+
+/* 理解チェックセクション */
+.atlas-check-panel {
+  max-width: 800px;
+  margin: 40px auto 0;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  padding: 24px;
+  background: var(--panel);
+  box-shadow: 0 4px 12px rgba(28, 37, 33, 0.02);
+}
+
+.atlas-check-panel h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.atlas-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+  display: grid;
+  gap: 12px;
+}
+
+.atlas-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.atlas-check-item input[type="checkbox"] {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.atlas-check-panel details {
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.atlas-check-panel summary {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--blue);
+  cursor: pointer;
+  user-select: none;
+}
+
+.atlas-check-answer {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+/* アトラス・フェードイン効果（JS有効時のみ適用） */
+.atlas-reveal {
+  transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+body.js-active .atlas-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+}
+body.js-active .atlas-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* インクスタンプ風アニメーション（JS有効時のみ適用） */
+.atlas-stamp {
+  transition: opacity 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body.js-active .atlas-stamp {
+  opacity: 0;
+  transform: scale(1.6) rotate(-10deg);
+}
+body.js-active .atlas-stamp.visible {
+  opacity: 0.82;
+  transform: scale(1) rotate(-4deg);
+}
+
+/* 用語集/凡例のデザイン向上 */
+.atlas-term-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.atlas-term-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--panel);
+  border-left: 4px solid var(--green);
+}
+
+.atlas-term-card.blue { border-left-color: var(--blue); }
+.atlas-term-card.gold { border-left-color: var(--gold); }
+.atlas-term-card.red { border-left-color: var(--red); }
+
+/* 分岐航路 (Study 19の末尾) */
+.atlas-fork-path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.atlas-fork-svg {
+  width: 100px;
+  height: 60px;
+  color: var(--line);
+}
+
+/* モバイルレスポンシブ (820px以下) */
+@media (max-width: 820px) {
+  .atlas-timeline-line {
+    left: 20px;
+    transform: none;
+  }
+  .atlas-timeline-svg {
+    display: none;
+  }
+  .atlas-timeline-item:nth-child(odd),
+  .atlas-timeline-item:nth-child(even) {
+    justify-content: flex-start;
+  }
+  .atlas-checkpoint-dot {
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  .atlas-timeline-item.current .atlas-checkpoint-dot {
+    left: 20px;
+    transform: translate(-2px, -50%);
+  }
+  .atlas-card {
+    width: calc(100% - 48px);
+    margin-left: 48px;
+    transform: none !important;
+  }
+  .atlas-chapter-bg-num {
+    left: 20px;
+    transform: none;
+    font-size: 100px;
+  }
+  .atlas-chapter-header {
+    text-align: left;
+  }
+  .atlas-chapter-title-wrap {
+    justify-content: flex-start;
+  }
+  .atlas-timeline-list {
+    gap: 40px;
+  }
+  .atlas-check-panel {
+    margin-left: 48px;
+    width: calc(100% - 48px);
+  }
+  .atlas-term-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* タップ領域拡大 */
+  .atlas-nav-link,
+  .atlas-card-link,
+  .atlas-check-panel summary {
+    min-height: 44px;
+  }
+}
+
+/* 減速・アニメーション減の対応 */
+@media (prefers-reduced-motion: reduce) {
+  .atlas-reveal,
+  .atlas-stamp,
+  .atlas-card,
+  .atlas-card-link::after,
+  .atlas-nav-link {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .atlas-timeline-path {
+    stroke-dashoffset: 0 !important;
+  }
+}
