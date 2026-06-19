@@ -148,7 +148,8 @@ job-log-05.html
 job-log-06.html
 job-log-07.html
 job-log-08.html
-job-log-09.html
+job-log-09.html（AI就活10の旧URLから転送）
+job-log-10.html
 study-ai-jobhunting-01.html
 roadmap.html
 study-investing-01.html

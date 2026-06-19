@@ -46,7 +46,7 @@
 | [job-log-06.html](file:///c:/trader/job-log-06.html) | AI就活 07: チーム開発経験の伝え方 | 調整役・課題解決をESで言語化する方法 |
 | [job-log-07.html](file:///c:/trader/job-log-07.html) | AI就活 08: 自己PRを盛りすぎないためにAIに確認してもらったこと | AIで文章を盛るのではなく、説明できる経験か確認する記録 |
 | [job-log-08.html](file:///c:/trader/job-log-08.html) | AI就活 09: 面接練習にChatGPTを使う方法 | ChatGPTを面接官役にして深掘り質問を受ける練習記録 |
-| [job-log-09.html](file:///c:/trader/job-log-09.html) | AI就活 10: 企業研究の比較表をAIと作る方法 | 公式情報を比較し、志望理由と逆質問の材料を整理する手順 |
+| [job-log-10.html](file:///c:/trader/job-log-10.html) | AI就活 10: 企業研究の比較表をAIと作る方法 | 公式情報を比較し、志望理由と逆質問の材料を整理する手順 |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
