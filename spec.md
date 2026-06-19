@@ -58,6 +58,14 @@
 | [study-investing-09.html](file:///c:/trader/study-investing-09.html) | Study 09: 銘柄を選ばず、企業を観察する練習 | 企業の事業内容（ビジネスモデル）、売上と利益の違い、株価以外の価値、公式IRの重要性の整理 |
 | [study-investing-10.html](file:///c:/trader/study-investing-10.html) | Study 10: SBI証券の口座開設を大学生がやってみた | 初心者向けの口座開設手順と注意点の整理 |
 | [study-investing-11.html](file:///c:/trader/study-investing-11.html) | Study 11: 口座開設後すぐ買わないための初期設定チェック | 口座開設後にすぐ買わず、安全設定と確認事項を整理する記録 |
+| [study-investing-12.html](file:///c:/trader/study-investing-12.html) | Study 12: 株の売買単位と単元未満株 | 1株、単元株、必要資金、単元未満株の制約を整理した記録 |
+| [study-investing-13.html](file:///c:/trader/study-investing-13.html) | Study 13: 指値・成行・約定の仕組み | 指値・成行注文の違い、約定・優先原則を整理した記録 |
+| [study-investing-14.html](file:///c:/trader/study-investing-14.html) | Study 14: 株で発生する利益・損失・コスト | 利益、損失、取引手数料、税金とNISAの関係を整理した記録 |
+| [study-investing-15.html](file:///c:/trader/study-investing-15.html) | Study 15: 決算書の入口―売上と利益 | 売上と利益の違い、段階ごとの利益、複数年の比較姿勢の整理 |
+| [study-investing-16.html](file:///c:/trader/study-investing-16.html) | Study 16: 貸借対照表とキャッシュフローの入口 | B/Sの資産・負債・純資産、C/Fの3区分、現金と利益の差の整理 |
+| [study-investing-17.html](file:///c:/trader/study-investing-17.html) | Study 17: PER・PBR・ROEの意味と限界 | PER・PBR・ROEの計算式の意味と、指標の限界を整理した記録 |
+| [study-investing-18.html](file:///c:/trader/study-investing-18.html) | Study 18: 配当利回りと株主還元 | 配当利回り・性向、自社株買い、減配リスクと高配当の罠の整理 |
+| [study-investing-19.html](file:///c:/trader/study-investing-19.html) | Study 19: 分散投資と投資信託・ETFの基本 | 個別株のリスク、投資信託とETFの違い、コストと再投資の整理 |
 | [ai-tips-01.html](file:///c:/trader/ai-tips-01.html) | AI Tips 01: 大学生向けChatGPT活用術10選 | 学習、就活、ブログ作成の補助として使うAI活用メモ |
 | [ai-tips-02.html](file:///c:/trader/ai-tips-02.html) | AI Tips 02: AIっぽい文章を自分の文章に戻す方法 | 生成AIで整えた文章を本人の記録として自然に見直す方法 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
@@ -87,6 +95,23 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第17期：新規学習記事（Study 12〜19）の追加と関連情報の同期（2026年6月19日実施）
+* **新規記事（Study 12〜19）の追加**:
+  - [study-investing-12.html](file:///c:/trader/study-investing-12.html) (株の売買単位と単元未満株)
+  - [study-investing-13.html](file:///c:/trader/study-investing-13.html) (指値・成行・約定の仕組み)
+  - [study-investing-14.html](file:///c:/trader/study-investing-14.html) (株で発生する利益・損失・コスト)
+  - [study-investing-15.html](file:///c:/trader/study-investing-15.html) (決算書の入口―売上と利益)
+  - [study-investing-16.html](file:///c:/trader/study-investing-16.html) (貸借対照表とキャッシュフローの入口)
+  - [study-investing-17.html](file:///c:/trader/study-investing-17.html) (PER・PBR・ROEの意味と限界)
+  - [study-investing-18.html](file:///c:/trader/study-investing-18.html) (配当利回りと株主還元)
+  - [study-investing-19.html](file:///c:/trader/study-investing-19.html) (分散投資と投資信託・ETFの基本)
+  を新規作成し、各記事に最新の公式情報（金融庁、JPX、日証協等）と本日付の確認日（2026年6月19日）を記載。
+* **既存ページとの同期およびリンク接続**:
+  - [index.html](file:///c:/trader/index.html) の「公開記事数」を **38本** にインクリメント。投資学習ログのレーンへ Study 12〜19 のカードを追加。
+  - [roadmap.html](file:///c:/trader/roadmap.html) の Study 12〜19 を公開済みにし、リンクと各説明文を付与。
+  - [study-investing-11.html](file:///c:/trader/study-investing-11.html)〜[study-investing-18.html](file:///c:/trader/study-investing-18.html) の次ページリンク・ナビゲーションを順次接続。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) に新規8記事のURLを追加。
 
 ### 第16期：AI活用メモとAI就活ログの導線分離（2026年6月17日実施）
 * **トップページのカテゴリ分離**:
@@ -281,9 +306,9 @@
    * `contact.html` 内のプレースホルダー部分に、Googleフォーム等の埋め込みコード（`iframe`）またはリンクボタンを設置する。
 2. **Google AdSenseの審査完了対応**:
    * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
-3. **新規学習記事（Study 12以降）の追加**:
-   * Study 11までは公開済み。次はロードマップに従って、口座開設後の安全確認、制度・用語の深掘り、実取引前の確認項目を増やす。
-   * 証券会社、証券口座、NISA、市場区分、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する。
+3. **新規学習記事（Study 20以降）の追加**:
+   * Study 19（分散投資と投資信託・ETFの基本）まで公開済み。次は実際の市場観察ワークや、Web収益が実際に発生した段階での少額検証ルールなどを検討する。
+   * 投資制度や最新の数字は、公開前に公式一次情報で確認する姿勢を維持する。
 4. **ファイル命名規則の統一（技術的負債）**:
    * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
    * GitHub Pagesでのリンク切れやSEOへの影響を避けるため、リリース優先で現状維持としているが、将来的に一貫性のある命名規則（例：`job-log-xx.html`）へのリダイレクト設定を含めた統一リファクタリングを検討する。

@@ -161,6 +161,14 @@ study-investing-08.html
 study-investing-09.html
 study-investing-10.html
 study-investing-11.html
+study-investing-12.html
+study-investing-13.html
+study-investing-14.html
+study-investing-15.html
+study-investing-16.html
+study-investing-17.html
+study-investing-18.html
+study-investing-19.html
 ai-tips-01.html
 ai-tips-02.html
 tools.html
@@ -192,18 +200,13 @@ robots.txt
 2. Google AnalyticsとSearch Consoleでの動作を引き続き監視する
 3. Search Console のサイトマップは送信済み。`sitemap.xml` は公開URLで取得できるため、Search Console側の再処理を待つ
 4. AdSenseは審査待ち。結果が出るまでは広告枠を増やさず、記事と学習記録を増やす（Day 7まで追加済み）
-5. 学習記録「株・市場・証券会社・証券口座の違い」を `study-investing-03.html` として追加済み
-6. 学習記録「一般口座・特定口座・NISA口座の違い」を `study-investing-04.html` として追加済み
-7. 学習記録「NISAの基本と注意点」を `study-investing-05.html` として追加済み
-8. 学習記録「東証の市場区分の役割と違い」を `study-investing-06.html` として追加済み
-9. 学習記録「リスクとは何か」を `study-investing-07.html` として追加済み
-10. 証券会社、証券口座、NISA、Prime市場、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する
-11. 学習記録「少額投資を考える前の確認」を `study-investing-08.html` として追加済み
-12. 証券口座の開設状況や実取引の検討は、Web収益が実際に発生するまで保留する
-13. 学習記録「銘柄を選ばず、企業を観察する練習」を `study-investing-09.html` として追加済み
-14. 次回は Study 12 以降、または Day 8 以降の記事を進める
-15. お問い合わせページまたは連絡手段を検討する
-16. AI活用メモは就活以外の学習・発信補助も扱い、AI就活ログはガクチカ・自己PR・面接練習など就活準備に絞って増やす
+5. 学習記録 Study 03〜08、および Study 09（銘柄を選ばず企業を観察する練習）を追加済み
+6. 学習記録「売買単位と単元未満株」〜「分散投資と投資信託・ETFの基本」（Study 12〜19）を順次追加済み
+7. 証券会社、証券口座、NISA、Prime市場、リスク管理などの制度・用語・定義は、公開前に公式情報で確認する
+8. 証券口座の開設状況や実取引の検討は、Web収益が実際に発生するまで保留する
+9. 次回は Study 20 以降、または Day 8 以降の記事を進める
+10. お問い合わせページまたは連絡手段を検討する
+11. AI活用メモは就活以外の学習・発信補助も扱い、AI就活ログはガクチカ・自己PR・面接練習など就活準備に絞って増やす
 
 ## X運用方針
 

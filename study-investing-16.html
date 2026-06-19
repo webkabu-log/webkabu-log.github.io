@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>貸借対照表とキャッシュフローの入口 | Web収益だけで株を買う日記</title>
+    <meta name="description" content="企業の財産状態を表す「貸借対照表（B/S）」の仕組み、現金の流れを示す「キャッシュ・フロー計算書（C/F）」、会計上の利益と手元現金のズレを整理した投資学習ログです。">
+    <link rel="canonical" href="https://webkabu-log.github.io/study-investing-16.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="貸借対照表とキャッシュフローの入口">
+    <meta property="og:description" content="企業の財産状態を表す「貸借対照表（B/S）」の仕組み、現金の流れを示す「キャッシュ・フロー計算書（C/F）」、会計上の利益と手元現金のズレを整理した投資学習ログです。">
+    <meta property="og:url" content="https://webkabu-log.github.io/study-investing-16.html">
+    <meta property="og:image" content="https://webkabu-log.github.io/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://webkabu-log.github.io/ogp.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378" crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-FZVKWGP9SH");
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#article-main">本文へスキップ</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインメニュー">
+        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <div id="site-menu" class="nav-links">
+          <a href="index.html#ai-tips">AI活用</a>
+          <a href="index.html#ai-records">AI就活</a>
+          <a href="index.html#study-notes">投資学習</a>
+          <a href="index.html#day-records">運営記録</a>
+          <a href="roadmap.html">ロードマップ</a>
+          <a href="profile.html">プロフィール</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="article-main">
+      <article class="article-page">
+        <header class="article-hero reveal">
+          <p class="eyebrow">Study 16</p>
+          <h1>貸借対照表とキャッシュフローの入口</h1>
+          <p class="lead">
+            売上高と利益の違いを学んだあと、会社の財産のバランスや、実際のお金の流れについて調べました。
+            この記事では、貸借対照表（B/S）の構造、キャッシュフロー（C/F）の役割、利益と現金のズレを整理します。
+          </p>
+        </header>
+
+        <div class="article-body reveal">
+          <section class="summary-panel" aria-label="Study 16の要点">
+            <div><span>対象</span><strong>初心者</strong></div>
+            <div><span>財産</span><strong>貸借対照表（B/S）</strong></div>
+            <div><span>現金</span><strong>キャッシュフロー</strong></div>
+            <div><span>ズレ</span><strong>利益と現金の差</strong></div>
+          </section>
+
+          <h2>今回学ぶこと</h2>
+          <p>
+            前回の<a href="study-investing-15.html">Study 15</a>では、損益計算書（P/L）の基本である「売上高」と、段階的な利益（営業利益・経常利益・当期純利益）の違いを整理しました。
+          </p>
+          <p>
+            今回は、企業の安全性や現金の流れを見るための「貸借対照表」と「キャッシュフロー」の入口について学びます。
+            帳簿の上の利益だけで判断せず、会社の健康状態を立体的に捉えるための基礎知識を整理します。
+          </p>
+
+          <h2>まず結論</h2>
+          <p>
+            <strong>「貸借対照表（B/S）」</strong>は企業の持っている財産と調達源（資産・負債・純資産）を示し、<strong>「キャッシュ・フロー計算書（C/F）」</strong>は実際の現金の動きを示します。
+            会計上の「利益」と、手元にある「現金（キャッシュ）」にはタイムラグ（ズレ）が生じるため、両者を分けて考えることが必要です。
+          </p>
+
+          <div class="checklist-box">
+            <p class="quiz-question">健康状態を見る2つの書類</p>
+            <ul class="checklist-list">
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>貸借対照表（B/S）：資産 ＝ 負債 ＋ 純資産</strong>
+                  左側（資産）に使い道を、右側（負債・純資産）に調達元を示し、左右の合計が必ず一致するバランスシートです。
+                </div>
+              </li>
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>キャッシュ・フロー計算書（C/F）：本業・投資・財務の現金の流れ</strong>
+                  企業の財布の中身（現金）が実際にどう動いているかを3つの区分で示します。
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="table-container">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>書類名</th>
+                  <th>記載されていること</th>
+                  <th>初心者が確認する基本コンセプト</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>貸借対照表（B/S）</strong></td>
+                  <td>ある時点における「資産」「負債」「純資産」の一覧表</td>
+                  <td>返済不要な「純資産」の割合が十分にあるか（自己資本比率）</td>
+                </tr>
+                <tr>
+                  <td><strong>キャッシュ・フロー計算書（C/F）</strong></td>
+                  <td>一定期間における「現金（キャッシュ）」のインとアウトの流れ</td>
+                  <td>本業による「営業キャッシュフロー」がしっかりプラスになっているか</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>会話で整理</h2>
+          <div class="dialogue compact-dialogue">
+            <p><strong>私</strong><span>利益がたくさん出ている会社なら、お金もたくさん持っているんですよね？</span></p>
+            <p><strong>AI</strong><span>実はそうとは限りません。例えば商品を売って売上を上げても、代金が翌月や翌々月の振込なら、売却時点では利益は増えても現金は増えていません。</span></p>
+            <p><strong>私</strong><span>なるほど。取引のタイミングで、利益と手元現金に差ができるのですね。</span></p>
+            <p><strong>AI</strong><span>その通りです。だからこそ、実際の現金の動きを見る「キャッシュ・フロー計算書（C/F）」が重要です。利益が出ていても、手元の現金が底をつくと会社は黒字倒産してしまいます。</span></p>
+            <p><strong>私</strong><span>現金が最も大切ですね。もう一つの「貸借対照表（B/S）」は何ですか？</span></p>
+            <p><strong>AI</strong><span>会社の持っている財産（資産）と、その資金をどうやって調達したか（負債・純資産）を表す表です。返済の必要がない「純資産」の割合が多い企業ほど、一般的に財務の安全性が高いと考えられます。</span></p>
+          </div>
+
+          <h2>B/SとC/Fを読み解く3つのポイント</h2>
+          <p>
+            企業の健全性や安全性について考える際の基本となる3つの概念です。
+          </p>
+
+          <ul>
+            <li><strong>1. 貸借対照表（B/S）の基本バランス（資産 ＝ 負債 ＋ 純資産）</strong>
+              B/Sは左側（借方）と右側（貸方）に分かれています。
+              左側の「資産」は会社が持つ現金、在庫、建物などの財産（使い道）を示します。
+              右側の「負債」は借入金などの「返す必要のあるお金」、「純資産」は資本金やこれまでの利益の蓄積などの「返す必要のないお金」（調達方法）を示し、左右の合計額は必ず等しくなります。
+            </li>
+            <li><strong>2. キャッシュフロー（C/F）の3つの区分</strong>
+              現金の流れは、その役割に応じて以下の3つに分類されます。
+              <ul>
+                <li><strong>営業活動によるCF：</strong> 本業の活動で得られた現金の増減。ここがプラスであることが健全な企業の絶対条件です。</li>
+                <li><strong>投資活動によるCF：</strong> 設備投資や有価証券の購入など。企業が成長のために投資を行うと通常はマイナスになります。</li>
+                <li><strong>財務活動によるCF：</strong> 銀行からの借入れ、返済、配当金の支払いなど。借金を返したり配当を払うとマイナスになります。</li>
+              </ul>
+            </li>
+            <li><strong>3. 利益と現金のズレ（発生主義のルール）</strong>
+              会計上の「利益」は、商品を引き渡した時点で計上されます（発生主義）。
+              しかし、実際の「現金」は後日入金されることが多いため、帳簿上の利益と財布の中の現金には必ずズレが生じます。
+              「利益が出ているから安全」と過信せず、営業キャッシュフローの推移を確認する姿勢が大切です。
+            </li>
+          </ul>
+
+          <h2>今回のミニ確認</h2>
+          <p>以下のクイズで、B/SとC/Fに関する理解を確認しましょう。</p>
+
+          <div class="quiz-container">
+            <p class="quiz-question">【クイズ 1】 貸借対照表（B/S）における「純資産」に関する説明として、最も適切なものはどれでしょうか？</p>
+            <ul class="quiz-options">
+              <li>A. 銀行など外部の債権者から借り入れたものであり、将来必ず返済しなければならないお金。</li>
+              <li>B. 会社が保有する土地や建物などの固定資産の総額だけで構成されている。</li>
+              <li>C. 株主が払い込んだ資金や企業が過去に蓄積した利益など、返済の義務がない自己資本。</li>
+            </ul>
+            <details>
+              <summary>正解と解説を見る</summary>
+              <p class="answer-line"><strong>正解: C</strong></p>
+              <p>純資産は返済の義務がない資金（自己資本）です。純資産が全体の調達源に対して占める割合を「自己資本比率」と呼び、安全性の指標になります。</p>
+            </details>
+          </div>
+
+          <div class="quiz-container">
+            <p class="quiz-question">【クイズ 2】 キャッシュ・フロー計算書（C/F）において、企業が「本業の営業活動」によって稼ぎ出した現金の動きを表す項目はどれでしょうか？</p>
+            <ul class="quiz-options">
+              <li>A. 営業活動によるキャッシュフロー</li>
+              <li>B. 投資活動によるキャッシュフロー</li>
+              <li>C. 財務活動によるキャッシュフロー</li>
+            </ul>
+            <details>
+              <summary>正解と解説を見る</summary>
+              <p class="answer-line"><strong>正解: A</strong></p>
+              <p>本業で稼いだ現金の流れを示すのは「営業活動によるキャッシュフロー」です。ここが恒常的にマイナスになっている企業は、本業の資金繰りが悪化している可能性があります。</p>
+            </details>
+          </div>
+
+          <h2>確認に使った公式情報</h2>
+          <ul>
+            <li><a href="https://www.fsa.go.jp/singi/singi_kinyu/toushin/material/20190603/03.pdf" target="_blank" rel="noopener noreferrer">金融庁: 投資初心者向け説明資料</a></li>
+            <li><a href="https://www.hp.jicpa.or.jp/ippan/cpas/shokai/fs.html" target="_blank" rel="noopener noreferrer">日本公認会計士協会: 財務諸表について</a></li>
+          </ul>
+
+          <h2>次に学ぶこと</h2>
+          <p>
+            貸借対照表（B/S）の資産・負債・純資産のバランスと、キャッシュフロー（C/F）の3区分、利益と現金のズレの基本を整理しました。
+            これで、企業の収益力（P/L）だけでなく、財産の健全性（B/S）や資金繰り（C/F）を多角的に観察する見方が分かりました。
+          </p>
+          <p>
+            次回は、これらの決算書の数字を組み合わせて株価と比較する代表的な指標である「PER」「PBR」「ROE」の意味と、指標の限界について学びます。
+          </p>
+
+          <p class="article-note">
+            このページは投資助言ではありません。大学生個人の学習記録です。会計ルールや企業の財務評価は多様であり、特定の指標の良し悪しだけで企業の安全性が決定されるわけではありません。
+          </p>
+
+          <nav class="next-links" aria-label="次に読む">
+            <a class="secondary-button" href="study-investing-15.html">Study 15へ戻る</a>
+            <a class="primary-button" href="roadmap.html">ロードマップへ戻る</a>
+            <a class="secondary-button" href="study-investing-17.html">Study 17へ進む</a>
+          </nav>
+        </div>
+
+        <nav class="article-nav" aria-label="記事ナビゲーション">
+          <div class="article-nav-inner">
+            <a class="article-nav-prev" href="study-investing-15.html">
+              <span class="nav-label">← 前の記事</span>
+              <span class="nav-title">決算書の入口―売上と利益</span>
+            </a>
+            <a class="article-nav-next" href="study-investing-17.html">
+              <span class="nav-label">次の記事 →</span>
+              <span class="nav-title">PER・PBR・ROEの意味と限界</span>
+            </a>
+          </div>
+        </nav>
+
+        <section class="related-articles">
+          <p class="eyebrow">関連記事</p>
+          <h3>投資学習ログ</h3>
+          <ul>
+            <li><a href="study-investing-03.html">株・市場・口座を整理する</a></li>
+            <li><a href="study-investing-09.html">企業を観察する練習</a></li>
+            <li><a href="study-investing-15.html">決算書の入口―売上と利益</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="profile.html">プロフィール</a>
+        <a href="roadmap.html">ロードマップ</a>
+        <a href="tools.html">ツール</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="monetization.html">広告・運営方針</a>
+        <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
+      </nav>
+      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
+      <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

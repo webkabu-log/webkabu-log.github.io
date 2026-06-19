@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PER・PBR・ROEの意味と限界 | Web収益だけで株を買う日記</title>
+    <meta name="description" content="代表的な株価・効率性指標である「PER（株価収益率）」「PBR（株価純資産倍率）」「ROE（自己資本利益率）」の計算式や意味、数値だけで判断できない限界を整理した投資学習ログです。">
+    <link rel="canonical" href="https://webkabu-log.github.io/study-investing-17.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PER・PBR・ROEの意味と限界">
+    <meta property="og:description" content="代表的な株価・効率性指標である「PER（株価収益率）」「PBR（株価純資産倍率）」「ROE（自己資本利益率）」の計算式や意味、数値だけで判断できない限界を整理した投資学習ログです。">
+    <meta property="og:url" content="https://webkabu-log.github.io/study-investing-17.html">
+    <meta property="og:image" content="https://webkabu-log.github.io/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://webkabu-log.github.io/ogp.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378" crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-FZVKWGP9SH");
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#article-main">本文へスキップ</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインメニュー">
+        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <div id="site-menu" class="nav-links">
+          <a href="index.html#ai-tips">AI活用</a>
+          <a href="index.html#ai-records">AI就活</a>
+          <a href="index.html#study-notes">投資学習</a>
+          <a href="index.html#day-records">運営記録</a>
+          <a href="roadmap.html">ロードマップ</a>
+          <a href="profile.html">プロフィール</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="article-main">
+      <article class="article-page">
+        <header class="article-hero reveal">
+          <p class="eyebrow">Study 17</p>
+          <h1>PER・PBR・ROEの意味と限界</h1>
+          <p class="lead">
+            貸借対照表（B/S）や現金の流れについて学んだあと、株価と決算書の数字を比べて割安度や効率性を測る指標について調べました。
+            この記事では、PER・PBR・ROEの意味と指標の限界を整理します。
+          </p>
+        </header>
+
+        <div class="article-body reveal">
+          <section class="summary-panel" aria-label="Study 17の要点">
+            <div><span>対象</span><strong>初心者</strong></div>
+            <div><span>指標</span><strong>PER・PBR・ROE</strong></div>
+            <div><span>目的</span><strong>割安度と効率性</strong></div>
+            <div><span>限界</span><strong>数値だけでは判断不可</strong></div>
+          </section>
+
+          <h2>今回学ぶこと</h2>
+          <p>
+            前回の<a href="study-investing-16.html">Study 16</a>では、財産バランスを示す「貸借対照表（B/S）」、現金の流れを示す「キャッシュ・フロー計算書（C/F）」、利益と現金のズレについて学びました。
+          </p>
+          <p>
+            今回は、これらの決算書の数字と「株価」を組み合わせて、企業の価値を比較するための3つの代表的な指標について学びます。
+            「PERが低い＝割安だから買い」「ROEが高い＝優良企業」といった、単純な解釈に陥らないための限界も併せて整理します。
+          </p>
+
+          <h2>まず結論</h2>
+          <p>
+            株価の割安さを測る<strong>「PER（株価収益率）」</strong>や<strong>「PBR（株価純資産倍率）」</strong>、経営の効率性を測る<strong>「ROE（自己資本利益率）」</strong>は、投資の判断材料としてよく使われます。
+            しかし、同業種内での比較や、一時的な特別損益などの要因を考慮しなければ、数値の低さ・高さだけで正しい判断はできません。
+          </p>
+
+          <div class="checklist-box">
+            <p class="quiz-question">3つの代表的指標</p>
+            <ul class="checklist-list">
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>PER（株価収益率）：株価が「利益」の何倍かを示す</strong>
+                  利益から見て現在の株価が割安か割高かを測ります。
+                </div>
+              </li>
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>PBR（株価純資産倍率）：株価が「純資産」の何倍かを示す</strong>
+                  持っている資産（解散価値）から見て現在の株価が割安かを測ります。
+                </div>
+              </li>
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>ROE（自己資本利益率）：株主の元手を使って「どれだけ効率よく稼いだか」を示す</strong>
+                  企業の経営資金の運用効率をパーセントで表したものです。
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="table-container">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>指標</th>
+                  <th>計算式のイメージ（※計算例）</th>
+                  <th>何を比べるか</th>
+                  <th>数値だけでは判断できない理由（限界）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>PER</strong></td>
+                  <td>株価 ÷ 1株当たり純利益 (EPS)</td>
+                  <td>株価と「利益」の比率</td>
+                  <td>将来の成長期待が極めて低いため、放置されて低数値になっていることがある</td>
+                </tr>
+                <tr>
+                  <td><strong>PBR</strong></td>
+                  <td>株価 ÷ 1株当たり純資産 (BPS)</td>
+                  <td>株価と「純資産」の比率</td>
+                  <td>1倍未満でも、将来の業績悪化によって資産が崩れるリスクがある</td>
+                </tr>
+                <tr>
+                  <td><strong>ROE</strong></td>
+                  <td>当期純利益 ÷ 自己資本 × 100</td>
+                  <td>自己資本と「利益」の比率</td>
+                  <td>莫大な借金（負債）をして自己資本を小さく見せても、数値が上がってしまう</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="article-note" style="border: none; background: transparent; padding: 0; font-weight: normal; color: var(--muted); margin-top: -8px;">
+            ※上記の計算式は、わかりやすさを優先した概念的な計算例です。
+          </p>
+
+          <h2>会話で整理</h2>
+          <div class="dialogue compact-dialogue">
+            <p><strong>私</strong><span>ネットの投稿で「PERが低い株は割安だから、初心者でも安全に儲かる」と見ました。</span></p>
+            <p><strong>AI</strong><span>それは少し危険な見方です。PERが低いのは「業績が悪化すると予想されているから、誰も買いたがらなくて安い」というケースもあります。</span></p>
+            <p><strong>私</strong><span>単に数字が低ければ良いわけではないのですね。PBRはどうですか？</span></p>
+            <p><strong>AI</strong><span>PBRは純資産と株価を比べます。1倍未満なら「会社を解散して配分される額より株価が安い」とされますが、これも将来赤字になって純資産が減るなら、安全とは言えません。</span></p>
+            <p><strong>私</strong><span>では、効率よく稼げているかを見るROEはどうでしょう？</span></p>
+            <p><strong>AI</strong><span>ROEが高い企業は魅力的ですが、自己資本（元手）を減らして多額の借金（負債）を抱えながらビジネスをしていても、見かけ上のROEは上がってしまいます。財務の安定性（自己資本比率）も併せて見る必要があります。</span></p>
+          </div>
+
+          <h2>PER・PBR・ROEを読み解く3つのポイント</h2>
+          <p>
+            指標の数値を見る際に、誤解を防ぐための3つの基本知識です。
+          </p>
+
+          <ul>
+            <li><strong>1. 業種によって「基準」が大きく異なる</strong>
+              PERやPBRは、すべての業種で同じ基準が通用するわけではありません。
+              例えば、将来の成長期待が高いIT企業やバイオ関連企業は、株価が高くなりやすくPERが30倍〜50倍以上になることもあります。
+              一方で、インフラ企業や伝統的な製造業などは、成長が穏やかなためPERが10倍以下にとどまることもあります。
+              指標を見る際は、必ず**「同じ業種の競合企業」と比べる**のが鉄則です。
+            </li>
+            <li><strong>2. 一時的な特別利益による数値の「ブレ」</strong>
+              営業外や特別利益（土地の売却など）によって一時的に当期純利益が急増すると、その年度のPERは急激に低くなり、ROEは非常に高く算出されます。
+              しかし、これは一過性の現象であり、翌年には元の数値に戻る可能性が高いです。
+              指標の分母となる「利益」が、一時的なものか本業によるものかを決算書で確かめる必要があります。
+            </li>
+            <li><strong>3. 数値の高さ・低さに隠された背景（成長期待とリスク）</strong>
+              「PBRが1倍を割っている」「PERが10倍以下である」という事実は、割安であるというシグナルかもしれませんし、その企業の製品が時代遅れになりつつあるという市場の警戒シグナルかもしれません。
+              「割安である理由」「効率が良い理由」を、指標の数字の外にある事業内容や業界全体の動きと照らし合わせて推測する姿勢が求められます。
+            </li>
+          </ul>
+
+          <h2>今回のミニ確認</h2>
+          <p>以下のクイズで、PER・PBR・ROEに関する理解を確認しましょう。</p>
+
+          <div class="quiz-container">
+            <p class="quiz-question">【クイズ 1】 株価が「1株あたりの純利益」の何倍になっているかを表し、利益面から見た株価の割安・割高を判断する際に用いられる指標はどれでしょうか？</p>
+            <ul class="quiz-options">
+              <li>A. PBR</li>
+              <li>B. PER</li>
+              <li>C. ROE</li>
+            </ul>
+            <details>
+              <summary>正解と解説を見る</summary>
+              <p class="answer-line"><strong>正解: B</strong></p>
+              <p>PER（株価収益率）です。分母が利益（EPS）となります。分母が純資産（BPS）の場合はPBRとなります。</p>
+            </details>
+          </div>
+
+          <div class="quiz-container">
+            <p class="quiz-question">【クイズ 2】 企業の効率性を示す「ROE（自己資本利益率）」を見る際の注意点として、最も適切なものはどれでしょうか？</p>
+            <ul class="quiz-options">
+              <li>A. ROEが高ければ、どれだけ借金（負債）が多くても財務の安全性が100%保証される。</li>
+              <li>B. 多額の借金をして自己資本を小さく見せることでも数値が上昇するため、貸借対照表（B/S）の安全性指標と併せて確認する必要がある。</li>
+              <li>C. ROEは会社の売上高の大きさそのものを表すため、売上高が大きい企業ほど必ずROEが高くなる。</li>
+            </ul>
+            <details>
+              <summary>正解と解説を見る</summary>
+              <p class="answer-line"><strong>正解: B</strong></p>
+              <p>ROEは「当期純利益 ÷ 自己資本」で計算されるため、負債（借金）を増やして分母の「自己資本」を減らせば、数値が上がって見えます。財務の健全性を同時に確認することが重要です。</p>
+            </details>
+          </div>
+
+          <h2>確認に使った公式情報</h2>
+          <ul>
+            <li><a href="https://www.jpx.co.jp/markets/statistics-metadata/market-value/01.html" target="_blank" rel="noopener noreferrer">日本取引所グループ: その他統計資料（規模別・業種別PER・PBR等）</a></li>
+            <li><a href="https://www.fsa.go.jp/singi/singi_kinyu/toushin/material/20190603/03.pdf" target="_blank" rel="noopener noreferrer">金融庁: 投資初心者向け説明資料</a></li>
+          </ul>
+
+          <h2>次に学ぶこと</h2>
+          <p>
+            PER、PBR、ROEの計算式の意味と、業種ごとの基準の違い、および一時的要因による歪みなどの指標の限界を整理しました。
+            これで、投資判断に用いられる主な数字の背景を客観的に観察できるようになりました。
+          </p>
+          <p>
+            次回は、株式を保有することで得られる「配当金」の利回りや、企業が利益を還元する割合を示す「配当性向」、および減配リスクについて学びます。
+          </p>
+
+          <p class="article-note">
+            このページは投資助言ではありません。大学生個人の学習記録です。指標の基準や傾向は市場全体の変動によっても変化するため、常に複合的な視点で公式情報を確認してください。
+          </p>
+
+          <nav class="next-links" aria-label="次に読む">
+            <a class="secondary-button" href="study-investing-16.html">Study 16へ戻る</a>
+            <a class="primary-button" href="roadmap.html">ロードマップへ戻る</a>
+            <a class="secondary-button" href="study-investing-18.html">Study 18へ進む</a>
+          </nav>
+        </div>
+
+        <nav class="article-nav" aria-label="記事ナビゲーション">
+          <div class="article-nav-inner">
+            <a class="article-nav-prev" href="study-investing-16.html">
+              <span class="nav-label">← 前の記事</span>
+              <span class="nav-title">貸借対照表とキャッシュフローの入口</span>
+            </a>
+            <a class="article-nav-next" href="study-investing-18.html">
+              <span class="nav-label">次の記事 →</span>
+              <span class="nav-title">配当利回りと株主還元</span>
+            </a>
+          </div>
+        </nav>
+
+        <section class="related-articles">
+          <p class="eyebrow">関連記事</p>
+          <h3>投資学習ログ</h3>
+          <ul>
+            <li><a href="study-investing-06.html">市場区分の役割と違い</a></li>
+            <li><a href="study-investing-15.html">決算書の入口―売上と利益</a></li>
+            <li><a href="study-investing-16.html">貸借対照表とキャッシュフローの入口</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="profile.html">プロフィール</a>
+        <a href="roadmap.html">ロードマップ</a>
+        <a href="tools.html">ツール</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="monetization.html">広告・運営方針</a>
+        <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
+      </nav>
+      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
+      <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

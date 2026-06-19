@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>指値・成行・約定の仕組み | Web収益だけで株を買う日記</title>
+    <meta name="description" content="株の注文方法である「指値注文」と「成行注文」、注文が成立する「約定」と「未約定」の状態、取引所における優先順位のルールを初心者向けに整理した投資学習ログです。">
+    <link rel="canonical" href="https://webkabu-log.github.io/study-investing-13.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="指値・成行・約定の仕組み">
+    <meta property="og:description" content="株の注文方法である「指値注文」と「成行注文」、注文が成立する「約定」と「未約定」の状態、取引所における優先順位のルールを初心者向けに整理した投資学習ログです。">
+    <meta property="og:url" content="https://webkabu-log.github.io/study-investing-13.html">
+    <meta property="og:image" content="https://webkabu-log.github.io/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://webkabu-log.github.io/ogp.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378" crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-FZVKWGP9SH");
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#article-main">本文へスキップ</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインメニュー">
+        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <div id="site-menu" class="nav-links">
+          <a href="index.html#ai-tips">AI活用</a>
+          <a href="index.html#ai-records">AI就活</a>
+          <a href="index.html#study-notes">投資学習</a>
+          <a href="index.html#day-records">運営記録</a>
+          <a href="roadmap.html">ロードマップ</a>
+          <a href="profile.html">プロフィール</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="article-main">
+      <article class="article-page">
+        <header class="article-hero reveal">
+          <p class="eyebrow">Study 13</p>
+          <h1>指値・成行・約定の仕組み</h1>
+          <p class="lead">
+            株を買う最小単位について学んだあと、実際の注文方法や売買が成立する仕組みを調べました。
+            この記事では、指値・成行注文の違いや、約定・未約定の定義、取引所のルールを整理します。
+          </p>
+        </header>
+
+        <div class="article-body reveal">
+          <section class="summary-panel" aria-label="Study 13の要点">
+            <div><span>対象</span><strong>初心者</strong></div>
+            <div><span>注文</span><strong>指値か成行</strong></div>
+            <div><span>成立</span><strong>約定か未約定</strong></div>
+            <div><span>原則</span><strong>価格と時間</strong></div>
+          </section>
+
+          <h2>今回学ぶこと</h2>
+          <p>
+            前回の<a href="study-investing-12.html">Study 12</a>では、株式の売買単位である「単元株（100株）」と、1株から買える「単元未満株」の違いを整理しました。
+          </p>
+          <p>
+            今回は、実際に取引を注文する際の方法と、注文が成立するルールを学びます。
+            画面でボタンを押せばいつでも同じ値段で買えるわけではないため、基本となる2つの注文方法と、取引所での売買成立の原則を正しく整理します。
+          </p>
+
+          <h2>まず結論</h2>
+          <p>
+            株式の注文方法には、希望価格を指定する<strong>「指値（さしね）注文」</strong>と、価格を指定せず取引成立を優先する<strong>「成行（なりゆき）注文」</strong>があります。
+            注文が成立することを<strong>「約定（やくじょう）」</strong>と呼び、成立していない状態を<strong>「未約定（みやくじょう）」</strong>と呼びます。
+          </p>
+
+          <div class="checklist-box">
+            <p class="quiz-question">注文方法の基本</p>
+            <ul class="checklist-list">
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>指値注文：価格をコントロールするが、買えない可能性がある</strong>
+                  「〇〇円以下で買う」と指定するため、株価がその価格まで下がらなければ約定しません。
+                </div>
+              </li>
+              <li class="checklist-item">
+                <span class="checklist-icon">☑</span>
+                <div class="checklist-content">
+                  <strong>成行注文：成立を最優先するが、思ったより高い価格になる可能性がある</strong>
+                  価格を指定しないためすぐに成立しやすいですが、急な株価変動時には想定外の価格で約定するリスクがあります。
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="table-container">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>注文方法</th>
+                  <th>価格の指定</th>
+                  <th>メリット</th>
+                  <th>主なリスク・注意点</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong class="accent-green">指値注文</strong></td>
+                  <td>あり（希望価格を指定）</td>
+                  <td>計画通りの価格で取引できる</td>
+                  <td>株価が動かないと注文が成立しない（未約定のまま）</td>
+                </tr>
+                <tr>
+                  <td><strong class="accent-blue">成行注文</strong></td>
+                  <td>なし（値決めは市場任せ）</td>
+                  <td>指値注文より優先してすぐに約定する</td>
+                  <td>買い注文の瞬間に急騰すると、高い価格で成立してしまう</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>会話で整理</h2>
+          <div class="dialogue compact-dialogue">
+            <p><strong>私</strong><span>注文を出したら、すぐにその価格で株を買えるんですよね？</span></p>
+            <p><strong>AI</strong><span>そうとは限りません。例えば価格を指定する「指値注文」の場合、株価が指定した価格にならなければ、注文は成立（約定）せずに残ります。</span></p>
+            <p><strong>私</strong><span>なるほど。では、今すぐ確実に買いたいときはどうすればいいですか？</span></p>
+            <p><strong>AI</strong><span>その場合は価格を指定しない「成行注文」を使います。成行注文は指値注文より優先して取引が成立しやすいです。</span></p>
+            <p><strong>私</strong><span>成行のほうが便利そうですが、何か気を付けることはありますか？</span></p>
+            <p><strong>AI</strong><span>価格を指定しないため、注文した瞬間に株価が急に跳ね上がると、思わぬ高値で買ってしまい予算を超えるリスクがあります。</span></p>
+          </div>
+
+          <h2>注文と約定の3つのポイント</h2>
+          <p>
+            株の発注を考える前に知っておきたい、売買成立の基本ルールです。
+          </p>
+
+          <ul>
+            <li><strong>1. 指値注文と成行注文の使い分け</strong>
+              価格を重視し「これ以上高い値段では買いたくない」という場合は指値注文を使います。
+              逆に「価格は多少前後してもいいから、今すぐ確実に取引を終わらせたい」という場合は成行注文を選びます。
+              初心者のうちは、思わぬ価格で約定するのを防ぐため、指値注文を中心に学ぶのが一般的とされています。
+            </li>
+            <li><strong>2. 約定と未約定・注文の有効期限</strong>
+              出した注文が成立することを「約定」と呼び、成立せずに残っている状態を「未約定」と呼びます。
+              注文を出す際には「当日中のみ有効」や「今週いっぱい有効」などの有効期限を指定でき、期限内に相手が見つからなければ、注文は自動的にキャンセルされます。
+            </li>
+            <li><strong>3. 取引所における「優先順位」の原則</strong>
+              取引所では、公平に取引を行うために以下の原則に従って約定の順番が決まります。
+              <ul>
+                <li><strong>価格優先の原則：</strong> 買い注文は「高い価格」、売り注文は「安い価格」が優先されます。また、成行注文は指値注文よりも常に最優先されます。</li>
+                <li><strong>時間優先の原則：</strong> 同じ価格の指値注文同士であれば、取引所に「早く届いた注文」から順番に売買が成立します。</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>今回のミニ確認</h2>
+          <p>以下のクイズで、注文と約定の仕組みに関する理解を確認しましょう。</p>
+
+          <div class="quiz-container">
+            <p class="quiz-question">【クイズ 1】 「この会社の株を1株1,500円以下なら買いたい」というように、価格を指定して出す注文方法を何と呼ぶでしょうか？</p>
+            <ul class="quiz-options">
+              <li>A. 成行注文</li>
+              <li>B. 指値注文</li>
+              <li>C. 期限注文</li>
+            </ul>
+            <details>
+              <summary>正解と解説を見る</summary>
+              <p class="answer-line"><strong>正解: B</strong></p>
+              <p>価格を指定して注文する方法は「指値注文」です。指定した価格よりも不利な条件（買いであれば高く、売りであれば安く）で約定することはありません。</p>
+            </details>
+          </div>
+
+          <div class="quiz-container">
+            <p class="quiz-question">【クイズ 2】 取引所における売買成立のルール（価格優先の原則・時間優先の原則）について、正しい説明はどれでしょうか？</p>
+            <ul class="quiz-options">
+              <li>A. 同じ価格の買い注文であれば、金額が大きい大口投資家の注文が常に優先される。</li>
+              <li>B. 指値注文は、成行注文よりも常に優先して約定される。</li>
+              <li>C. 買い注文の場合、より高い価格を提示した注文が優先され、同じ価格であれば先に出された注文が優先される。</li>
+            </ul>
+            <details>
+              <summary>正解と解説を見る</summary>
+              <p class="answer-line"><strong>正解: C</strong></p>
+              <p>取引所では「高い買い注文」や「安い売り注文」が優先され（価格優先）、同じ価格の場合は「早い注文」が優先されます（時間優先）。成行注文はすべての指値注文より優先されます。</p>
+            </details>
+          </div>
+
+          <h2>確認に使った公式情報</h2>
+          <ul>
+            <li><a href="https://www.jpx.co.jp/equities/trading/domestic/index.html" target="_blank" rel="noopener noreferrer">日本取引所グループ: 内国株の売買制度</a></li>
+          </ul>
+
+          <h2>次に学ぶこと</h2>
+          <p>
+            希望価格で買う「指値」と、成立を優先する「成行」の違い、そして取引所のルールを整理しました。
+            これで、株価ボード（板）の数字がどのようにマッチングして動くのか、イメージができるようになりました。
+          </p>
+          <p>
+            次回は、実際に株を売買したときに発生する「値上がり益・配当金」の利益と、「手数料・税金」などのコスト・損失の関係について学びます。
+          </p>
+
+          <p class="article-note">
+            このページは投資助言ではありません。大学生個人の学習記録です。実際の注文画面や操作ルールは証券会社ごとに異なるため、取引前に必ず各証券会社のヘルプや公式情報を確認してください。
+          </p>
+
+          <nav class="next-links" aria-label="次に読む">
+            <a class="secondary-button" href="study-investing-12.html">Study 12へ戻る</a>
+            <a class="primary-button" href="roadmap.html">ロードマップへ戻る</a>
+            <a class="secondary-button" href="study-investing-14.html">Study 14へ進む</a>
+          </nav>
+        </div>
+
+        <nav class="article-nav" aria-label="記事ナビゲーション">
+          <div class="article-nav-inner">
+            <a class="article-nav-prev" href="study-investing-12.html">
+              <span class="nav-label">← 前の記事</span>
+              <span class="nav-title">株の売買単位と単元未満株</span>
+            </a>
+            <a class="article-nav-next" href="study-investing-14.html">
+              <span class="nav-label">次の記事 →</span>
+              <span class="nav-title">株で発生する利益・損失・コスト</span>
+            </a>
+          </div>
+        </nav>
+
+        <section class="related-articles">
+          <p class="eyebrow">関連記事</p>
+          <h3>投資学習ログ</h3>
+          <ul>
+            <li><a href="study-investing-02.html">株価が動く理由</a></li>
+            <li><a href="study-investing-12.html">株の売買単位と単元未満株</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="profile.html">プロフィール</a>
+        <a href="roadmap.html">ロードマップ</a>
+        <a href="tools.html">ツール</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="monetization.html">広告・運営方針</a>
+        <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
+      </nav>
+      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
+      <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
