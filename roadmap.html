@@ -52,24 +52,24 @@
 
     <main id="article-main">
       <div class="atlas-container">
-        <article class="article-page" style="max-width: 1000px; padding-top: 10px;">
+        <article class="article-page atlas-article-page">
 
           <!-- 1. ヒーロー -->
-          <header class="article-hero reveal" style="position: relative; text-align: center; margin-bottom: 48px;">
+          <header class="article-hero reveal atlas-hero">
             <!-- 航路を模したインラインSVG曲線 -->
-            <svg class="atlas-hero-curve" viewBox="0 0 800 200" preserveAspectRatio="none">
+            <svg class="atlas-hero-curve" viewBox="0 0 800 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
               <path d="M 0,100 C 200,20 300,180 500,100 C 650,40 750,140 800,80" />
             </svg>
-            <p class="eyebrow" style="position: relative; z-index: 1;">INVESTMENT LEARNING ATLAS</p>
-            <h1 style="position: relative; z-index: 1;">投資を始める前の地図</h1>
-            <p class="lead" style="position: relative; z-index: 1; max-width: 680px; margin-inline: auto;">
+            <p class="eyebrow atlas-hero-eyebrow">INVESTMENT LEARNING ATLAS</p>
+            <h1>投資を始める前の地図</h1>
+            <p class="lead atlas-hero-lead">
               19のStudyを通して、投資の基本、制度、売買の仕組み、企業分析、分散投資を順番に確認する学習航路です。
               慌てて取引を始める前に、言葉と仕組みの違いをこの地図に沿って確認します。
             </p>
-            <div class="summary-panel" style="position: relative; z-index: 1; max-width: 800px; margin: 32px auto 0;">
+            <div class="summary-panel">
               <div>
                 <span>Checkpoints</span>
-                <strong>19のチェックポイント</strong>
+                <strong>公開記事数: 19 Study</strong>
               </div>
               <div>
                 <span>Learning Areas</span>
@@ -79,105 +79,86 @@
                 <span>Safety Rule</span>
                 <strong>買う前に仕組みを確認</strong>
               </div>
-              <div style="border: none; background: transparent; padding: 0; display: flex; align-items: center;">
-                <a href="#chapter-1" class="primary-button" style="width: 100%; min-height: unset; height: 100%; padding: 10px; font-size: 14px;">航路をたどる</a>
+              <div class="summary-panel-button-wrap">
+                <a href="#chapter-1" class="primary-button atlas-hero-btn">航路をたどる</a>
               </div>
             </div>
           </header>
 
-          <!-- 2. 全体サマリー -->
-          <section class="roadmap-overview" aria-label="ロードマップの要点" style="margin-bottom: 48px;">
-            <article>
-              <span style="background: #e7f1eb; color: var(--green-dark);">Goal</span>
-              <strong>順番に理解する</strong>
-              <p>投資、口座、制度、市場区分を一気に混ぜず、前から確認できる形にします。</p>
-            </article>
-            <article>
-              <span style="background: #e6edf7; color: #244e82;">Focus</span>
-              <strong>似た言葉を分ける</strong>
-              <p>証券会社、証券口座、NISA口座、Prime市場を別のものとして整理します。</p>
-            </article>
-            <article>
-              <span style="background: #fdf2e2; color: #8c5519;">Note</span>
-              <strong>仕組みを理解する</strong>
-              <p>特定の銘柄や証券会社を選ぶ話ではなく、まず言葉と仕組みの違いを整理します。</p>
-            </article>
-          </section>
-
-          <!-- 3. 章一覧 (凡例ナビ) -->
+          <!-- 2. 章一覧 (凡例ナビ) -->
           <nav class="atlas-nav" aria-label="章選択ナビゲーション">
             <ul class="atlas-nav-list">
               <li class="atlas-nav-item">
                 <a href="#chapter-1" class="atlas-nav-link">
                   <span class="ch-num">Ch.1</span>
-                  <span class="ch-name">基礎の丘</span>
+                  <span class="ch-name">第1章：投資の基本</span>
                   <span class="ch-range">Study 01-03</span>
                 </a>
               </li>
               <li class="atlas-nav-item">
                 <a href="#chapter-2" class="atlas-nav-link">
                   <span class="ch-num">Ch.2</span>
-                  <span class="ch-name">制度の街</span>
+                  <span class="ch-name">第2章：口座と制度</span>
                   <span class="ch-range">Study 04-06</span>
                 </a>
               </li>
               <li class="atlas-nav-item">
                 <a href="#chapter-3" class="atlas-nav-link">
                   <span class="ch-num">Ch.3</span>
-                  <span class="ch-name">安全確認所</span>
+                  <span class="ch-name">第3章：リスクと準備</span>
                   <span class="ch-range">Study 07-11</span>
                 </a>
               </li>
               <li class="atlas-nav-item">
                 <a href="#chapter-4" class="atlas-nav-link">
                   <span class="ch-num">Ch.4</span>
-                  <span class="ch-name">売買の駅</span>
+                  <span class="ch-name">第4章：株式売買の仕組み</span>
                   <span class="ch-range">Study 12-14</span>
                 </a>
               </li>
               <li class="atlas-nav-item">
                 <a href="#chapter-5" class="atlas-nav-link">
                   <span class="ch-num">Ch.5</span>
-                  <span class="ch-name">企業分析ラボ</span>
+                  <span class="ch-name">第5章：企業分析と財務指標</span>
                   <span class="ch-range">Study 15-18</span>
                 </a>
               </li>
               <li class="atlas-nav-item">
                 <a href="#chapter-6" class="atlas-nav-link">
                   <span class="ch-num">Ch.6</span>
-                  <span class="ch-name">分散の港</span>
+                  <span class="ch-name">第6章：分散投資の基礎</span>
                   <span class="ch-range">Study 19</span>
                 </a>
               </li>
             </ul>
           </nav>
 
-          <!-- 4. 投資Studyの学習航路 -->
+          <!-- 3. 投資Studyの学習航路 -->
 
-          <!-- 第1章：基礎の丘 -->
+          <!-- 第1章：投資の基本 -->
           <section class="atlas-chapter" id="chapter-1">
-            <div class="atlas-chapter-bg-num">01</div>
+            <div class="atlas-chapter-bg-num" aria-hidden="true">01</div>
             <div class="atlas-chapter-header atlas-reveal">
               <div class="atlas-chapter-title-wrap">
                 <!-- 線画本アイコン -->
-                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1M20 1v21" /></svg>
-                <h2>第1章：基礎の丘</h2>
+                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1M20 1v21" /></svg>
+                <h2>第1章：投資の基本</h2>
               </div>
               <p class="atlas-chapter-desc">投資、株価、市場、証券会社、口座の違いを理解するスタート地点です。（記事数: 3）</p>
             </div>
 
             <div class="atlas-timeline-container">
               <div class="atlas-timeline-line"></div>
-              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path class="atlas-timeline-path" d="M 50,0 C 20,25 80,75 50,100" vector-effect="non-scaling-stroke" />
+              <svg class="atlas-timeline-svg" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="atlas-timeline-path-bg" d="M 50,0 C 35,90 35,210 50,300" vector-effect="non-scaling-stroke" />
+                <path class="atlas-timeline-path" d="M 50,0 C 35,90 35,210 50,300" vector-effect="non-scaling-stroke" />
               </svg>
               <ol class="atlas-timeline-list">
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
                   <article class="atlas-card">
-                    <div class="atlas-card-coords">x: 124, y: 082</div>
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 01</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>投資とは何か</h3>
@@ -185,15 +166,14 @@
                       <strong>読後にできること</strong>
                       貯金と投資のリスクの違いを説明できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-01.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-01.html" aria-label="Study 01『投資とは何か』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.4deg);">
-                    <div class="atlas-card-coords">x: 135, y: 094</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 02</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>株価が動く理由</h3>
@@ -201,15 +181,14 @@
                       <strong>読後にできること</strong>
                       株価が需給バランスで変動する理由が分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-02.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-02.html" aria-label="Study 02『株価が動く理由』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.3deg);">
-                    <div class="atlas-card-coords">x: 142, y: 108</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 03</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>株・市場・証券会社・証券口座</h3>
@@ -217,65 +196,59 @@
                       <strong>読後にできること</strong>
                       証券会社、口座、市場区分の違いを整理できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-03.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-03.html" aria-label="Study 03『株・市場・証券会社・証券口座』を読む">読む</a>
                   </article>
                 </li>
               </ol>
             </div>
 
             <!-- 理解チェック -->
-            <div class="atlas-check-panel atlas-reveal">
-              <h4>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                この章で確認
-              </h4>
-              <ul class="atlas-check-list">
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-1-1">
-                  <label for="check-1-1">投資と貯金の違い、リスクについて説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-1-2">
-                  <label for="check-1-2">株価が需給バランスで変動する理由が分かる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-1-3">
-                  <label for="check-1-3">証券会社、口座、市場区分の違いを整理できる</label>
-                </li>
-              </ul>
-              <details>
-                <summary>確認用のヒント</summary>
-                <div class="atlas-check-answer">
-                  貯金は元本が守られますがインフレに弱く、投資は元本保証はありませんが成長の恩恵を受けられます（Study 01）。株価は売り手と買い手の需給で決まります（Study 02）。証券会社は窓口、口座は管理場所、市場区分は取引の基準となる舞台です（Study 03）。
+            <details class="atlas-check-details atlas-reveal">
+              <summary>
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12" /></svg>
+                  第1章の理解度チェック
+                </h3>
+                <span class="details-toggle-icon"></span>
+              </summary>
+              <div class="atlas-check-content">
+                <ul class="atlas-check-list">
+                  <li class="atlas-check-item">投資と貯金の違い、リスクについて説明できる</li>
+                  <li class="atlas-check-item">株価が需給バランスで変動する理由が分かる</li>
+                  <li class="atlas-check-item">証券会社、口座、市場区分の違いを整理できる</li>
+                </ul>
+                <div class="atlas-check-answer-box">
+                  <strong>確認のポイント</strong>
+                  <p class="atlas-check-answer">貯金は元本が守られますがインフレに弱く、投資は元本保証はありませんが成長の恩恵を受けられます（Study 01）。株価は売り手と買い手の需給で決まります（Study 02）。証券会社は窓口、口座は管理場所、市場区分は取引の基準となる舞台です（Study 03）。</p>
                 </div>
-              </details>
-            </div>
+              </div>
+            </details>
           </section>
 
-          <!-- 第2章：制度の街 -->
+          <!-- 第2章：口座と制度 -->
           <section class="atlas-chapter" id="chapter-2">
-            <div class="atlas-chapter-bg-num">02</div>
+            <div class="atlas-chapter-bg-num" aria-hidden="true">02</div>
             <div class="atlas-chapter-header atlas-reveal">
               <div class="atlas-chapter-title-wrap">
                 <!-- 線画書類アイコン -->
-                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>
-                <h2>第2章：制度の街</h2>
+                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>
+                <h2>第2章：口座と制度</h2>
               </div>
               <p class="atlas-chapter-desc">口座の種類、NISA制度、東証の市場区分を整理するエリアです。（記事数: 3）</p>
             </div>
 
             <div class="atlas-timeline-container">
               <div class="atlas-timeline-line"></div>
-              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path class="atlas-timeline-path" d="M 50,0 C 80,25 20,75 50,100" vector-effect="non-scaling-stroke" />
+              <svg class="atlas-timeline-svg" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="atlas-timeline-path-bg" d="M 50,0 C 65,90 65,210 50,300" vector-effect="non-scaling-stroke" />
+                <path class="atlas-timeline-path" d="M 50,0 C 65,90 65,210 50,300" vector-effect="non-scaling-stroke" />
               </svg>
               <ol class="atlas-timeline-list">
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.4deg);">
-                    <div class="atlas-card-coords">x: 212, y: 110</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 04</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>一般口座・特定口座・NISA口座</h3>
@@ -283,15 +256,14 @@
                       <strong>読後にできること</strong>
                       特定口座と一般口座の税制の違いが分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-04.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-04.html" aria-label="Study 04『一般口座・特定口座・NISA口座』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.3deg);">
-                    <div class="atlas-card-coords">x: 220, y: 122</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 05</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>NISAの基本と注意点</h3>
@@ -299,15 +271,14 @@
                       <strong>読後にできること</strong>
                       新NISAの非課税枠と注意点を説明できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-05.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-05.html" aria-label="Study 05『NISAの基本と注意点』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.2deg);">
-                    <div class="atlas-card-coords">x: 228, y: 135</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 06</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>市場区分の役割と違い</h3>
@@ -315,65 +286,60 @@
                       <strong>読後にできること</strong>
                       東証3市場（プライム・スタンダード・グロース）の特徴が分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-06.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-06.html" aria-label="Study 06『市場区分の役割と違い』を読む">読む</a>
                   </article>
                 </li>
               </ol>
             </div>
 
             <!-- 理解チェック -->
-            <div class="atlas-check-panel atlas-reveal">
-              <h4>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                この章で確認
-              </h4>
-              <ul class="atlas-check-list">
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-2-1">
-                  <label for="check-2-1">特定口座（源泉徴収あり/なし）の選び方を説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-2-2">
-                  <label for="check-2-2">NISAが利益保証ではなく税制優遇制度であると理解している</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-2-3">
-                  <label for="check-2-3">プライム市場の上場企業＝絶対安全ではない理由を説明できる</label>
-                </li>
-              </ul>
-              <details>
-                <summary>確認用のヒント</summary>
-                <div class="atlas-check-answer">
-                  特定口座（源泉徴収あり）は確定申告が原則不要になり、初心者にお勧めです（Study 04）。NISAは投資の利益にかかる税金がゼロになる制度であり、損益通算ができないなどの制約もあります（Study 05）。プライム市場は厳しい基準をクリアした企業ですが、業績悪化や倒産のリスクはゼロではありません（Study 06）。
+            <details class="atlas-check-details atlas-reveal">
+              <summary>
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12" /></svg>
+                  第2章の理解度チェック
+                </h3>
+                <span class="details-toggle-icon"></span>
+              </summary>
+              <div class="atlas-check-content">
+                <ul class="atlas-check-list">
+                  <li class="atlas-check-item">特定口座（源泉徴収あり/なし）の選び方を説明できる</li>
+                  <li class="atlas-check-item">NISAが利益保証ではなく税制優遇制度であると理解している</li>
+                  <li class="atlas-check-item">プライム市場の上場企業＝絶対安全ではない理由を説明できる</li>
+                </ul>
+                <div class="atlas-check-answer-box">
+                  <strong>確認のポイント</strong>
+                  <p class="atlas-check-answer">特定口座（源泉徴収あり）は確定申告が原則不要になり、初心者にお勧めです（Study 04）。NISAは投資の利益にかかる税金がゼロになる制度であり、損益通算ができないなどの制約もあります（Study 05）。プライム市場は厳しい基準をクリアした企業ですが、業績悪化や倒産のリスクはゼロではありません（Study 06）。</p>
                 </div>
-              </details>
-            </div>
+              </div>
+            </details>
           </section>
 
-          <!-- 第3章：安全確認所 -->
+          <!-- 第3章：リスクと準備 -->
           <section class="atlas-chapter" id="chapter-3">
-            <div class="atlas-chapter-bg-num">03</div>
+            <div class="atlas-chapter-bg-num" aria-hidden="true">03</div>
             <div class="atlas-chapter-header atlas-reveal">
               <div class="atlas-chapter-title-wrap">
                 <!-- 線画盾アイコン -->
-                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
-                <h2>第3章：安全確認所</h2>
+                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+                <h2>第3章：リスクと準備</h2>
               </div>
               <p class="atlas-chapter-desc">リスクの定義、生活防衛資金、企業観察の基礎、口座開設後の誤発注防止設定を学びます。（記事数: 5）</p>
+              <div class="atlas-caution-note">注意: 口座開設完了メールが届いても、安全のための初期設定を確認するまでは実際の買い注文を出さないでください。</div>
             </div>
 
             <div class="atlas-timeline-container">
               <div class="atlas-timeline-line"></div>
-              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path class="atlas-timeline-path" d="M 50,0 C 20,20 80,40 50,60 C 20,80 80,90 50,100" vector-effect="non-scaling-stroke" />
+              <svg class="atlas-timeline-svg" viewBox="0 0 100 500" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="atlas-timeline-path-bg" d="M 50,0 C 35,150 35,350 50,500" vector-effect="non-scaling-stroke" />
+                <path class="atlas-timeline-path" d="M 50,0 C 35,150 35,350 50,500" vector-effect="non-scaling-stroke" />
               </svg>
               <ol class="atlas-timeline-list">
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.2deg);">
-                    <div class="atlas-card-coords">x: 305, y: 142</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 07</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>リスクとは何か</h3>
@@ -381,15 +347,14 @@
                       <strong>読後にできること</strong>
                       投資におけるリスクの定義と許容度を判断できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-07.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-07.html" aria-label="Study 07『リスクとは何か』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.3deg);">
-                    <div class="atlas-card-coords">x: 312, y: 150</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 08</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>少額投資を考える前の確認</h3>
@@ -397,15 +362,14 @@
                       <strong>読後にできること</strong>
                       投資を始める前の安全ルールをチェックできる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-08.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-08.html" aria-label="Study 08『少額投資を考える前の確認』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.4deg);">
-                    <div class="atlas-card-coords">x: 320, y: 158</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 09</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>企業を観察する練習</h3>
@@ -413,15 +377,14 @@
                       <strong>読後にできること</strong>
                       企業公式IRからビジネスモデルを読み解く練習ができる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-09.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-09.html" aria-label="Study 09『企業を観察する練習』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.2deg);">
-                    <div class="atlas-card-coords">x: 328, y: 165</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 10</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>SBI証券 of 口座開設体験</h3>
@@ -429,15 +392,14 @@
                       <strong>読後にできること</strong>
                       ネット証券の口座開設の流れをイメージできる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-10.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-10.html" aria-label="Study 10『SBI証券の口座開設体験』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.3deg);">
-                    <div class="atlas-card-coords">x: 335, y: 172</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 11</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>口座開設後すぐ買わない確認</h3>
@@ -445,65 +407,59 @@
                       <strong>読後にできること</strong>
                       口座開設後の誤発注を防ぐ初期設定ができる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-11.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-11.html" aria-label="Study 11『口座開設後すぐ買わない確認』を読む">読む</a>
                   </article>
                 </li>
               </ol>
             </div>
 
             <!-- 理解チェック -->
-            <div class="atlas-check-panel atlas-reveal">
-              <h4>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                この章で確認
-              </h4>
-              <ul class="atlas-check-list">
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-3-1">
-                  <label for="check-3-1">リスクとは単に「危ない」ことではなく「振れ幅」だと説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-3-2">
-                  <label for="check-3-2">投資を始める前に確保すべき生活防衛資金の目安を答えられる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-3-3">
-                  <label for="check-3-3">口座開設完了後、すぐに購入手続きを始めないための初期設定が分かる</label>
-                </li>
-              </ul>
-              <details>
-                <summary>確認用のヒント</summary>
-                <div class="atlas-check-answer">
-                  リスクとは値動きのばらつき（リターンの不確実性）のことです（Study 07）。生活費の数ヶ月分〜半年分を「生活防衛資金」として銀行預金に確保し、それ以外の余剰資金でのみ投資を検討します（Study 08）。口座開設後は自動で「特定口座（源泉徴収あり）」や「手数料プラン」が正しく設定されているか確認し、無駄なコストを抑えます（Study 11）。
+            <details class="atlas-check-details atlas-reveal">
+              <summary>
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12" /></svg>
+                  第3章の理解度チェック
+                </h3>
+                <span class="details-toggle-icon"></span>
+              </summary>
+              <div class="atlas-check-content">
+                <ul class="atlas-check-list">
+                  <li class="atlas-check-item">リスクとは単に「危ない」ことではなく「振れ幅」だと説明できる</li>
+                  <li class="atlas-check-item">投資を始める前に確保すべき生活防衛資金の目安を答えられる</li>
+                  <li class="atlas-check-item">口座開設完了後、すぐに購入手続きを始めないための初期設定が分かる</li>
+                </ul>
+                <div class="atlas-check-answer-box">
+                  <strong>確認のポイント</strong>
+                  <p class="atlas-check-answer">リスクとは値動きのばらつき（リターンの不確実性）のことです（Study 07）。生活費の数ヶ月分〜半年分を「生活防衛資金」として銀行預金に確保し、それ以外の余剰資金でのみ投資を検討します（Study 08）。口座開設後は自動で「特定口座（源泉徴収あり）」や「手数料プラン」が正しく設定されているか確認し、無駄なコストを抑えます（Study 11）。</p>
                 </div>
-              </details>
-            </div>
+              </div>
+            </details>
           </section>
 
-          <!-- 第4章：売買の駅 -->
+          <!-- 第4章：株式売買の仕組み -->
           <section class="atlas-chapter" id="chapter-4">
-            <div class="atlas-chapter-bg-num">04</div>
+            <div class="atlas-chapter-bg-num" aria-hidden="true">04</div>
             <div class="atlas-chapter-header atlas-reveal">
               <div class="atlas-chapter-title-wrap">
                 <!-- 線画駅/グリッドアイコン -->
-                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><line x1="9" y1="9" x2="15" y2="15" /><line x1="15" y1="9" x2="9" y2="15" /></svg>
-                <h2>第4章：売買の駅</h2>
+                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><line x1="9" y1="9" x2="15" y2="15" /><line x1="15" y1="9" x2="9" y2="15" /></svg>
+                <h2>第4章：株式売買の仕組み</h2>
               </div>
               <p class="atlas-chapter-desc">1株単位の取引、指値・成行注文の違い、約定優先のルール、取引コストを学ぶエリアです。（記事数: 3）</p>
             </div>
 
             <div class="atlas-timeline-container">
               <div class="atlas-timeline-line"></div>
-              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path class="atlas-timeline-path" d="M 50,0 C 80,25 20,75 50,100" vector-effect="non-scaling-stroke" />
+              <svg class="atlas-timeline-svg" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="atlas-timeline-path-bg" d="M 50,0 C 65,90 65,210 50,300" vector-effect="non-scaling-stroke" />
+                <path class="atlas-timeline-path" d="M 50,0 C 65,90 65,210 50,300" vector-effect="non-scaling-stroke" />
               </svg>
               <ol class="atlas-timeline-list">
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.3deg);">
-                    <div class="atlas-card-coords">x: 410, y: 180</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 12</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約5分</span>
                     </div>
                     <h3>株の売買単位と単元未満株</h3>
@@ -511,15 +467,14 @@
                       <strong>読後にできること</strong>
                       単元株と単元未満株の売買ルールと制約が分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-12.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-12.html" aria-label="Study 12『株の売買単位と単元未満株』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.4deg);">
-                    <div class="atlas-card-coords">x: 418, y: 192</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 13</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>指値・成行・約定の仕組み</h3>
@@ -527,15 +482,14 @@
                       <strong>読後にできること</strong>
                       指値注文と成行注文の使い分けと約定優先原則が分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-13.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-13.html" aria-label="Study 13『指値・成行・約定の仕組み』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.4deg);">
-                    <div class="atlas-card-coords">x: 425, y: 205</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 14</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>株で発生する利益・損失・コスト</h3>
@@ -543,65 +497,59 @@
                       <strong>読後にできること</strong>
                       取引手数料・税金などのトータルコストを計算できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-14.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-14.html" aria-label="Study 14『株で発生する利益・損失・コスト』を読む">読む</a>
                   </article>
                 </li>
               </ol>
             </div>
 
             <!-- 理解チェック -->
-            <div class="atlas-check-panel atlas-reveal">
-              <h4>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                この章で確認
-              </h4>
-              <ul class="atlas-check-list">
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-4-1">
-                  <label for="check-4-1">1株単位（単元未満株）で売買する際の手数料や権利制限が分かる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-4-2">
-                  <label for="check-4-2">成行注文と指値注文 of メリット・デメリットを説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-4-3">
-                  <label for="check-4-3">利益が出た場合に差し引かれる税率（約20.315%）と手数料の関係が分かる</label>
-                </li>
-              </ul>
-              <details>
-                <summary>確認用のヒント</summary>
-                <div class="atlas-check-answer">
-                  日本株は原則100株（単元株）単位ですが、1株（単元未満株）から取引可能な証券会社もあります。ただし、議決権がないなどの制限や手数料体系の違いに注意します（Study 12）。成行は即時成立を優先し、指値は価格上限/下限を自分で指定して不測の価格での成立を防ぎます（Study 13）。株の売買で生じた利益には約20.315%の税金が課されますが、NISA口座内であればこれが非課税になります（Study 14）。
+            <details class="atlas-check-details atlas-reveal">
+              <summary>
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12" /></svg>
+                  第4章の理解度チェック
+                </h3>
+                <span class="details-toggle-icon"></span>
+              </summary>
+              <div class="atlas-check-content">
+                <ul class="atlas-check-list">
+                  <li class="atlas-check-item">1株単位（単元未満株）で売買する際の手数料や権利制限が分かる</li>
+                  <li class="atlas-check-item">成行注文と指値注文のメリット・デメリットを説明できる</li>
+                  <li class="atlas-check-item">利益が出た場合に差し引かれる税率（約20.315%）と手数料の関係が分かる</li>
+                </ul>
+                <div class="atlas-check-answer-box">
+                  <strong>確認のポイント</strong>
+                  <p class="atlas-check-answer">日本株は原則100株（単元株）単位ですが、1株（単元未満株）から取引可能な証券会社もあります。ただし、議決権がないなどの制限や手数料体系の違いに注意します（Study 12）。成行は即時成立を優先し、指値は価格上限/下限を自分で指定して不測の価格での成立を防ぎます（Study 13）。株の売買で生じた利益には約20.315%の税金が課されますが、NISA口座内であればこれが非課税になります（Study 14）。</p>
                 </div>
-              </details>
-            </div>
+              </div>
+            </details>
           </section>
 
-          <!-- 第5章：企業分析ラボ -->
+          <!-- 第5章：企業分析と財務指標 -->
           <section class="atlas-chapter" id="chapter-5">
-            <div class="atlas-chapter-bg-num">05</div>
+            <div class="atlas-chapter-bg-num" aria-hidden="true">05</div>
             <div class="atlas-chapter-header atlas-reveal">
               <div class="atlas-chapter-title-wrap">
                 <!-- 線画グラフアイコン -->
-                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></svg>
-                <h2>第5章：企業分析ラボ</h2>
+                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></svg>
+                <h2>第5章：企業分析と財務指標</h2>
               </div>
               <p class="atlas-chapter-desc">売上と利益の区別、B/S・C/F決算書の仕組み、PER・PBR・ROE指標、配当金を学びます。（記事数: 4）</p>
             </div>
 
             <div class="atlas-timeline-container">
               <div class="atlas-timeline-line"></div>
-              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path class="atlas-timeline-path" d="M 50,0 C 20,25 80,50 50,75 C 20,90 80,95 50,100" vector-effect="non-scaling-stroke" />
+              <svg class="atlas-timeline-svg" viewBox="0 0 100 400" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="atlas-timeline-path-bg" d="M 50,0 C 35,120 35,280 50,400" vector-effect="non-scaling-stroke" />
+                <path class="atlas-timeline-path" d="M 50,0 C 35,120 35,280 50,400" vector-effect="non-scaling-stroke" />
               </svg>
               <ol class="atlas-timeline-list">
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.3deg);">
-                    <div class="atlas-card-coords">x: 504, y: 212</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 15</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>決算書の入口―売上と利益</h3>
@@ -609,15 +557,14 @@
                       <strong>読後にできること</strong>
                       段階別の利益（営業・経常・当期純利益）の違いを説明できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-15.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-15.html" aria-label="Study 15『決算書の入口―売上と利益』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.3deg);">
-                    <div class="atlas-card-coords">x: 512, y: 220</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 16</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>B/Sとキャッシュフローの入口</h3>
@@ -625,15 +572,14 @@
                       <strong>読後にできること</strong>
                       貸借対照表（B/S）の3要素とC/Fの役割が分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-16.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-16.html" aria-label="Study 16『貸借対照表とキャッシュフロー』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(0.2deg);">
-                    <div class="atlas-card-coords">x: 520, y: 228</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 17</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>PER・PBR・ROEの意味と限界</h3>
@@ -641,15 +587,14 @@
                       <strong>読後にできること</strong>
                       PER・PBR・ROE指標の意味と限界を説明できる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-17.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-17.html" aria-label="Study 17『PER・PBR・ROEの意味と限界』を読む">読む</a>
                   </article>
                 </li>
-                <li class="atlas-timeline-item completed atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <article class="atlas-card" style="transform: rotate(-0.4deg);">
-                    <div class="atlas-card-coords">x: 528, y: 235</div>
+                <li class="atlas-timeline-item is-published atlas-reveal">
+                  <article class="atlas-card">
                     <div class="atlas-card-meta">
                       <span class="study-num">Study 18</span>
+                      <span class="atlas-status-tag">公開済み</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>配当利回りと株主還元</h3>
@@ -657,66 +602,60 @@
                       <strong>読後にできること</strong>
                       配当利回りと配当性向の計算、減配リスクをチェックできる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-18.html">読む</a>
+                    <a class="atlas-card-link" href="study-investing-18.html" aria-label="Study 18『配当利回りと株主還元』を読む">読む</a>
                   </article>
                 </li>
               </ol>
             </div>
 
             <!-- 理解チェック -->
-            <div class="atlas-check-panel atlas-reveal">
-              <h4>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                この章で確認
-              </h4>
-              <ul class="atlas-check-list">
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-5-1">
-                  <label for="check-5-1">売上が増えていても利益が減っている（増収減益）理由を説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-5-2">
-                  <label for="check-5-2">貸借対照表の「純資産（自己資本）」がなぜ重要か説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-5-3">
-                  <label for="check-5-3">PERやPBRが低いからという理由だけで「割安」と判断できない限界が分かる</label>
-                </li>
-              </ul>
-              <details>
-                <summary>確認用のヒント</summary>
-                <div class="atlas-check-answer">
-                  売上が伸びていても、原材料費や人件費などの経費が増大すると、手元に残る利益が減少します（Study 15）。貸借対照表の純資産は返済不要の自己資本であり、企業の財務安全性を図るバロメーターになります（Study 16）。PERやPBRなどの株価指標は一時的な業績歪みや、成長期待の低さによって低値で放置される「バリュートラップ（割安放置）」を招くことがあるため、指標のみで機械的に判断してはいけません（Study 17）。
+            <details class="atlas-check-details atlas-reveal">
+              <summary>
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12" /></svg>
+                  第5章の理解度チェック
+                </h3>
+                <span class="details-toggle-icon"></span>
+              </summary>
+              <div class="atlas-check-content">
+                <ul class="atlas-check-list">
+                  <li class="atlas-check-item">売上が増えていても利益が減っている（増収減益）理由を説明できる</li>
+                  <li class="atlas-check-item">貸借対照表の「純資産（自己資本）」がなぜ重要か説明できる</li>
+                  <li class="atlas-check-item">PERやPBRが低いからという理由だけで「割安」と判断できない限界が分かる</li>
+                </ul>
+                <div class="atlas-check-answer-box">
+                  <strong>確認のポイント</strong>
+                  <p class="atlas-check-answer">売上が伸びていても、原材料費や人件費などの経費が増大すると、手元に残る利益が減少します（Study 15）。貸借対照表の純資産は返済不要の自己資本であり、企業の財務安全性を図るバロメーターになります（Study 16）。PERやPBRなどの株価指標は一時的な業績歪みや、成長期待の低さによって低値で放置される「バリュートラップ（割安放置）」を招くことがあるため、指標のみで機械的に判断してはいけません（Study 17）。</p>
                 </div>
-              </details>
-            </div>
+              </div>
+            </details>
           </section>
 
-          <!-- 第6章：分散の港 -->
-          <section class="atlas-chapter" id="chapter-6" style="margin-bottom: 40px;">
-            <div class="atlas-chapter-bg-num">06</div>
+          <!-- 第6章：分散投資の基礎 -->
+          <section class="atlas-chapter is-last" id="chapter-6">
+            <div class="atlas-chapter-bg-num" aria-hidden="true">06</div>
             <div class="atlas-chapter-header atlas-reveal">
               <div class="atlas-chapter-title-wrap">
                 <!-- 線画港（円）アイコン -->
-                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
-                <h2>第6章：分散の港</h2>
+                <svg class="atlas-chapter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+                <h2>第6章：分散投資の基礎</h2>
               </div>
               <p class="atlas-chapter-desc">1社集中を避け、投資信託やETFを用いてリスクを抑える分散投資を学ぶ終着点です。（記事数: 1）</p>
             </div>
 
             <div class="atlas-timeline-container">
               <div class="atlas-timeline-line"></div>
-              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <svg class="atlas-timeline-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="atlas-timeline-path-bg" d="M 50,0 L 50,100" vector-effect="non-scaling-stroke" />
                 <path class="atlas-timeline-path" d="M 50,0 L 50,100" vector-effect="non-scaling-stroke" />
               </svg>
               <ol class="atlas-timeline-list">
-                <li class="atlas-timeline-item current atlas-reveal">
-                  <div class="atlas-checkpoint-dot"></div>
-                  <!-- 現在地のしおり/クリップ装飾つき -->
-                  <article class="atlas-card current">
-                    <div class="atlas-card-coords">x: 612, y: 240</div>
+                <li class="atlas-timeline-item is-published is-latest atlas-reveal">
+                  <!-- 最新公開カード -->
+                  <article class="atlas-card is-latest">
                     <div class="atlas-card-meta">
-                      <span class="study-num" style="color: var(--blue);">Study 19 (現在地)</span>
+                      <span class="study-num">Study 19</span>
+                      <span class="atlas-status-tag is-latest">最新公開</span>
                       <span class="read-time">約6分</span>
                     </div>
                     <h3>分散投資と投資信託・ETFの基本</h3>
@@ -724,170 +663,167 @@
                       <strong>読後にできること</strong>
                       個別株・投資信託・ETFの分散投資効果の違いが分かる
                     </div>
-                    <a class="atlas-card-link" href="study-investing-19.html" style="color: var(--blue);">読む</a>
+                    <a class="atlas-card-link" href="study-investing-19.html" aria-label="Study 19『分散投資と投資信託・ETFの基本』を読む">読む</a>
                   </article>
                 </li>
               </ol>
             </div>
 
-            <!-- 分岐する航路SVG -->
-            <div class="atlas-fork-path atlas-reveal">
-              <svg class="atlas-fork-svg" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M 50,0 C 50,20 20,40 10,60 M 50,0 L 50,60 M 50,0 C 50,20 80,40 90,60" />
+            <div class="atlas-fork-path atlas-reveal" aria-hidden="true">
+              <svg class="atlas-fork-svg" viewBox="0 0 240 90" fill="none" aria-hidden="true" focusable="false">
+                <path d="M120 0 L120 24 M120 24 C120 46 46 52 24 88 M120 24 L120 88 M120 24 C120 46 194 52 216 88" />
               </svg>
             </div>
 
+            <p class="atlas-fork-desc atlas-reveal">
+              ここから学びは複数方向へ広がります。口座を開設した後は、実際の市場を観察しながら、個別の企業分析や、AIを活用した情報収集、就職活動での学びなど、それぞれの航路へ進むことができます。
+            </p>
+
             <!-- 理解チェック -->
-            <div class="atlas-check-panel atlas-reveal" style="margin-top: 20px;">
-              <h4>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                この章で確認
-              </h4>
-              <ul class="atlas-check-list">
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-6-1">
-                  <label for="check-6-1">なぜ1つの会社の株だけを買うとリスクが高くなるのか説明できる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-6-2">
-                  <label for="check-6-2">投資信託とETF（上場投資信託）の取引方法やコストの違いが分かる</label>
-                </li>
-                <li class="atlas-check-item">
-                  <input type="checkbox" id="check-6-3">
-                  <label for="check-6-3">長期投資において分配金を再投資する複利効果が理解できる</label>
-                </li>
-              </ul>
-              <details>
-                <summary>確認用のヒント</summary>
-                <div class="atlas-check-answer">
-                  1社への集中投資はその企業の倒産や不祥事の影響をダイレクトに受けますが、多数 of 企業や国に分散することで個々の企業リスクが均されます。投資信託は1日1回の基準価額で取引され、ETFは証券取引所のリアルタイム価格で指値・成行売買が可能です（Study 19）。
+            <details class="atlas-check-details atlas-reveal">
+              <summary>
+                <h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12" /></svg>
+                  第6章の理解度チェック
+                </h3>
+                <span class="details-toggle-icon"></span>
+              </summary>
+              <div class="atlas-check-content">
+                <ul class="atlas-check-list">
+                  <li class="atlas-check-item">なぜ1つの会社の株だけを買うとリスクが高くなるのか説明できる</li>
+                  <li class="atlas-check-item">投資信託とETF（上場投資信託）の取引方法やコストの違いが分かる</li>
+                  <li class="atlas-check-item">長期投資において分配金を再投資する複利効果が理解できる</li>
+                </ul>
+                <div class="atlas-check-answer-box">
+                  <strong>確認のポイント</strong>
+                  <p class="atlas-check-answer">1社への集中投資はその企業の倒産や不祥事の影響をダイレクトに受けますが、多数の企業や国に分散することで個々の企業リスクが均されます。投資信託は1日1回の基準価額で取引され、ETFは証券取引所のリアルタイム価格で指値・成行売買が可能です（Study 19）。</p>
                 </div>
-              </details>
-            </div>
+              </div>
+            </details>
           </section>
 
-          <!-- 5. 別の学習コース (AI活用・AI就活) -->
-          <section class="atlas-chapter" id="ai-courses" style="margin-top: 80px; border-top: 1px dashed var(--line); padding-top: 60px;">
+          <!-- 4. 別の学習コース (AI活用・AI就活) -->
+          <section class="atlas-chapter atlas-section-separated" id="ai-courses">
             <div class="atlas-chapter-header atlas-reveal">
               <h2>別の学習コース</h2>
               <p class="atlas-chapter-desc">AIを学習・ブログ運営や就活準備の壁打ち相手として活用する別航路です。</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1000px; margin: 0 auto; padding: 0 22px;">
-              <!-- AI活用メモ -->
-              <article class="atlas-card atlas-reveal" style="width: 100%; transform: rotate(-0.2deg);">
+            <div class="atlas-course-grid">
+              <!-- AI活用 -->
+              <article class="atlas-card atlas-course-card gold atlas-reveal">
                 <div class="atlas-card-meta">
-                  <span class="study-num" style="color: var(--gold);">AI活用メモ</span>
+                  <span class="study-num">AI活用メモ</span>
                 </div>
                 <h3>一緒に試すAI活用メモ</h3>
-                <p style="font-size: 13px; color: var(--muted); margin-bottom: 16px;">ChatGPTを学習やブログ作成の補助として使うためのメモです。</p>
-                <ul style="list-style: none; padding: 0; margin: 0 0 16px; font-size: 13px; display: grid; gap: 8px;">
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--gold);">01</span><a href="ai-tips-01.html" class="text-link">ChatGPT活用術10選</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--gold);">02</span><a href="ai-tips-02.html" class="text-link">AIっぽい文章を自分の文章に戻す</a></li>
+                <p>ChatGPTを学習やブログ作成の補助として使うためのメモです。</p>
+                <ul class="atlas-course-list">
+                  <li class="atlas-course-item"><span>01</span><a href="ai-tips-01.html" class="text-link">ChatGPT活用術10選</a></li>
+                  <li class="atlas-course-item"><span>02</span><a href="ai-tips-02.html" class="text-link">AIっぽい文章を自分の文章に戻す</a></li>
                 </ul>
               </article>
 
               <!-- AI就活 -->
-              <article class="atlas-card atlas-reveal" style="width: 100%; transform: rotate(0.2deg);">
+              <article class="atlas-card atlas-course-card green atlas-reveal">
                 <div class="atlas-card-meta">
-                  <span class="study-num" style="color: var(--green);">AI就活</span>
+                  <span class="study-num">AI就活</span>
                 </div>
                 <h3>AI就活ロードマップ</h3>
-                <p style="font-size: 13px; color: var(--muted); margin-bottom: 16px;">生成AIを自己分析、ES・面接の補助として二人三脚で活用する記録です。</p>
-                <ul style="list-style: none; padding: 0; margin: 0 0 16px; font-size: 13px; display: grid; gap: 8px;">
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">01</span><a href="job-log-01.html" class="text-link">就活で最初に整理すること</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">02</span><a href="job-log-02.html" class="text-link">理系学生の経験を整理する</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">03</span><a href="job-log-03.html" class="text-link">チーム開発で学ぶこと</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">04</span><a href="job-log-04.html" class="text-link">STAR法で経験を整理する</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">05</span><a href="study-ai-jobhunting-01.html" class="text-link">ChatGPTで自己PRを磨く</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">06</span><a href="job-log-05.html" class="text-link">ガクチカの作り方</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">07</span><a href="job-log-06.html" class="text-link">チーム開発経験の伝え方</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">08</span><a href="job-log-07.html" class="text-link">自己PRを盛りすぎないために</a></li>
-                  <li style="display: flex; gap: 8px;"><span style="color: var(--green);">09</span><a href="job-log-08.html" class="text-link">面接練習にChatGPTを使う</a></li>
+                <p>生成AIを自己分析、ES・面接の補助として二人三脚で活用する記録です。</p>
+                <ul class="atlas-course-list">
+                  <li class="atlas-course-item"><span>01</span><a href="job-log-01.html" class="text-link">就活で最初に整理すること</a></li>
+                  <li class="atlas-course-item"><span>02</span><a href="job-log-02.html" class="text-link">理系学生の経験を整理する</a></li>
+                  <li class="atlas-course-item"><span>03</span><a href="job-log-03.html" class="text-link">チーム開発で学ぶこと</a></li>
+                  <li class="atlas-course-item"><span>04</span><a href="job-log-04.html" class="text-link">STAR法で経験を整理する</a></li>
+                  <li class="atlas-course-item"><span>05</span><a href="study-ai-jobhunting-01.html" class="text-link">ChatGPTで自己PRを磨く</a></li>
+                  <li class="atlas-course-item"><span>06</span><a href="job-log-05.html" class="text-link">ガクチカの作り方</a></li>
+                  <li class="atlas-course-item"><span>07</span><a href="job-log-06.html" class="text-link">チーム開発経験の伝え方</a></li>
+                  <li class="atlas-course-item"><span>08</span><a href="job-log-07.html" class="text-link">自己PRを盛りすぎないために</a></li>
+                  <li class="atlas-course-item"><span>09</span><a href="job-log-08.html" class="text-link">面接練習にChatGPTを使う</a></li>
                 </ul>
               </article>
             </div>
           </section>
 
-          <!-- 6. 用語集 -->
-          <section class="atlas-reveal" style="margin-top: 80px; border-top: 1px dashed var(--line); padding-top: 60px;">
+          <!-- 5. 用語集 -->
+          <section class="atlas-reveal atlas-section-separated">
             <h2>混同しやすい言葉</h2>
-            <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">証券会社、口座、市場区分、NISAの違いを整理します。</p>
+            <p class="atlas-section-desc">証券会社、口座、市場区分、NISAの違いを整理します。</p>
             <div class="atlas-term-grid">
               <article class="atlas-term-card">
                 <strong>証券会社</strong>
-                <dl class="term-grid-dl" style="font-size: 13px; margin: 0; display: grid; gap: 6px;">
+                <dl class="term-grid-dl">
                   <div>
-                    <dt style="font-weight: 800; color: var(--green-dark);">これは</dt>
-                    <dd style="margin: 0; color: var(--muted);">株や投資信託を扱うための金融機関・サービス</dd>
+                    <dt>これは</dt>
+                    <dd>株や投資信託を扱うための金融機関・サービス</dd>
                   </div>
                   <div>
-                    <dt style="font-weight: 800; color: var(--green-dark);">これは違う</dt>
-                    <dd style="margin: 0; color: var(--muted);">市場区分、口座の種類、投資判断そのもの</dd>
+                    <dt>これは違う</dt>
+                    <dd>市場区分、口座の種類、投資判断そのもの</dd>
                   </div>
                 </dl>
               </article>
               <article class="atlas-term-card blue">
                 <strong>証券口座</strong>
-                <dl class="term-grid-dl" style="font-size: 13px; margin: 0; display: grid; gap: 6px;">
+                <dl class="term-grid-dl">
                   <div>
-                    <dt style="font-weight: 800; color: var(--blue);">これは</dt>
-                    <dd style="margin: 0; color: var(--muted);">株や投資信託を管理するための口座</dd>
+                    <dt>これは</dt>
+                    <dd>株や投資信託を管理するための口座</dd>
                   </div>
                   <div>
-                    <dt style="font-weight: 800; color: var(--blue);">これは違う</dt>
-                    <dd style="margin: 0; color: var(--muted);">銀行口座、証券会社そのもの、市場区分</dd>
+                    <dt>これは違う</dt>
+                    <dd>銀行口座、証券会社そのもの、市場区分</dd>
                   </div>
                 </dl>
               </article>
-              <article class="atlas-term-card red">
+              <article class="atlas-term-card gold">
                 <strong>NISA口座</strong>
-                <dl class="term-grid-dl" style="font-size: 13px; margin: 0; display: grid; gap: 6px;">
+                <dl class="term-grid-dl">
                   <div>
-                    <dt style="font-weight: 800; color: var(--red);">これは</dt>
-                    <dd style="margin: 0; color: var(--muted);">NISA制度を使うための口座</dd>
+                    <dt>これは</dt>
+                    <dd>NISA制度を使うための口座</dd>
                   </div>
                   <div>
-                    <dt style="font-weight: 800; color: var(--red);">これは違う</dt>
-                    <dd style="margin: 0; color: var(--muted);">投資商品そのもの、利益保証、証券会社の名前</dd>
+                    <dt>これは違う</dt>
+                    <dd>投資商品そのもの、利益保証、証券会社の名前</dd>
                   </div>
                 </dl>
               </article>
               <article class="atlas-term-card gold">
                 <strong>Prime市場</strong>
-                <dl class="term-grid-dl" style="font-size: 13px; margin: 0; display: grid; gap: 6px;">
+                <dl class="term-grid-dl">
                   <div>
-                    <dt style="font-weight: 800; color: var(--gold);">これは</dt>
-                    <dd style="margin: 0; color: var(--muted);">東京証券取引所の市場区分のひとつ</dd>
+                    <dt>これは</dt>
+                    <dd>東京証券取引所の市場区分のひとつ</dd>
                   </div>
                   <div>
-                    <dt style="font-weight: 800; color: var(--gold);">これは違う</dt>
-                    <dd style="margin: 0; color: var(--muted);">証券会社のランク、口座の種類、安全な投資先という意味</dd>
+                    <dt>これは違う</dt>
+                    <dd>証券会社のランク、口座の種類、安全な投資先という意味</dd>
                   </div>
                 </dl>
               </article>
             </div>
-            <div class="roadmap-warning" style="margin-top: 16px;">
+            <div class="roadmap-warning">
               <strong>Prime市場は「安全な投資先」という意味ではありません。</strong>
               <p>市場区分は企業規模や流動性を担保する基準ですが、それ自体が投資の安全性を保証するものではありません。</p>
             </div>
           </section>
 
-          <!-- 7. 公式情報 -->
-          <section class="atlas-reveal" style="margin-top: 48px;">
+          <!-- 6. 公式情報 -->
+          <section class="atlas-reveal atlas-section-spaced">
             <h2>確認に使う公式情報</h2>
-            <ul style="color: var(--muted); padding-left: 1.2em; display: grid; gap: 8px;">
+            <ul class="atlas-link-list">
               <li><a href="https://www.jpx.co.jp/equities/market-restructure/market-segments/index.html" target="_blank" rel="noopener noreferrer" class="text-link">日本取引所グループ: 市場区分</a></li>
               <li><a href="https://www.fsa.go.jp/policy/nisa2/" target="_blank" rel="noopener noreferrer" class="text-link">金融庁: NISA特設ウェブサイト</a></li>
               <li><a href="https://www.jsda.or.jp/nisa/" target="_blank" rel="noopener noreferrer" class="text-link">日本証券業協会: NISA情報</a></li>
             </ul>
-            <p class="article-note" style="margin-top: 24px;">
+            <p class="article-note">
               このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。
             </p>
           </section>
 
-          <!-- 8. 次に読む導線 -->
-          <nav class="next-links atlas-reveal" aria-label="次に読む" style="margin-top: 48px;">
+          <!-- 7. 次に読む導線 -->
+          <nav class="next-links atlas-reveal atlas-section-spaced" aria-label="次に読む">
             <a class="secondary-button" href="study-investing-01.html">Study 01を読む</a>
             <a class="secondary-button" href="ai-tips-01.html">AI活用 01を読む</a>
             <a class="secondary-button" href="job-log-01.html">AI就活 01を読む</a>
@@ -913,103 +849,7 @@
       <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // JSが有効なことを示すクラスをbodyに付与
-        document.body.classList.add("js-active");
-
-        // prefers-reduced-motion: reduce の場合はアニメーションしない
-        const isReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-        if (!isReduced) {
-          // 1. スクロール連動航路描画
-          const paths = document.querySelectorAll(".atlas-timeline-path");
-
-          paths.forEach(path => {
-            const length = path.getTotalLength();
-            path.style.strokeDasharray = length;
-            path.style.strokeDashoffset = length;
-
-            const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  const updatePath = () => {
-                    const rect = entry.target.getBoundingClientRect();
-                    const viewHeight = window.innerHeight;
-
-                    const startY = viewHeight * 0.85; // 画面下部から開始
-                    const endY = viewHeight * 0.15;   // 画面上部で完了
-
-                    let progress = (startY - rect.top) / (startY - endY);
-                    progress = Math.max(0, Math.min(1, progress));
-
-                    path.style.strokeDashoffset = length * (1 - progress);
-
-                    if (progress < 1 && progress > 0) {
-                      requestAnimationFrame(updatePath);
-                    } else if (progress >= 1) {
-                      path.style.strokeDashoffset = 0;
-                    } else {
-                      path.style.strokeDashoffset = length;
-                    }
-                  };
-
-                  updatePath();
-                  window.addEventListener("scroll", updatePath, { passive: true });
-                }
-              });
-            }, { threshold: 0.05 });
-
-            const container = path.closest(".atlas-timeline-container");
-            if (container) {
-              observer.observe(container);
-            }
-          });
-
-          // 2. スタンプ風出現 & カードのフェードイン
-          const reveals = document.querySelectorAll(".atlas-reveal, .atlas-stamp");
-          const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                revealObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-
-          reveals.forEach(el => revealObserver.observe(el));
-
-          // 3. ナビゲーションのアクティブ連動
-          const chapters = document.querySelectorAll(".atlas-chapter");
-          const navLinks = document.querySelectorAll(".atlas-nav-link");
-
-          const activeObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                const id = entry.target.getAttribute("id");
-                navLinks.forEach(link => {
-                  if (link.getAttribute("href") === `#${id}`) {
-                    link.classList.add("active");
-                  } else {
-                    link.classList.remove("active");
-                  }
-                });
-              }
-            });
-          }, { rootMargin: "-20% 0px -60% 0px" });
-
-          chapters.forEach(ch => activeObserver.observe(ch));
-        } else {
-          // Reduced motionが有効な場合、最初からすべて表示
-          document.querySelectorAll(".atlas-timeline-path").forEach(path => {
-            path.style.strokeDashoffset = 0;
-          });
-          document.querySelectorAll(".atlas-reveal, .atlas-stamp").forEach(el => {
-            el.classList.add("visible");
-          });
-        }
-      });
-    </script>
     <script src="script.js"></script>
+    <script src="roadmap.js"></script>
   </body>
 </html>
