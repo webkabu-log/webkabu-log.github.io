@@ -32,11 +32,12 @@
 | [hajimari.html](file:///c:/trader/hajimari.html) | Day 0: 挑戦のはじまり | なぜこの挑戦を始めるのかの対話記録 |
 | [day1.html](file:///c:/trader/day1.html) | Day 1: 読まれる流れを考える | ブログ集客設計とX運用の基本方針 |
 | [day2.html](file:///c:/trader/day2.html) | Day 2: 読まれる入口を作る | Google Analytics, Search Console, AdSense設定 |
-| [day3.html](file:///c:/trader/day3.html) | Day 3: 広告審査・アクセス解析・収益0円の現状整理 | 収益0円の現状分析とAdSense広告審査、Analytics、Search Console、X運用の進捗状況、今後の改善項目の整理 |
+| [day3.html](file:///c:/trader/day3.html) | Day 3: 設定は増えたのに、収益はまだ0円だった日 | 広告審査やアクセス解析を設定しても数字が動かなかった日の運営記録 |
 | [day4.html](file:///c:/trader/day4.html) | Day 4: Web収益0円のまま、自分でも読みにくいところを直した日 | サイトを読み返して、導線や読みにくさを改善した運営記録 |
 | [day5.html](file:///c:/trader/day5.html) | Day 5: GA4とSearch Consoleを見たら、ほぼ誰にも読まれていなかった日 | AnalyticsとSearch Consoleで初期の読まれ方を確認した記録 |
 | [day6.html](file:///c:/trader/day6.html) | Day 6: サイト全体のナビとツールページを見直した日 | ナビゲーション、関連リンク、ツールページの見直し記録 |
 | [day7.html](file:///c:/trader/day7.html) | Day 7: 記事を増やす前に次に読む流れを決めた日 | 記事追加前にサイト内導線と次に読む流れを整理した記録 |
+| [day8.html](file:///c:/trader/day8.html) | Day 8: 記事数を数え直したら、表示と合わなかった日 | 記事数のずれ、運営メモの整理、次の作業を人の目線で振り返った記録 |
 | [job-log-01.html](file:///c:/trader/job-log-01.html) | AI就活 01: 就活で最初に整理すること | 就活で最初に整理すべき5大要素と文理の具体例 |
 | [job-log-02.html](file:///c:/trader/job-log-02.html) | AI就活 02: 理系学生の経験を整理する | 理系向けに「課題・行動・学び」に分けるアプローチ |
 | [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
@@ -67,6 +68,7 @@
 | [study-investing-17.html](file:///c:/trader/study-investing-17.html) | Study 17: PER・PBR・ROEの意味と限界 | PER・PBR・ROEの計算式の意味と、指標の限界を整理した記録 |
 | [study-investing-18.html](file:///c:/trader/study-investing-18.html) | Study 18: 配当利回りと株主還元 | 配当利回り・性向、自社株買い、減配リスクと高配当の罠の整理 |
 | [study-investing-19.html](file:///c:/trader/study-investing-19.html) | Study 19: 分散投資と投資信託・ETFの基本 | 個別株のリスク、投資信託とETFの違い、コストと再投資の整理 |
+| [study-investing-20.html](file:///c:/trader/study-investing-20.html) | Study 20: 銘柄を選ぶ前の市場観察ノート | 株価指数、売買統計、公式発表を事実と感想に分ける観察方法 |
 | [ai-tips-01.html](file:///c:/trader/ai-tips-01.html) | AI Tips 01: 大学生向けChatGPT活用術10選 | 学習、就活、ブログ作成の補助として使うAI活用メモ |
 | [ai-tips-02.html](file:///c:/trader/ai-tips-02.html) | AI Tips 02: AIっぽい文章を自分の文章に戻す方法 | 生成AIで整えた文章を本人の記録として自然に見直す方法 |
 | [ai-tips-03.html](file:///c:/trader/ai-tips-03.html) | AI Tips 03: AIの回答を公式情報で確かめる方法 | 数字・制度・出典を公式情報と照らし合わせる手順 |
@@ -100,6 +102,32 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第20期：Day記事の文体見直し（2026年6月22日実施）
+* **人間味のある運営記録へ調整**:
+  - Day 1〜3、Day 6、Day 8を中心に、報告書調の言い回しを減らし、迷い、予想との差、小さな感情、未完了の状態が伝わる文章へ修正。
+  - Day 3を「設定は増えたのに、収益はまだ0円だった日」、Day 8を「記事数を数え直したら、表示と合わなかった日」へ改題し、関連リンクとメタ情報を同期。
+  - Day 8へ2026年6月22日に確認したGA4の過去7日間と、Search Consoleで実データが表示された2026年6月4日〜20日の値を、期間を分けて追記。
+  - `CONTENT_STYLE_GUIDE.md` に、Day記事で作業報告書調を避けるための文体ルールを追加。
+
+### 第19期：市場観察の学習記事（Study 20）追加（2026年6月22日実施）
+* **Study 20の追加**:
+  - [study-investing-20.html](file:///c:/trader/study-investing-20.html) を追加。日経平均とTOPIXの違い、売買高・売買代金、事実と感想を分ける観察ノートを整理。
+  - JPXと日本経済新聞社の公式ページを確認し、情報確認日を記載。個別銘柄の推奨や実測値の創作は行っていない。
+* **関連情報の同期**:
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **44本** に更新し、投資学習の最新カードをStudy 20へ変更。
+  - [roadmap.html](file:///c:/trader/roadmap.html) を20 Studyへ更新し、第6章へStudy 20を追加。
+  - [study-investing-19.html](file:///c:/trader/study-investing-19.html) の次記事リンク、[sitemap.xml](file:///c:/trader/sitemap.xml)、`HANDOFF.md`、`NEXT_ACTIONS.md` を同期。
+
+### 第18期：Day 8の追加と運営文書の整理（2026年6月22日実施）
+* **Day 8の追加**:
+  - [day8.html](file:///c:/trader/day8.html) を追加。公開記事数の数え方を確認し、`PROJECT_RULES.md`、`FAILURE_LOG.md`、`NEXT_ACTIONS.md` に運営情報を分けた記録を掲載。
+  - 初稿では未確認だったGA4・Search Consoleの値は、その後2026年6月22日の確認画像をもとに期間を分けて追記。
+* **関連情報の同期**:
+  - 公開記事数を番号付き4シリーズの合計と定義し、[index.html](file:///c:/trader/index.html) を **43本** に更新。運営ログの最新カードをDay 8へ変更。
+  - `noindex` の月次レポートを公開前の `sitemap.xml` から除外。
+  - [day7.html](file:///c:/trader/day7.html) の次記事リンクと [sitemap.xml](file:///c:/trader/sitemap.xml) を更新。
+  - Study 20、AI就活11、AI活用メモ07のテーマ候補を `NEXT_ACTIONS.md` に具体化。
 
 ### 第17期：新規学習記事（Study 12〜19）の追加と関連情報の同期（2026年6月19日実施）
 * **新規記事（Study 12〜19）の追加**:
@@ -160,7 +188,7 @@
   - `spec.md` に `study-investing-09.html` を追加し、本チェンジログを記録。
 
 ### 第13期：新規作業・運営ログ（Day 3）の追加と関連情報の同期（2026年6月12日実施）
-* **新規記事「広告審査・アクセス解析・収益0円の現状整理」（Day 3）の追加**:
+* **新規記事「設定は増えたのに、収益はまだ0円だった日」（Day 3）の追加**:
   - Web収益と投資額がともに「0円」である現状、AdSense審査待ち状況、今後の改善計画（記事数、読みやすさ、内部リンク、Xからの導線）を整理した日記調の記事 [day3.html](file:///c:/trader/day3.html) を作成。
 * **既存ページとの同期およびリンク接続**:
   - [index.html](file:///c:/trader/index.html) の「公開記事数」を **19本** にインクリメント。作業・運営ログのレーンへ Day 3 のカードを追加。
@@ -311,8 +339,8 @@
    * `contact.html` 内のプレースホルダー部分に、Googleフォーム等の埋め込みコード（`iframe`）またはリンクボタンを設置する。
 2. **Google AdSenseの審査完了対応**:
    * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
-3. **新規学習記事（Study 20以降）の追加**:
-   * Study 19（分散投資と投資信託・ETFの基本）まで公開済み。次は実際の市場観察ワークや、Web収益が実際に発生した段階での少額検証ルールなどを検討する。
+3. **新規学習記事（Study 21以降）の追加**:
+   * Study 20（銘柄を選ぶ前の市場観察ノート）まで公開済み。次は企業の適時開示を確認し、決算や重要情報を読み分ける学習を検討する。
    * 投資制度や最新の数字は、公開前に公式情報で確認する姿勢を維持する。
 4. **ファイル命名規則の統一（技術的負債）**:
    * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
