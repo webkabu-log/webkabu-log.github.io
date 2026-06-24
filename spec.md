@@ -69,6 +69,7 @@
 | [study-investing-18.html](file:///c:/trader/study-investing-18.html) | Study 18: 配当利回りと株主還元 | 配当利回り・性向、自社株買い、減配リスクと高配当の罠の整理 |
 | [study-investing-19.html](file:///c:/trader/study-investing-19.html) | Study 19: 分散投資と投資信託・ETFの基本 | 個別株のリスク、投資信託とETFの違い、コストと再投資の整理 |
 | [study-investing-20.html](file:///c:/trader/study-investing-20.html) | Study 20: 銘柄を選ぶ前の市場観察ノート | 株価指数、売買統計、公式発表を事実と感想に分ける観察方法 |
+| [study-investing-21.html](file:///c:/trader/study-investing-21.html) | Study 21: 企業の適時開示を確認する方法 | TDnet、決算短信、業績予想修正を事実と感想に分ける確認方法 |
 | [ai-tips-01.html](file:///c:/trader/ai-tips-01.html) | AI Tips 01: 大学生向けChatGPT活用術10選 | 学習、就活、ブログ作成の補助として使うAI活用メモ |
 | [ai-tips-02.html](file:///c:/trader/ai-tips-02.html) | AI Tips 02: AIっぽい文章を自分の文章に戻す方法 | 生成AIで整えた文章を本人の記録として自然に見直す方法 |
 | [ai-tips-03.html](file:///c:/trader/ai-tips-03.html) | AI Tips 03: AIの回答を公式情報で確かめる方法 | 数字・制度・出典を公式情報と照らし合わせる手順 |
@@ -109,6 +110,15 @@
   - Day 3を「設定は増えたのに、収益はまだ0円だった日」、Day 8を「記事数を数え直したら、表示と合わなかった日」へ改題し、関連リンクとメタ情報を同期。
   - Day 8へ2026年6月22日に確認したGA4の過去7日間と、Search Consoleで実データが表示された2026年6月4日〜20日の値を、期間を分けて追記。
   - `CONTENT_STYLE_GUIDE.md` に、Day記事で作業報告書調を避けるための文体ルールを追加。
+
+### 第20期：適時開示の学習記事（Study 21）追加（2026年6月24日実施）
+* **Study 21の追加**:
+  - [study-investing-21.html](file:///c:/trader/study-investing-21.html) を追加。TDnet、決算短信、業績予想修正、配当、自社株買いを事実と感想に分けて確認する方法を整理。
+  - 投資助言ではなく、公式発表を読むための学習記録として、TDnetとEDINETへの参照リンクを掲載。
+* **導線と管理情報の同期**:
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **45本** に更新し、投資学習の最新カードをStudy 21へ変更。
+  - [roadmap.html](file:///c:/trader/roadmap.html) を21 Studyへ更新し、第6章へStudy 21を追加。Study 20の次記事リンクもStudy 21へ接続。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) と [NEXT_ACTIONS.md](file:///c:/trader/NEXT_ACTIONS.md) を更新し、投資Study 01〜21をいったん区切りとして記録。
 
 ### 第19期：市場観察の学習記事（Study 20）追加（2026年6月22日実施）
 * **Study 20の追加**:
@@ -339,8 +349,8 @@
    * `contact.html` 内のプレースホルダー部分に、Googleフォーム等の埋め込みコード（`iframe`）またはリンクボタンを設置する。
 2. **Google AdSenseの審査完了対応**:
    * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
-3. **新規学習記事（Study 21以降）の追加**:
-   * Study 20（銘柄を選ぶ前の市場観察ノート）まで公開済み。次は企業の適時開示を確認し、決算や重要情報を読み分ける学習を検討する。
+3. **新規学習記事（Study 22以降）の追加**:
+   * Study 21（企業の適時開示を確認する方法）まで公開済み。投資Study 01〜21で、投資の入口から公式発表の確認までをいったん区切りとする。
    * 投資制度や最新の数字は、公開前に公式情報で確認する姿勢を維持する。
 4. **ファイル命名規則の統一（技術的負債）**:
    * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
