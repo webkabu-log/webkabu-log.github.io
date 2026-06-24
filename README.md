@@ -23,7 +23,6 @@ python -m http.server 8000
 - [FAILURE_LOG.md](FAILURE_LOG.md): 失敗、原因、再発防止策の記録
 - [NEXT_ACTIONS.md](NEXT_ACTIONS.md): 次に行う作業と優先順位
 - [CONTENT_STYLE_GUIDE.md](CONTENT_STYLE_GUIDE.md): 記事の文章、構成、見せ方のルール
-- [HANDOFF.md](HANDOFF.md): 現在の進捗と引き継ぎ情報
 - [spec.md](spec.md): 詳細仕様、ファイル構成、変更履歴
 
 作業前に `PROJECT_RULES.md` と `NEXT_ACTIONS.md` を確認し、記事を編集するときは `CONTENT_STYLE_GUIDE.md` も参照してください。

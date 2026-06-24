@@ -117,7 +117,7 @@
 * **関連情報の同期**:
   - [index.html](file:///c:/trader/index.html) の公開記事数を **44本** に更新し、投資学習の最新カードをStudy 20へ変更。
   - [roadmap.html](file:///c:/trader/roadmap.html) を20 Studyへ更新し、第6章へStudy 20を追加。
-  - [study-investing-19.html](file:///c:/trader/study-investing-19.html) の次記事リンク、[sitemap.xml](file:///c:/trader/sitemap.xml)、`HANDOFF.md`、`NEXT_ACTIONS.md` を同期。
+  - [study-investing-19.html](file:///c:/trader/study-investing-19.html) の次記事リンク、[sitemap.xml](file:///c:/trader/sitemap.xml)、`NEXT_ACTIONS.md` を同期。
 
 ### 第18期：Day 8の追加と運営文書の整理（2026年6月22日実施）
 * **Day 8の追加**:
