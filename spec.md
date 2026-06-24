@@ -49,6 +49,10 @@
 | [job-log-08.html](file:///c:/trader/job-log-08.html) | AI就活 09: 面接練習にChatGPTを使う方法 | ChatGPTを面接官役にして深掘り質問を受ける練習記録 |
 | [job-log-10.html](file:///c:/trader/job-log-10.html) | AI就活 10: 企業研究の比較表をAIと作る方法 | 公式情報を比較し、志望理由と逆質問の材料を整理する手順 |
 | [job-log-11.html](file:///c:/trader/job-log-11.html) | AI就活 11: 企業研究を志望理由へつなぐ前にAIで確認する | 公式情報、自分の経験、未確認事項を分け、志望理由の根拠を確認する手順 |
+| [job-log-12.html](file:///c:/trader/job-log-12.html) | AI就活 12: 志望理由の下書きをAIで点検する | 志望理由を代筆させず、企業側の根拠、自分側の根拠、つなぎ方を確認する手順 |
+| [job-log-13.html](file:///c:/trader/job-log-13.html) | AI就活 13: 面接回答を短く自然に直す | 長い下書きを、面接で話せる30秒版と深掘り確認に分ける手順 |
+| [job-log-14.html](file:///c:/trader/job-log-14.html) | AI就活 14: 逆質問を企業研究から作る | 企業研究の未確認事項を、調べる質問と面接で聞く質問に分ける手順 |
+| [job-log-15.html](file:///c:/trader/job-log-15.html) | AI就活 15: AI就活まとめ | AIを整理役として使う範囲と、使わない方がいい場面を整理した区切りの記事 |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -104,6 +108,18 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第22期：AI就活12〜15の記事追加とシリーズ区切り（2026年6月24日実施）
+* **AI就活 12〜15の追加**:
+  - [job-log-12.html](file:///c:/trader/job-log-12.html) を追加。志望理由の下書きをAIで代筆させず、根拠の薄さや他社にも当てはまる表現を点検する手順を整理。
+  - [job-log-13.html](file:///c:/trader/job-log-13.html) を追加。面接回答を30秒で話せる形へ短くし、聞き返しで説明できるか確認する手順を整理。
+  - [job-log-14.html](file:///c:/trader/job-log-14.html) を追加。企業研究で残った未確認事項から逆質問を作り、調べれば分かる質問を外す手順を整理。
+  - [job-log-15.html](file:///c:/trader/job-log-15.html) を追加。AI就活01〜15を振り返り、AIを整理役・壁打ち相手として使う範囲と、使わない方がいい場面をまとめた。
+* **導線と管理情報の同期**:
+  - [job-log-11.html](file:///c:/trader/job-log-11.html) からAI就活12へ進む前後リンクを接続。
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **50本** に更新し、AI就活の最新カードをAI就活15へ変更。
+  - [roadmap.html](file:///c:/trader/roadmap.html) のAI就活ロードマップへ12〜15番を追加。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) と [NEXT_ACTIONS.md](file:///c:/trader/NEXT_ACTIONS.md) を更新し、AI就活01〜15をいったん区切りとして記録。
 
 ### 第21期：AI就活11の記事追加（2026年6月24日実施）
 * **AI就活 11の追加**:
@@ -362,6 +378,9 @@
 3. **新規学習記事（Study 22以降）の追加**:
    * Study 21（企業の適時開示を確認する方法）まで公開済み。投資Study 01〜21で、投資の入口から公式発表の確認までをいったん区切りとする。
    * 投資制度や最新の数字は、公開前に公式情報で確認する姿勢を維持する。
-4. **ファイル命名規則の統一（技術的負債）**:
+4. **AI就活記事の追加**:
+   * AI就活15（AI就活まとめ）まで公開済み。自己分析から面接前確認までをいったん区切りとする。
+   * 今後は実際に新しい気づきが出た場合だけ追加し、経験や選考結果を創作しない。
+5. **ファイル命名規則の統一（技術的負債）**:
    * AI就活関連の記事において、`job-log-01.html`〜`job-log-04.html` と `study-ai-jobhunting-01.html`（AI就活 05）および `job-log-05.html`（AI就活 06）が混在している。
    * GitHub Pagesでのリンク切れやSEOへの影響を避けるため、リリース優先で現状維持としているが、将来的に一貫性のある命名規則（例：`job-log-xx.html`）へのリダイレクト設定を含めた統一リファクタリングを検討する。
