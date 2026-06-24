@@ -1592,6 +1592,21 @@ h3 {
   transition: transform 220ms ease;
 }
 
+.pillar-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.browser-search-icon {
+  color: var(--blue);
+  background: #e6edf7;
+}
+
 .pillar-card:hover .pillar-icon {
   transform: scale(1.1);
 }
