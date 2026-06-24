@@ -48,6 +48,7 @@
 | [job-log-07.html](file:///c:/trader/job-log-07.html) | AI就活 08: 自己PRを盛りすぎないためにAIに確認してもらったこと | AIで文章を盛るのではなく、説明できる経験か確認する記録 |
 | [job-log-08.html](file:///c:/trader/job-log-08.html) | AI就活 09: 面接練習にChatGPTを使う方法 | ChatGPTを面接官役にして深掘り質問を受ける練習記録 |
 | [job-log-10.html](file:///c:/trader/job-log-10.html) | AI就活 10: 企業研究の比較表をAIと作る方法 | 公式情報を比較し、志望理由と逆質問の材料を整理する手順 |
+| [job-log-11.html](file:///c:/trader/job-log-11.html) | AI就活 11: 企業研究を志望理由へつなぐ前にAIで確認する | 公式情報、自分の経験、未確認事項を分け、志望理由の根拠を確認する手順 |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -103,6 +104,15 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### 第21期：AI就活11の記事追加（2026年6月24日実施）
+* **AI就活 11の追加**:
+  - [job-log-11.html](file:///c:/trader/job-log-11.html) を追加。企業研究で集めた公式情報、自分の経験、未確認事項を分け、志望理由へつなぐ前に根拠の弱さや他社にも当てはまる表現をAIで確認する手順を整理。
+  - AIに志望理由を代筆させず、話の飛びや根拠不足を見つける確認役として使う方針を明記。
+* **導線と管理情報の同期**:
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **46本** に更新し、AI就活の最新カードをAI就活11へ変更。
+  - [roadmap.html](file:///c:/trader/roadmap.html) のAI就活ロードマップへ11番を追加し、[job-log-10.html](file:///c:/trader/job-log-10.html) から次記事リンクを接続。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) と [NEXT_ACTIONS.md](file:///c:/trader/NEXT_ACTIONS.md) を更新し、AI就活01〜11まで公開済みとして記録。
 
 ### 第20期：Day記事の文体見直し（2026年6月22日実施）
 * **人間味のある運営記録へ調整**:
