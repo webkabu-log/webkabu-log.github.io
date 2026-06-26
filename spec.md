@@ -1,4 +1,4 @@
-# プロジェクト仕様書 ＆ 変更履歴
+﻿# プロジェクト仕様書 ＆ 変更履歴
 
 この仕様書は、「Web収益だけで株を買う日記」プロジェクトの目的、構成、技術仕様、およびこれまでの変更履歴と今後の改善候補を記録するマスタードキュメントです。
 
@@ -29,15 +29,15 @@
 | ファイル名 | 役割・ページ内容 | 備考 |
 | :--- | :--- | :--- |
 | [index.html](file:///c:/trader/index.html) | トップページ | ヒーロー、現在地、3つの柱、進捗メーター、記事一覧レーン |
-| [hajimari.html](file:///c:/trader/hajimari.html) | Day 0: 挑戦のはじまり | なぜこの挑戦を始めるのかの対話記録 |
-| [day1.html](file:///c:/trader/day1.html) | Day 1: 読まれる流れを考える | ブログ集客設計とX運用の基本方針 |
-| [day2.html](file:///c:/trader/day2.html) | Day 2: 読まれる入口を作る | Google Analytics, Search Console, AdSense設定 |
-| [day3.html](file:///c:/trader/day3.html) | Day 3: 設定は増えたのに、収益はまだ0円だった日 | 広告審査やアクセス解析を設定しても数字が動かなかった日の運営記録 |
-| [day4.html](file:///c:/trader/day4.html) | Day 4: Web収益0円のまま、自分でも読みにくいところを直した日 | サイトを読み返して、導線や読みにくさを改善した運営記録 |
-| [day5.html](file:///c:/trader/day5.html) | Day 5: GA4とSearch Consoleを見たら、ほぼ誰にも読まれていなかった日 | AnalyticsとSearch Consoleで初期の読まれ方を確認した記録 |
-| [day6.html](file:///c:/trader/day6.html) | Day 6: サイト全体のナビとツールページを見直した日 | ナビゲーション、関連リンク、ツールページの見直し記録 |
-| [day7.html](file:///c:/trader/day7.html) | Day 7: 記事を増やす前に次に読む流れを決めた日 | 記事追加前にサイト内導線と次に読む流れを整理した記録 |
-| [day8.html](file:///c:/trader/day8.html) | Day 8: 記事数を数え直したら、表示と合わなかった日 | 記事数のずれ、運営メモの整理、次の作業を人の目線で振り返った記録 |
+| [hajimari.html](file:///c:/trader/hajimari.html) | Day 0: 挑戦のルールを決める | なぜこの挑戦を始めるのかと、生活費を使わないルールを決めた記録 |
+| [day1.html](file:///c:/trader/day1.html) | Day 1: 広告より先に、読まれる流れを考える | ブログ集客設計とX運用の基本方針 |
+| [day2.html](file:///c:/trader/day2.html) | Day 2: 読まれる入口と計測を準備する | Google Analytics, Search Console, AdSense設定 |
+| [day3.html](file:///c:/trader/day3.html) | Day 3: 設定を確認して、0円の現在地を見る | 広告審査やアクセス解析を設定したあと、Web収益0円の現在地を確認した運営記録 |
+| [day4.html](file:///c:/trader/day4.html) | Day 4: 読みにくいところを自分で直す | サイトを読み返して、導線や読みにくさを改善した運営記録 |
+| [day5.html](file:///c:/trader/day5.html) | Day 5: 最初のアクセス数を確認する | AnalyticsとSearch Consoleで初期の読まれ方を確認した記録 |
+| [day6.html](file:///c:/trader/day6.html) | Day 6: ナビとツールページを整える | ナビゲーション、関連リンク、ツールページの見直し記録 |
+| [day7.html](file:///c:/trader/day7.html) | Day 7: 次に読む流れを決める | 記事追加前にサイト内導線と次に読む流れを整理した記録 |
+| [day8.html](file:///c:/trader/day8.html) | Day 8: 記事数と作業メモを整理する | 記事数のずれ、運営メモの整理、次の作業を人の目線で振り返った記録 |
 | [job-log-01.html](file:///c:/trader/job-log-01.html) | AI就活 01: 就活で最初に整理すること | 就活で最初に整理すべき5大要素と文理の具体例 |
 | [job-log-02.html](file:///c:/trader/job-log-02.html) | AI就活 02: 理系学生の経験を整理する | 理系向けに「課題・行動・学び」に分けるアプローチ |
 | [job-log-03.html](file:///c:/trader/job-log-03.html) | AI就活 03: チーム開発で学ぶこと | 進捗共有・認識合わせなどのプロセス管理の重要性 |
@@ -81,6 +81,7 @@
 | [ai-tips-04.html](file:///c:/trader/ai-tips-04.html) | AI Tips 04: AIに個人情報を入力しないためのチェック | 送信前の情報削減、匿名化、画像・ファイル確認 |
 | [ai-tips-05.html](file:///c:/trader/ai-tips-05.html) | AI Tips 05: 授業ノートから要約・理解チェックを作る方法 | AIを理解不足の発見に使う学習手順 |
 | [ai-tips-06.html](file:///c:/trader/ai-tips-06.html) | AI Tips 06: 答えを作る前にAIから質問してもらう方法 | 足りない条件をAIに質問させ、回答のずれを減らす小技 |
+| [ai-tips-07.html](file:///c:/trader/ai-tips-07.html) | AI Tips 07: 長いメモを要点・決定・未確認事項に分ける方法 | 作業メモを分類し、推測を増やさず次の作業へつなげる手順 |
 | [tools.html](file:///c:/trader/tools.html) | 使っているツール・サービス | 開発、AI、就活、投資学習で使うツールの紹介ページ |
 | [monthly-report-2026-06.html](file:///c:/trader/monthly-report-2026-06.html) | 2026年6月度 運営レポート | （準備中）6月末公開予定。記事数、PV、収益、振り返り等 |
 | [contact.html](file:///c:/trader/contact.html) | お問い合わせ | Googleフォーム連携用のプレースホルダー（メールアドレスなし） |
@@ -109,6 +110,26 @@
 
 ## 5. 変更履歴（チェンジログ）
 
+### 第24期：Dayタイトルの見直し（2026年6月26日実施）
+* **Day 0〜8のタイトル調整**:
+  - 読者役、運営者役、編集者役の3視点で、トップ一覧に並べたときの自然さ、記録としての正確さ、クリック前の分かりやすさを確認。
+  - 「〜だった日」が続く長いタイトルを減らし、Day 0〜8を短く内容が分かるタイトルへ変更。
+  - 本文の事実、0円、アクセス数、記事数のずれなどは残し、タイトルだけを落ち着いた表現へ調整。
+* **導線と管理情報の同期**:
+  - 各Dayページの `<title>`、`og:title`、`h1`、前後リンク、関連記事リンクを同期。
+  - [index.html](file:///c:/trader/index.html) の作業・運営ログカードとおすすめ導線を新タイトルへ更新。
+  - ファイルマップを新タイトルへ更新。
+
+### 第23期：AI活用メモ07の追加とサイト全体点検（2026年6月26日実施）
+* **AI活用メモ 07の追加**:
+  - [ai-tips-07.html](file:///c:/trader/ai-tips-07.html) を追加。長い作業メモを、要点、決定事項、未確認事項、次の作業に分け、元メモにない推測を増やさない整理方法を記録。
+  - AI Tipsの型に合わせ、会話・クイズは使わず、困りごと、使い方、使用例、注意点、使う前後の違いの順で構成。
+* **導線と管理情報の同期**:
+  - [ai-tips-06.html](file:///c:/trader/ai-tips-06.html) からAI活用07へ進む前後リンクを接続。
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **51本** に更新し、AI活用メモの最新カードをAI活用07へ変更。
+  - [roadmap.html](file:///c:/trader/roadmap.html) のAI活用メモへ07番を追加。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) と [NEXT_ACTIONS.md](file:///c:/trader/NEXT_ACTIONS.md) を更新し、AI活用メモ01〜07まで公開済みとして記録。
+
 ### 第22期：AI就活12〜15の記事追加とシリーズ区切り（2026年6月24日実施）
 * **AI就活 12〜15の追加**:
   - [job-log-12.html](file:///c:/trader/job-log-12.html) を追加。志望理由の下書きをAIで代筆させず、根拠の薄さや他社にも当てはまる表現を点検する手順を整理。
@@ -133,7 +154,7 @@
 ### 第20期：Day記事の文体見直し（2026年6月22日実施）
 * **人間味のある運営記録へ調整**:
   - Day 1〜3、Day 6、Day 8を中心に、報告書調の言い回しを減らし、迷い、予想との差、小さな感情、未完了の状態が伝わる文章へ修正。
-  - Day 3を「設定は増えたのに、収益はまだ0円だった日」、Day 8を「記事数を数え直したら、表示と合わなかった日」へ改題し、関連リンクとメタ情報を同期。
+  - Day 3を「設定を確認して、0円の現在地を見る」、Day 8を「記事数と作業メモを整理する」へ改題し、関連リンクとメタ情報を同期。
   - Day 8へ2026年6月22日に確認したGA4の過去7日間と、Search Consoleで実データが表示された2026年6月4日〜20日の値を、期間を分けて追記。
   - `CONTENT_STYLE_GUIDE.md` に、Day記事で作業報告書調を避けるための文体ルールを追加。
 
@@ -224,7 +245,7 @@
   - `spec.md` に `study-investing-09.html` を追加し、本チェンジログを記録。
 
 ### 第13期：新規作業・運営ログ（Day 3）の追加と関連情報の同期（2026年6月12日実施）
-* **新規記事「設定は増えたのに、収益はまだ0円だった日」（Day 3）の追加**:
+* **新規記事「設定を確認して、0円の現在地を見る」（Day 3）の追加**:
   - Web収益と投資額がともに「0円」である現状、AdSense審査待ち状況、今後の改善計画（記事数、読みやすさ、内部リンク、Xからの導線）を整理した日記調の記事 [day3.html](file:///c:/trader/day3.html) を作成。
 * **既存ページとの同期およびリンク接続**:
   - [index.html](file:///c:/trader/index.html) の「公開記事数」を **19本** にインクリメント。作業・運営ログのレーンへ Day 3 のカードを追加。
