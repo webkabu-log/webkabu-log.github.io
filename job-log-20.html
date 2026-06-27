@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPTの音声モードで面接練習する方法｜声に出して短く答える手順 | Web収益だけで株を買う日記</title>
+    <meta name="description" content="ChatGPTの音声モードを面接官役にし、質問を聞いて自分の言葉で短く答える練習方法。文字起こしを本人が照合する手順とプロンプト、振り返り表付き。">
+    <link rel="canonical" href="https://webkabu-log.github.io/job-log-20.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ChatGPTの音声モードで面接練習する方法｜声に出して短く答える手順">
+    <meta property="og:description" content="ChatGPTとの音声会話を使い、想定質問に声で答え、文字起こしを自分で確認する面接練習の流れです。">
+    <meta property="og:url" content="https://webkabu-log.github.io/job-log-20.html">
+    <meta property="og:image" content="https://webkabu-log.github.io/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://webkabu-log.github.io/ogp.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378" crossorigin="anonymous"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-FZVKWGP9SH");
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#article-main">本文へスキップ</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインメニュー">
+        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+        <div id="site-menu" class="nav-links">
+          <a href="index.html#ai-records">AI就活</a>
+          <a href="index.html#study-notes">投資学習</a>
+          <a href="index.html#day-records">運営記録</a>
+          <a href="roadmap.html">ロードマップ</a>
+          <a href="profile.html">プロフィール</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="article-main">
+      <article class="article-page">
+        <header class="article-hero reveal">
+          <p class="eyebrow">AI就活 20</p>
+          <h1>ChatGPTの音声モードで面接練習する方法</h1>
+          <p class="lead">
+            ESに書けても、質問を聞いてすぐ話すと長くなったり、結論が後ろに回ったりします。
+            ChatGPTの音声モードが利用できる場合は、一問ずつ声で答える練習相手にできます。
+            今回は、回答を作ってもらうのではなく、自分の答えを短くして振り返る手順を整理します。
+          </p>
+        </header>
+
+        <div class="article-body reveal">
+          <section class="summary-panel" aria-label="AI就活20の要点">
+            <div><span>練習</span><strong>声に出す</strong></div>
+            <div><span>進め方</span><strong>一問ずつ</strong></div>
+            <div><span>確認</span><strong>本人が照合</strong></div>
+            <div><span>避ける</span><strong>回答の暗記</strong></div>
+          </section>
+
+          <h2>音声モードでできることと限界</h2>
+          <p>
+            OpenAIの公式FAQでは、ChatGPTの音声会話はログイン中のユーザーがモバイルアプリとデスクトップWebで利用できると説明されています。
+            ただし、アクセスや使用上限は変更される場合があり、アカウントや環境によって表示が異なる可能性があります。
+          </p>
+          <p>
+            音声会話の回答には誤りが含まれることがあり、会話後の文字起こしも実際の発話と完全には一致しない場合があります。
+            そのため、ChatGPTの評価や文字起こしを正解にせず、最終確認は自分で行います。
+          </p>
+
+          <h2>テキスト練習との違い</h2>
+          <p>
+            テキストなら考え直しながら入力できますが、面接では質問を聞き、要点を選んで声に出します。
+            音声練習では、内容の立派さより次の3点を確認します。
+          </p>
+          <ul>
+            <li>質問に対する結論が先に出ているか</li>
+            <li>一文が長くなりすぎていないか</li>
+            <li>ESに書いた事実と話した内容が一致しているか</li>
+          </ul>
+
+          <h2>始める前に情報を伏せる</h2>
+          <p>
+            面接練習に必要なのは、質問のテーマと自分の経験の要点です。
+            氏名、住所、電話番号、メールアドレス、学生番号、選考用ID、第三者の個人情報は入力しません。
+            企業名や大学名を入れなくても練習できる場合は、［応募先］や［大学名］に置き換えます。
+          </p>
+          <p>
+            音声や文字起こしの取り扱いは設定や利用形態によって異なるため、利用前に公式FAQと自分のデータ設定を確認します。
+          </p>
+
+          <h2>面接練習プロンプト</h2>
+          <p>音声会話を始める前に、次のように進め方を指定します。</p>
+          <pre><code>新卒採用の面接練習をしてください。
+
+ルール：
+1. 質問は一度に1つだけ
+2. 私が答え終わるまで次の質問へ進まない
+3. 書かれていない経験や実績を補わない
+4. 回答例を先に作らない
+5. 回答後は、内容の正しさを決めつけず、
+   「質問に答えているか」「長い部分はどこか」だけ指摘する
+6. 3問終わったら、詰まった質問を一覧にする
+
+最初は自己PRについて質問してください。</code></pre>
+          <p>
+            実際の面接官が同じ質問をするとは限りません。
+            この練習は合否を予測するものではなく、話しにくい箇所を見つけるために行います。
+          </p>
+
+          <h2>声に出して短く答える4段階</h2>
+          <ol>
+            <li><strong>質問を最後まで聞く：</strong>聞かれたテーマを一つに絞ります。</li>
+            <li><strong>結論から話す：</strong>まず何を伝えたいかを短く言います。</li>
+            <li><strong>具体例を一つ添える：</strong>自分が実際にした行動を説明します。</li>
+            <li><strong>言い切って止める：</strong>情報を足し続けず、追加質問を待つ練習をします。</li>
+          </ol>
+          <p>
+            うまく言えなかったときも、AIに模範回答を作らせる前に、自分が何を思い出せなかったのかをメモします。
+          </p>
+
+          <h2>文字起こしは原文ではない</h2>
+          <p>
+            音声会話の終了後に文字起こしを確認できる場合があります。
+            ただし、公式FAQにもあるとおり、文字起こしが実際の会話と完全には一致しないことがあります。
+            誤字だけを見て話し方を評価せず、自分の記憶や手元のメモと照合します。
+          </p>
+          <div class="table-container">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th>見る項目</th>
+                  <th>確認すること</th>
+                  <th>直し方</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>質問との対応</td>
+                  <td>聞かれたことに最初に答えたか</td>
+                  <td>結論を最初の一文へ移す</td>
+                </tr>
+                <tr>
+                  <td>一文の長さ</td>
+                  <td>理由や例を一度に詰め込んでいないか</td>
+                  <td>結論、理由、例で文を分ける</td>
+                </tr>
+                <tr>
+                  <td>事実の一致</td>
+                  <td>ESと異なる数字や役割を話していないか</td>
+                  <td>元の記録へ戻って確認する</td>
+                </tr>
+                <tr>
+                  <td>文字起こし</td>
+                  <td>自分の発話と違う箇所がないか</td>
+                  <td>AIの記録をうのみにせず本人が直す</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>振り返りメモの型</h2>
+          <pre><code>質問：
+最初に答えた結論：
+伝えた具体例：
+長くなった部分：
+詰まった理由：
+ESと照合する箇所：
+次に一文で答えるなら：</code></pre>
+          <p>
+            「次に一文で答えるなら」は暗記用の完成回答ではありません。
+            次の練習で最初の結論を見失わないための見出しとして使います。
+          </p>
+
+          <h2>やらないこと</h2>
+          <ul>
+            <li>ChatGPTの評価を採用担当者の評価だと思わない</li>
+            <li>AIが作った模範回答をそのまま暗記しない</li>
+            <li>文字起こしを実際の発話と同一だと決めつけない</li>
+            <li>合格率や本番の結果を予測させない</li>
+            <li>他の人を許可なく録音しない</li>
+            <li>個人情報や応募先の非公開情報を話さない</li>
+          </ul>
+
+          <h2>公式情報</h2>
+          <ul>
+            <li><a href="https://help.openai.com/ja-jp/articles/8400625-voice-mode-faq" target="_blank" rel="noopener noreferrer">OpenAI: 音声モード FAQ</a></li>
+          </ul>
+
+          <h2>今回のまとめ</h2>
+          <p>
+            ChatGPTの音声モードは、質問を聞いて自分の言葉で答える練習相手として使えます。
+            一問ずつ答え、結論と具体例を分け、最後に自分で文字起こしとESを照合します。
+            AIの評価を信じるのではなく、自分が説明しにくかった箇所を見つけることが目的です。
+          </p>
+
+          <p class="article-note">
+            このページは生成AIを使った面接練習の個人メモであり、実際の選考結果や採用担当者の評価を予測するものではありません。音声モードの提供状況やデータの取り扱いは変わる場合があるため、利用時にOpenAI公式の最新情報を確認してください。
+          </p>
+
+          <nav class="next-links" aria-label="次に読む">
+            <a class="secondary-button" href="job-log-19.html">AI就活 19へ戻る</a>
+            <a class="primary-button" href="job-log-21.html">AI就活 21を読む</a>
+          </nav>
+        </div>
+
+        <nav class="article-nav" aria-label="記事ナビゲーション">
+          <div class="article-nav-inner">
+            <a class="article-nav-prev" href="job-log-19.html">
+              <span class="nav-label">← 前の記事</span>
+              <span class="nav-title">Geminiで企業研究する方法</span>
+            </a>
+            <a class="article-nav-next" href="job-log-21.html">
+              <span class="nav-label">次の記事 →</span>
+              <span class="nav-title">Perplexityの引用元を確認する方法</span>
+            </a>
+          </div>
+        </nav>
+
+        <section class="related-articles">
+          <p class="eyebrow">関連記事</p>
+          <h3>面接前に読みたい記事</h3>
+          <ul>
+            <li><a href="job-log-08.html">面接練習にChatGPTを使う方法</a></li>
+            <li><a href="job-log-16.html">ChatGPTで書いたESの提出前チェック</a></li>
+            <li><a href="job-log-19.html">Geminiで企業研究する方法</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-links" aria-label="サイト情報">
+        <a href="profile.html">プロフィール</a>
+        <a href="roadmap.html">ロードマップ</a>
+        <a href="tools.html">ツール</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="monetization.html">広告・運営方針</a>
+        <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
+      </nav>
+      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
+      <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

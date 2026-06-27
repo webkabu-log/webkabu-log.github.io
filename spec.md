@@ -53,6 +53,12 @@
 | [job-log-13.html](file:///c:/trader/job-log-13.html) | AI就活 13: 面接回答を短く自然に直す | 長い下書きを、面接で話せる30秒版と深掘り確認に分ける手順 |
 | [job-log-14.html](file:///c:/trader/job-log-14.html) | AI就活 14: 逆質問を企業研究から作る | 企業研究の未確認事項を、調べる質問と面接で聞く質問に分ける手順 |
 | [job-log-15.html](file:///c:/trader/job-log-15.html) | AI就活 15: AI就活まとめ | AIを整理役として使う範囲と、使わない方がいい場面を整理した区切りの記事 |
+| [job-log-16.html](file:///c:/trader/job-log-16.html) | AI就活 16: ChatGPTで書いたESの提出前チェック | 応募先ルール、事実性、面接での説明可能性を確認する手順 |
+| [job-log-17.html](file:///c:/trader/job-log-17.html) | AI就活 17: 生成AIへESを貼る前の確認 | 個人情報・第三者情報・非公開情報を伏字へ置き換える手順 |
+| [job-log-18.html](file:///c:/trader/job-log-18.html) | AI就活 18: Claudeで自己分析 | 答えを作らせず、質問を1つずつ受けて経験を整理する方法 |
+| [job-log-19.html](file:///c:/trader/job-log-19.html) | AI就活 19: Geminiで企業研究 | AIの回答を企業公式の採用ページやIR情報と照合する手順 |
+| [job-log-20.html](file:///c:/trader/job-log-20.html) | AI就活 20: ChatGPT音声面接 | 声に出して短く答え、文字起こしを本人が確認する練習 |
+| [job-log-21.html](file:///c:/trader/job-log-21.html) | AI就活 21: Perplexityで引用元確認 | 引用元の発行主体・日付・本文との一致を確認する方法 |
 | [roadmap.html](file:///c:/trader/roadmap.html) | 投資学習ロードマップ | 口座や市場区分などを学ぶ順序と用語集 |
 | [study-investing-01.html](file:///c:/trader/study-investing-01.html) | Study 01: 投資とは何か | 貯金と投資の違い、リスクの基本 |
 | [study-investing-02.html](file:///c:/trader/study-investing-02.html) | Study 02: 株価が動く理由 | 需要と供給のバランス |
@@ -109,6 +115,12 @@
 ---
 
 ## 5. 変更履歴（チェンジログ）
+
+### AI就活 16〜21の追加（2026年6月27日実施）
+* **pull前のローカル記事をリモート版と統合**:
+  - リモートのAI就活01〜15を維持し、ローカルで作成した6記事をAI就活16〜21として追加した。
+  - ChatGPTのES提出前確認、生成AIへの個人情報入力、Claude自己分析、Gemini企業研究、ChatGPT音声面接、Perplexity引用元確認を扱う。
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **57本** に更新し、トップ、ロードマップ、前後ナビ、サイトマップを同期した。
 
 ### 第24期：Dayタイトルの見直し（2026年6月26日実施）
 * **Day 0〜8のタイトル調整**:
