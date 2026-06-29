@@ -2985,3 +2985,15 @@ body.js-active .is-drawn .atlas-timeline-path {
     stroke-dashoffset: 0 !important;
   }
 }
+
+/* Article Eyecatch Image */
+.article-eyecatch {
+  width: 100%;
+  aspect-ratio: 1.9 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin: 2rem 0;
+  box-shadow: var(--shadow-sm);
+  background-color: var(--surface-2);
+}
+

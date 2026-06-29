@@ -37,13 +37,13 @@
       "description": "「投資」と「貯金」の違い、リスクの本来の意味、投資で起こりうる損失について初心者向けに整理。大学生が投資学習を始める前に確認した基礎知識メモ。",
       "author": {
         "@type": "Person",
-        "name": "ショウヤ",
+        "name": "ショウ",
         "url": "https://webkabu-log.github.io/profile.html"
       },
       "datePublished": "2026-06-17",
       "dateModified": "2026-06-17"
     }
-    </script><meta content="ショウヤ" name="author"/></head>
+    </script><meta content="ショウ" name="author"/></head>
 <body>
 <a class="skip-link" href="#article-main">本文へスキップ</a>
 <header class="site-header">
@@ -58,7 +58,6 @@
 <a href="index.html#ai-tips">AI活用</a>
 <a href="index.html#ai-records">AI就活</a>
 <a href="index.html#study-notes">投資学習</a>
-<a href="index.html#day-records">運営記録</a>
 <a href="roadmap.html">ロードマップ</a>
 <a href="profile.html">プロフィール</a>
 </div>
@@ -68,12 +67,12 @@
 <article class="article-page">
 <header class="article-hero reveal">
 <p class="eyebrow">Study 01</p>
-<h1>投資とは何かを1から確認する</h1><div class="article-meta" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;"><time datetime="2026-06-17">公開日: 2026/06/17</time><span style="margin-left: 1rem;">著者: <a href="profile.html">ショウヤ</a></span></div>
+<h1>投資とは何かを1から確認する</h1><div class="article-meta" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;"><time datetime="2026-06-17">公開日: 2026/06/17</time><span style="margin-left: 1rem;">著者: <a href="profile.html">ショウ</a></span></div>
 <p class="lead">
             株やNISAに進む前に、まず「投資」という言葉の意味を整理します。
             ここでは銘柄選びではなく、仕組みの理解を優先します。
           </p>
-</header>
+</header><img alt="投資とは何かを1から確認するのアイキャッチ画像" class="article-eyecatch" height="630" src="images/eyecatch/study-investing-01.svg" width="1200"/>
 <div class="article-body reveal">
 <h2>今回学ぶこと</h2>
 <p>
@@ -99,6 +98,17 @@
             その会社の一部を持つようなイメージです。
             会社が成長したり、利益を出したりすると株価や配当に反映されることがあります。
           </p>
+          
+          <div style="margin: 2rem 0; text-align: center;">
+            <div class="mermaid">
+              xychart-beta
+                title "貯金と投資のイメージ比較（※あくまで概念図です）"
+                x-axis ["現在", "将来(貯金)", "将来(投資 成功)", "将来(投資 失敗)"]
+                y-axis "資産価値" 0 --> 150
+                bar [100, 100, 140, 70]
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">※貯金は価値が固定（インフレリスクは考慮せず）、投資は振れ幅があることを示しています。</p>
+          </div>
 <h2>次に学ぶこと</h2>
 <p>
             次は、株価がなぜ上がったり下がったりするのかを確認します。
@@ -108,7 +118,6 @@
             このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。
           </p>
 <nav aria-label="次に読む" class="next-links">
-<a class="secondary-button" href="day1.html">Day 1を読む</a>
 <a class="primary-button" href="study-investing-02.html">Study 02を読む</a>
 </nav>
 </div>
@@ -146,5 +155,9 @@
 <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
 </footer>
 <script src="script.js"></script>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+</script>
 </body>
 </html>

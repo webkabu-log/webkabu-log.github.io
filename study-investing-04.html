@@ -37,13 +37,13 @@
       "description": "証券口座の種類（特定口座・一般口座・NISA口座）と、それぞれの税金の仕組みの違いを初心者向けに整理。どの口座を選ぶべきかの判断基準も確認した投資学習メモ。",
       "author": {
         "@type": "Person",
-        "name": "ショウヤ",
+        "name": "ショウ",
         "url": "https://webkabu-log.github.io/profile.html"
       },
       "datePublished": "2026-06-17",
       "dateModified": "2026-06-17"
     }
-    </script><meta content="ショウヤ" name="author"/></head>
+    </script><meta content="ショウ" name="author"/></head>
 <body>
 <a class="skip-link" href="#article-main">本文へスキップ</a>
 <header class="site-header">
@@ -58,7 +58,6 @@
 <a href="index.html#ai-tips">AI活用</a>
 <a href="index.html#ai-records">AI就活</a>
 <a href="index.html#study-notes">投資学習</a>
-<a href="index.html#day-records">運営記録</a>
 <a href="roadmap.html">ロードマップ</a>
 <a href="profile.html">プロフィール</a>
 </div>
@@ -68,12 +67,12 @@
 <article class="article-page">
 <header class="article-hero reveal">
 <p class="eyebrow">Study 04</p>
-<h1>一般口座・特定口座・NISA口座の違いを整理する</h1><div class="article-meta" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;"><time datetime="2026-06-17">公開日: 2026/06/17</time><span style="margin-left: 1rem;">著者: <a href="profile.html">ショウヤ</a></span></div>
+<h1>一般口座・特定口座・NISA口座の違いを整理する</h1><div class="article-meta" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;"><time datetime="2026-06-17">公開日: 2026/06/17</time><span style="margin-left: 1rem;">著者: <a href="profile.html">ショウ</a></span></div>
 <p class="lead">
             証券会社で口座を作る際に、一般口座、特定口座（源泉徴収あり/なし）、NISA口座の選択肢が出てきます。
             今回は、それぞれの税金の扱いや確定申告の手間を比較し、初心者が知っておくべき違いを整理します。
           </p>
-</header>
+</header><img alt="一般口座・特定口座・NISA口座の違いを整理するのアイキャッチ画像" class="article-eyecatch" height="630" src="images/eyecatch/study-investing-04.svg" width="1200"/>
 <div class="article-body reveal">
 <h2>今回学ぶこと</h2>
 <p>
@@ -89,7 +88,25 @@
             もっとも税金の優遇が大きいのは**NISA口座**です。
             課税される口座の中では、税金の計算と納税を証券会社が代行してくれる**特定口座（源泉徴収あり）**が最も手続きが簡便です。
           </p>
-<div class="table-container" style="overflow-x: auto; margin: 24px 0;">
+          
+          <div style="margin: 2rem 0; text-align: center;">
+            <div class="mermaid">
+              flowchart TD
+                Start((口座開設)) --> Q1{NISAの非課税枠\nを使いたい？}
+                Q1 -- Yes --> NISA[NISA口座]
+                Q1 -- No\n枠超過など --> Q2{確定申告を\n自分でやりたい？}
+                Q2 -- No --> TokuteiAri[特定口座\n源泉徴収あり]
+                Q2 -- Yes --> TokuteiNasi[特定口座\n源泉徴収なし]
+                Q2 -- 自分で全て計算 --> Ippan[一般口座]
+                
+                style Start fill:#f0f4f8,stroke:#cbd5e1,stroke-width:2px
+                style NISA fill:#e6fffa,stroke:#0d9488,stroke-width:2px
+                style TokuteiAri fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">※多くの初心者は「NISA口座」＋「特定口座（源泉徴収あり）」の組み合わせを選びます。</p>
+          </div>
+
+          <div class="table-container" style="overflow-x: auto; margin: 24px 0;">
 <table style="width: 100%; border-collapse: collapse; text-align: left;">
 <thead>
 <tr style="border-bottom: 2px solid var(--border-color); background-color: rgba(0,0,0,0.02);">
@@ -254,5 +271,9 @@
 <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
 </footer>
 <script src="script.js"></script>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+</script>
 </body>
 </html>
