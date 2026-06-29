@@ -3016,7 +3016,7 @@ body.js-active .is-drawn .atlas-timeline-path {
   font-weight: bold;
   font-size: 1.1rem;
   margin-bottom: 12px;
-  color: var(--text-main);
+  color: var(--ink);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -3028,60 +3028,80 @@ body.js-active .is-drawn .atlas-timeline-path {
   gap: 8px;
 }
 
+
 .series-dot {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--bg-main);
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--paper);
   border: 1px solid var(--line);
-  color: var(--text-muted);
-  font-size: 0.8rem;
+  color: var(--muted);
+  font-size: 0.95rem;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .series-dot:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--green);
+  color: var(--green);
+  transform: translateY(-2px);
 }
 
 .series-dot.is-current {
-  background: var(--primary);
+  background: var(--green);
   color: white;
-  border-color: var(--primary);
+  border-color: var(--green);
   font-weight: bold;
+  padding: 0 16px;
+  width: auto;
 }
+
+.series-dot.is-current::after {
+  content: "現在地";
+  font-size: 0.75rem;
+  margin-left: 6px;
+  opacity: 0.9;
+  font-weight: normal;
+}
+
 
 /* Summary Card */
 .summary-card {
-  background: linear-gradient(145deg, #ffffff, #f8f9fa);
-  border-left: 4px solid var(--primary);
+  background: var(--panel);
+  border-left: 4px solid var(--green);
   border-radius: 8px;
   padding: 24px;
   margin: 30px 0;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(28, 37, 33, 0.05);
   position: relative;
+  transition: all 0.3s ease;
 }
 
-.summary-card::before {
-  content: '✅';
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  font-size: 24px;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(28, 37, 33, 0.08);
 }
 
 .summary-card h2 {
   margin-top: 0 !important;
   font-size: 1.3rem !important;
-  color: var(--text-main);
+  color: var(--ink);
   border-bottom: 1px solid var(--line);
   padding-bottom: 12px;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
+.summary-card h2::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%231b7a5b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>');
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
