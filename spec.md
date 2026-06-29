@@ -81,6 +81,7 @@
 | [study-investing-19.html](file:///c:/trader/study-investing-19.html) | Study 19: 分散投資と投資信託・ETFの基本 | 個別株のリスク、投資信託とETFの違い、コストと再投資の整理 |
 | [study-investing-20.html](file:///c:/trader/study-investing-20.html) | Study 20: 銘柄を選ぶ前の市場観察ノート | 株価指数、売買統計、公式発表を事実と感想に分ける観察方法 |
 | [study-investing-21.html](file:///c:/trader/study-investing-21.html) | Study 21: 企業の適時開示を確認する方法 | TDnet、決算短信、業績予想修正を事実と感想に分ける確認方法 |
+| [study-investing-22.html](file:///c:/trader/study-investing-22.html) | Study 22: 株価チャートを見る前に確認すること | ローソク足、出来高、移動平均線を売買判断ではなく事実として読む方法 |
 | [ai-tips-01.html](file:///c:/trader/ai-tips-01.html) | AI Tips 01: 大学生向けChatGPT活用術10選 | 学習、就活、ブログ作成の補助として使うAI活用メモ |
 | [ai-tips-02.html](file:///c:/trader/ai-tips-02.html) | AI Tips 02: AIっぽい文章を自分の文章に戻す方法 | 生成AIで整えた文章を本人の記録として自然に見直す方法 |
 | [ai-tips-03.html](file:///c:/trader/ai-tips-03.html) | AI Tips 03: AIの回答を公式情報で確かめる方法 | 数字・制度・出典を公式情報と照らし合わせる手順 |
@@ -121,6 +122,16 @@
   - リモートのAI就活01〜15を維持し、ローカルで作成した6記事をAI就活16〜21として追加した。
   - ChatGPTのES提出前確認、生成AIへの個人情報入力、Claude自己分析、Gemini企業研究、ChatGPT音声面接、Perplexity引用元確認を扱う。
   - [index.html](file:///c:/trader/index.html) の公開記事数を **57本** に更新し、トップ、ロードマップ、前後ナビ、サイトマップを同期した。
+
+### 第25期：株価チャートの学習記事（Study 22）追加（2026年6月26日実施）
+* **Study 22の追加**:
+  - [study-investing-22.html](file:///c:/trader/study-investing-22.html) を追加。株価チャートを、売買タイミング探しではなく、期間、四本値、出来高、移動平均線を事実として読む練習として整理。
+  - ローソク足の基本、出来高の見方、移動平均線の注意点、チャートから公式情報へ戻る流れを記録。
+* **導線と管理情報の同期**:
+  - [study-investing-21.html](file:///c:/trader/study-investing-21.html) からStudy 22へ進む前後リンクを接続。
+  - [index.html](file:///c:/trader/index.html) の公開記事数を **58本** に更新し、投資学習の最新カードをStudy 22へ変更。
+  - [roadmap.html](file:///c:/trader/roadmap.html) を22 Studyへ更新し、第6章へStudy 22を追加。
+  - [sitemap.xml](file:///c:/trader/sitemap.xml) と [NEXT_ACTIONS.md](file:///c:/trader/NEXT_ACTIONS.md) を更新し、投資Study 01〜22まで公開済みとして記録。
 
 ### 第24期：Dayタイトルの見直し（2026年6月26日実施）
 * **Day 0〜8のタイトル調整**:
@@ -408,8 +419,8 @@
    * `contact.html` 内のプレースホルダー部分に、Googleフォーム等の埋め込みコード（`iframe`）またはリンクボタンを設置する。
 2. **Google AdSenseの審査完了対応**:
    * 審査通過後, `monetization.html` の記載に沿って過度でない配置で広告ユニットを表示させる。
-3. **新規学習記事（Study 22以降）の追加**:
-   * Study 21（企業の適時開示を確認する方法）まで公開済み。投資Study 01〜21で、投資の入口から公式発表の確認までをいったん区切りとする。
+3. **新規学習記事（Study 23以降）の追加**:
+   * Study 22（株価チャートを見る前に確認すること）まで公開済み。投資Study 01〜22で、投資の入口から公式発表とチャートの基本確認までを扱っている。
    * 投資制度や最新の数字は、公開前に公式情報で確認する姿勢を維持する。
 4. **AI就活記事の追加**:
    * AI就活15（AI就活まとめ）まで公開済み。自己分析から面接前確認までをいったん区切りとする。

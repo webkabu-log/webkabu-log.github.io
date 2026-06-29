@@ -1,25 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例 | Web収益だけで株を買う日記</title>
-    <meta name="description" content="就活で聞かれるガクチカ（学生時代に最も力を入れたこと）をChatGPTと対話しながら整理する方法。自己PRとの違い、STAR構造での書き方、使えるプロンプト例を大学生が実践記録。">
-    <link rel="canonical" href="https://webkabu-log.github.io/job-log-05.html">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例">
-    <meta property="og:description" content="就活で聞かれるガクチカ（学生時代に最も力を入れたこと）をChatGPTと対話しながら整理する方法。自己PRとの違い、STAR構造での書き方、使えるプロンプト例を大学生が実践記録。">
-    <meta property="og:url" content="https://webkabu-log.github.io/job-log-05.html">
-    <meta property="og:image" content="https://webkabu-log.github.io/ogp.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://webkabu-log.github.io/ogp.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378"
-      crossorigin="anonymous"
-    ></script>
-    <script>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例 | Web収益だけで株を買う日記</title>
+<meta content="就活で聞かれるガクチカ（学生時代に最も力を入れたこと）をChatGPTと対話しながら整理する方法。自己PRとの違い、STAR構造での書き方、使えるプロンプト例を大学生が実践記録。" name="description"/>
+<link href="https://webkabu-log.github.io/job-log-05.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例" property="og:title"/>
+<meta content="就活で聞かれるガクチカ（学生時代に最も力を入れたこと）をChatGPTと対話しながら整理する方法。自己PRとの違い、STAR構造での書き方、使えるプロンプト例を大学生が実践記録。" property="og:description"/>
+<meta content="https://webkabu-log.github.io/job-log-05.html" property="og:url"/>
+<meta content="https://webkabu-log.github.io/ogp.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://webkabu-log.github.io/ogp.png" name="twitter:image"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZVKWGP9SH"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9424993744252378"></script>
+<script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -27,118 +24,125 @@
       gtag("js", new Date());
       gtag("config", "G-FZVKWGP9SH");
     </script>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#article-main">本文へスキップ</a>
-    <header class="site-header">
-      <nav class="nav" aria-label="メインメニュー">
-        <a class="brand" href="index.html">Web収益だけで株を買う日記</a>
-        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div id="site-menu" class="nav-links">
-          <a href="index.html#ai-tips">AI活用</a>
-          <a href="index.html#ai-records">AI就活</a>
-          <a href="index.html#study-notes">投資学習</a>
-          <a href="index.html#day-records">運営記録</a>
-          <a href="roadmap.html">ロードマップ</a>
-          <a href="profile.html">プロフィール</a>
-        </div>
-      </nav>
-    </header>
-
-    <main id="article-main">
-      <article class="article-page">
-        <header class="article-hero reveal">
-          <p class="eyebrow">AI就活 06</p>
-          <h1>ガクチカの作り方：自己PRとの違いとAI対話プロンプト</h1>
-          <p class="lead">
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/site-icon-512.png" rel="icon" sizes="512x512" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例",
+      "description": "就活で聞かれるガクチカ（学生時代に最も力を入れたこと）をChatGPTと対話しながら整理する方法。自己PRとの違い、STAR構造での書き方、使えるプロンプト例を大学生が実践記録。",
+      "author": {
+        "@type": "Person",
+        "name": "ショウヤ",
+        "url": "https://webkabu-log.github.io/profile.html"
+      },
+      "datePublished": "2026-06-17",
+      "dateModified": "2026-06-17"
+    }
+    </script><meta content="ショウヤ" name="author"/></head>
+<body>
+<a class="skip-link" href="#article-main">本文へスキップ</a>
+<header class="site-header">
+<nav aria-label="メインメニュー" class="nav">
+<a class="brand" href="index.html">Web収益だけで株を買う日記</a>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="メニューを開く" class="nav-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-links" id="site-menu">
+<a href="index.html#ai-tips">AI活用</a>
+<a href="index.html#ai-records">AI就活</a>
+<a href="index.html#study-notes">投資学習</a>
+<a href="index.html#day-records">運営記録</a>
+<a href="roadmap.html">ロードマップ</a>
+<a href="profile.html">プロフィール</a>
+</div>
+</nav>
+</header>
+<main id="article-main">
+<article class="article-page">
+<header class="article-hero reveal">
+<p class="eyebrow">AI就活 06</p>
+<h1>ガクチカの作り方：自己PRとの違いとAI対話プロンプト</h1><div class="article-meta" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;"><time datetime="2026-06-17">公開日: 2026/06/17</time><span style="margin-left: 1rem;">著者: <a href="profile.html">ショウヤ</a></span></div>
+<p class="lead">
             就活で聞かれることが多い「ガクチカ（学生時代に最も力を入れたこと）」。自己PRとの違いが分からず、内容が重複してしまう人も多いのではないでしょうか。両者の違いを整理し、AIを壁打ち相手として使いながらSTAR構造でエピソードを深掘りする手順をまとめます。
           </p>
-        </header>
-
-        <div class="article-body reveal">
-          <h2>今回学ぶこと</h2>
-          <p>
+</header>
+<div class="article-body reveal">
+<h2>今回学ぶこと</h2>
+<p>
             前回の「AI就活 05」では、ChatGPTを使って自己PRの構成を整える方法と安全ルールを学びました。
             今回は、自己PRと並ぶ最重要テーマである「ガクチカ」について、その評価基準と作成手順を整理します。
             AIに文章作成を丸投げするのではなく、適切なプロンプトを用いて「自分の行動の動機や工夫」を引き出す対話方法を実践します。
           </p>
-
-          <h2>自己PRとガクチカの決定的な違い</h2>
-          <p>
+<h2>自己PRとガクチカの決定的な違い</h2>
+<p>
             多くの就活生が「自己PR」と「ガクチカ」に同じような内容を書いてしまい、アピールが重複する悩みを抱えています。
             採用担当者がそれぞれの質問で何を見ているのか、その違いを理解しておくことが重要です。
           </p>
-          <ul>
-            <li><strong>自己PR（私はどのような強みを持つ人か）：</strong> 主に「人柄・資質・強み」に焦点を当てます。あなたの強みが企業の求める人物像に合致し、入社後にどう活かせるか（再現性）をアピールします。質問の意図は「あなたを採用するメリットは何か」です。</li>
-            <li><strong>ガクチカ（困難に対してどう行動する人か）：</strong> 主に「意思決定と行動のプロセス」に焦点を当てます。なぜそれをやろうと思ったのか（動機）、困難に対してどう考え、どう行動し、何を学んだのかを掘り下げます。質問の意図は「仕事で壁にぶつかったとき、どうやって乗り越える人か」です。</li>
-          </ul>
-
-          <div class="table-container">
-            <table class="article-table">
-              <thead>
-                <tr>
-                  <th>項目</th>
-                  <th>自己PR</th>
-                  <th>ガクチカ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>主役（焦点）</strong></td>
-                  <td><strong class="accent-gold">あなた自身の「強み」や「人柄」</strong></td>
-                  <td><strong class="accent-blue">課題解決への「プロセス」や「思考」</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>面接官の問い</strong></td>
-                  <td>「あなたにはどんな強みがありますか？」</td>
-                  <td>「なぜそれに取り組み、どう壁を越えましたか？」</td>
-                </tr>
-                <tr>
-                  <td><strong>評価ポイント</strong></td>
-                  <td>強みの入社後の再現性、自社とのマッチ度</td>
-                  <td>動機、論理的思考、実行力、学び取る力</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h2>会話で整理</h2>
-          <div class="dialogue compact-dialogue">
-            <p><strong>私</strong><span>自己PRとガクチカって、同じアルバイトのエピソードを使って書いても大丈夫なんですか？</span></p>
-            <p><strong>AI</strong><span>はい、同じエピソードを使っても問題ありません。ただし、切り口を変える必要があります。自己PRでは「自分の強み（例：主体性）」をアピールするための証拠としてエピソードを使い、ガクチカでは「課題を解決するまでの自分の思考と行動プロセス」を詳しく語ります。</span></p>
-            <p><strong>私</strong><span>なるほど。自己PRは「強み」が主役で、ガクチカは「乗り越えたプロセス」が主役なんですね。</span></p>
-            <p><strong>AI</strong><span>その通りです。特にガクチカでは「なぜそれを始めようと思ったのか」という動機や、「最も苦労した局面でどう考えたか」という思考の深さが重視されます。</span></p>
-            <p><strong>私</strong><span>ChatGPTに「私の代わりにガクチカを書いて」と頼めば、それっぽいストーリーを作ってくれますか？</span></p>
-            <p><strong>AI</strong><span>それは避けた方がよいです。AIが作った架空の動機や工夫は、面接で深掘りされたときに回答のつじつまが合わなくなります。AIはあくまで「自分の体験の解像度を上げるための質問役」として使います。</span></p>
-            <p><strong>私</strong><span>AIに質問してもらうことで、忘れていた当時の感情や具体的な行動を思い出すんですね。</span></p>
-          </div>
-
-          <h2>丸投げしないAI対話手順</h2>
-          <p>
+<ul>
+<li><strong>自己PR（私はどのような強みを持つ人か）：</strong> 主に「人柄・資質・強み」に焦点を当てます。あなたの強みが企業の求める人物像に合致し、入社後にどう活かせるか（再現性）をアピールします。質問の意図は「あなたを採用するメリットは何か」です。</li>
+<li><strong>ガクチカ（困難に対してどう行動する人か）：</strong> 主に「意思決定と行動のプロセス」に焦点を当てます。なぜそれをやろうと思ったのか（動機）、困難に対してどう考え、どう行動し、何を学んだのかを掘り下げます。質問の意図は「仕事で壁にぶつかったとき、どうやって乗り越える人か」です。</li>
+</ul>
+<div class="table-container">
+<table class="article-table">
+<thead>
+<tr>
+<th>項目</th>
+<th>自己PR</th>
+<th>ガクチカ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>主役（焦点）</strong></td>
+<td><strong class="accent-gold">あなた自身の「強み」や「人柄」</strong></td>
+<td><strong class="accent-blue">課題解決への「プロセス」や「思考」</strong></td>
+</tr>
+<tr>
+<td><strong>面接官の問い</strong></td>
+<td>「あなたにはどんな強みがありますか？」</td>
+<td>「なぜそれに取り組み、どう壁を越えましたか？」</td>
+</tr>
+<tr>
+<td><strong>評価ポイント</strong></td>
+<td>強みの入社後の再現性、自社とのマッチ度</td>
+<td>動機、論理的思考、実行力、学び取る力</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>会話で整理</h2>
+<div class="dialogue compact-dialogue">
+<p><strong>私</strong><span>自己PRとガクチカって、同じアルバイトのエピソードを使って書いても大丈夫なんですか？</span></p>
+<p><strong>AI</strong><span>はい、同じエピソードを使っても問題ありません。ただし、切り口を変える必要があります。自己PRでは「自分の強み（例：主体性）」をアピールするための証拠としてエピソードを使い、ガクチカでは「課題を解決するまでの自分の思考と行動プロセス」を詳しく語ります。</span></p>
+<p><strong>私</strong><span>なるほど。自己PRは「強み」が主役で、ガクチカは「乗り越えたプロセス」が主役なんですね。</span></p>
+<p><strong>AI</strong><span>その通りです。特にガクチカでは「なぜそれを始めようと思ったのか」という動機や、「最も苦労した局面でどう考えたか」という思考の深さが重視されます。</span></p>
+<p><strong>私</strong><span>ChatGPTに「私の代わりにガクチカを書いて」と頼めば、それっぽいストーリーを作ってくれますか？</span></p>
+<p><strong>AI</strong><span>それは避けた方がよいです。AIが作った架空の動機や工夫は、面接で深掘りされたときに回答のつじつまが合わなくなります。AIはあくまで「自分の体験の解像度を上げるための質問役」として使います。</span></p>
+<p><strong>私</strong><span>AIに質問してもらうことで、忘れていた当時の感情や具体的な行動を思い出すんですね。</span></p>
+</div>
+<h2>丸投げしないAI対話手順</h2>
+<p>
             ガクチカ作成におけるハルシネーション（事実と異なる内容の出力）を防ぎ、説得力のある文章にするための対話ステップです。
           </p>
-          <ol>
-            <li><strong>事実の箇条書き：</strong> STAR構造（S:状況、T:課題、A:行動、R:結果）に沿って、まずは自分が思いつく事実だけを箇条書きでメモします。綺麗な文章にする必要はありません。</li>
-            <li><strong>役割設定と質問プロンプトの入力：</strong> AIに「新卒採用の面接官」の役割を与え、箇条書きのメモに対して【1つずつ】質問を投げてもらうように指示します。</li>
-            <li><strong>一問一答で深掘り：</strong> AIからの「なぜその課題に取り組もうと思ったのですか？」「他に選択肢はありましたか？」といった質問に対し、当時の事実や考えを自分の言葉で返答します。</li>
-            <li><strong>構成の整理：</strong> 対話で引き出された事実をもとに、AIに「400字程度のガクチカの構成案」を作成させます。</li>
-            <li><strong>推敲と肉付け：</strong> AIが作成したドラフトを必ず自分で読み、大げさな表現を削り、等身大の自分の話し言葉に書き直します。</li>
-          </ol>
-
-          <h2>STAR構造を利用したAI壁打ちプロンプト</h2>
-          <p>
+<ol>
+<li><strong>事実の箇条書き：</strong> STAR構造（S:状況、T:課題、A:行動、R:結果）に沿って、まずは自分が思いつく事実だけを箇条書きでメモします。綺麗な文章にする必要はありません。</li>
+<li><strong>役割設定と質問プロンプトの入力：</strong> AIに「新卒採用の面接官」の役割を与え、箇条書きのメモに対して【1つずつ】質問を投げてもらうように指示します。</li>
+<li><strong>一問一答で深掘り：</strong> AIからの「なぜその課題に取り組もうと思ったのですか？」「他に選択肢はありましたか？」といった質問に対し、当時の事実や考えを自分の言葉で返答します。</li>
+<li><strong>構成の整理：</strong> 対話で引き出された事実をもとに、AIに「400字程度のガクチカの構成案」を作成させます。</li>
+<li><strong>推敲と肉付け：</strong> AIが作成したドラフトを必ず自分で読み、大げさな表現を削り、等身大の自分の話し言葉に書き直します。</li>
+</ol>
+<h2>STAR構造を利用したAI壁打ちプロンプト</h2>
+<p>
             以下のプロンプトをChatGPT等の生成AIに入力し、ガクチカのエピソードを深掘りする壁打ちを開始してください。
           </p>
-          <pre><code>【ガクチカ深掘り壁打ちプロンプト】
+<pre><code>【ガクチカ深掘り壁打ちプロンプト】
 あなたは新卒採用の面接官、または就活支援の専門家として、私の「ガクチカ（学生時代に最も力を入れたこと）」の解像度を上げるための壁打ち相手をしてください。
 
 以下の私の「活動テーマ」と、大まかな「STARの箇条書き」を読み、一度にすべて答えるのではなく、私への質問を【1つずつ】投げてください。
@@ -148,100 +152,90 @@
 3. R（結果・学び）：結果から得た学びを、今後仕事でどう活かせるか
 
 まずは、「よろしくお願いします。活動テーマとSTARのメモを教えてください」とだけ返答してください。</code></pre>
-
-          <h2>今回のミニ確認</h2>
-          <p>今回の内容について、クイズで理解度を確認しましょう。</p>
-
-          <div class="quiz-container">
-            <p class="quiz-question">【クイズ 1】 「自己PR」と「ガクチカ」の違いに関する説明として、最も適切なものはどれでしょうか？</p>
-            <ul class="quiz-options">
-              <li>A. 自己PRは自分の強みや資質そのもの（再現性）をアピールし、ガクチカは困難に対する動機や行動プロセスをアピールする。</li>
-              <li>B. 自己PRは嘘の経歴を書いてもよいが、ガクチカは事実だけで構成しなければならない。</li>
-              <li>C. 自己PRとガクチカは名前が違うだけで、全く同じ構成・同じアピールポイントの文章を使い回してよい。</li>
-            </ul>
-            <details>
-              <summary>正解と解説を見る</summary>
-              <p class="answer-line"><strong>正解: A</strong></p>
-              <p>自己PRは「強み（人柄・再現性）」に焦点を当て、ガクチカは「課題解決のプロセス（動機・思考・行動）」に焦点を当てます。同じエピソードを使う場合でも、切り口を分ける必要があります。</p>
-            </details>
-          </div>
-
-          <div class="quiz-container">
-            <p class="quiz-question">【クイズ 2】 ガクチカの作成時にAIのハルシネーション（事実と異なる出力）を防ぎ、面接に耐えうる文章を作るための最も適切なAIの使い方はどれでしょうか？</p>
-            <ul class="quiz-options">
-              <li>A. エピソードのタイトルだけを伝え、中身の体験談や成果の数値はすべてAIに考えてもらう。</li>
-              <li>B. 自分で事前にSTAR構造で事実を整理し、AIに面接官役として一問一答形式で深く問いかけてもらい、事実を引き出す。</li>
-              <li>C. 面接で話す内容とESがずれても問題ないので、AIが出力した文章をそのままコピー＆ペーストして提出する。</li>
-            </ul>
-            <details>
-              <summary>正解と解説を見る</summary>
-              <p class="answer-line"><strong>正解: B</strong></p>
-              <p>AIにエピソードそのものを作成させるのではなく、実体験に基づいた事実をSTAR構造で整理し、AIの壁打ち対話を通じて内容の解像度を上げていく使い方が安全です。</p>
-            </details>
-          </div>
-
-          <h2>次に学ぶこと</h2>
-          <p>
+<h2>今回のミニ確認</h2>
+<p>今回の内容について、クイズで理解度を確認しましょう。</p>
+<div class="quiz-container">
+<p class="quiz-question">【クイズ 1】 「自己PR」と「ガクチカ」の違いに関する説明として、最も適切なものはどれでしょうか？</p>
+<ul class="quiz-options">
+<li>A. 自己PRは自分の強みや資質そのもの（再現性）をアピールし、ガクチカは困難に対する動機や行動プロセスをアピールする。</li>
+<li>B. 自己PRは嘘の経歴を書いてもよいが、ガクチカは事実だけで構成しなければならない。</li>
+<li>C. 自己PRとガクチカは名前が違うだけで、全く同じ構成・同じアピールポイントの文章を使い回してよい。</li>
+</ul>
+<details>
+<summary>正解と解説を見る</summary>
+<p class="answer-line"><strong>正解: A</strong></p>
+<p>自己PRは「強み（人柄・再現性）」に焦点を当て、ガクチカは「課題解決のプロセス（動機・思考・行動）」に焦点を当てます。同じエピソードを使う場合でも、切り口を分ける必要があります。</p>
+</details>
+</div>
+<div class="quiz-container">
+<p class="quiz-question">【クイズ 2】 ガクチカの作成時にAIのハルシネーション（事実と異なる出力）を防ぎ、面接に耐えうる文章を作るための最も適切なAIの使い方はどれでしょうか？</p>
+<ul class="quiz-options">
+<li>A. エピソードのタイトルだけを伝え、中身の体験談や成果の数値はすべてAIに考えてもらう。</li>
+<li>B. 自分で事前にSTAR構造で事実を整理し、AIに面接官役として一問一答形式で深く問いかけてもらい、事実を引き出す。</li>
+<li>C. 面接で話す内容とESがずれても問題ないので、AIが出力した文章をそのままコピー＆ペーストして提出する。</li>
+</ul>
+<details>
+<summary>正解と解説を見る</summary>
+<p class="answer-line"><strong>正解: B</strong></p>
+<p>AIにエピソードそのものを作成させるのではなく、実体験に基づいた事実をSTAR構造で整理し、AIの壁打ち対話を通じて内容の解像度を上げていく使い方が安全です。</p>
+</details>
+</div>
+<h2>次に学ぶこと</h2>
+<p>
             自己PRとガクチカの違い、そしてAIを用いた「丸投げしない」深掘り対話の手順を整理しました。
             これでESの基礎となる文章作成の型は身につきました。
             次回は、チーム開発などの具体的なプロジェクト活動において、どのように調整経験や課題解決のプロセスを言語化し伝えるべきか、「AI就活 07（チーム開発経験の伝え方）」で整理します。
           </p>
-
-          <p class="article-note">
+<p class="article-note">
             このページは、生成AIツールを就職活動に有効活用するための学習ログです。AIの利用に関する公式な規約や大学・企業のガイドラインがある場合は、それに従って利用してください。
           </p>
-          <p class="article-note">
+<p class="article-note">
             このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。
           </p>
-
-          <nav class="next-links" aria-label="次に読む">
-            <a class="secondary-button" href="study-ai-jobhunting-01.html">AI就活 05へ戻る</a>
-            <a class="primary-button" href="job-log-06.html">AI就活 07へ進む</a>
-            <a class="secondary-button" href="roadmap.html">ロードマップを見る</a>
-          </nav>
-        </div>
-
-<nav class="article-nav" aria-label="記事ナビゲーション">
-  <div class="article-nav-inner">
-    <a class="article-nav-prev" href="study-ai-jobhunting-01.html">
-      <span class="nav-label">← 前の記事</span>
-      <span class="nav-title">ChatGPTで自己PRを磨き上げる：AIと二人三脚のES作成法</span>
-    </a>
-    <a class="article-nav-next" href="job-log-06.html">
-      <span class="nav-label">次の記事 →</span>
-      <span class="nav-title">チーム開発経験の伝え方：調整役・課題解決をESで言語化する方法</span>
-    </a>
-  </div>
+<nav aria-label="次に読む" class="next-links">
+<a class="secondary-button" href="study-ai-jobhunting-01.html">AI就活 05へ戻る</a>
+<a class="primary-button" href="job-log-06.html">AI就活 07へ進む</a>
+<a class="secondary-button" href="roadmap.html">ロードマップを見る</a>
 </nav>
-
+</div>
+<nav aria-label="記事ナビゲーション" class="article-nav">
+<div class="article-nav-inner">
+<a class="article-nav-prev" href="study-ai-jobhunting-01.html">
+<span class="nav-label">← 前の記事</span>
+<span class="nav-title">ChatGPTで自己PRを磨き上げる：AIと二人三脚のES作成法</span>
+</a>
+<a class="article-nav-next" href="job-log-06.html">
+<span class="nav-label">次の記事 →</span>
+<span class="nav-title">チーム開発経験の伝え方：調整役・課題解決をESで言語化する方法</span>
+</a>
+</div>
+</nav>
 <section class="related-articles">
-  <p class="eyebrow">関連記事</p>
-  <h3>AI就活ログ</h3>
-  <ul>
-    <li><a href="job-log-01.html">就活で最初にやるべきこと５つ【自己分析の前に整理する準備】</a></li>
-    <li><a href="job-log-04.html">STAR法で就活の経験を整理する方法【ChatGPT活用プロンプト付き】</a></li>
-    <li><a href="job-log-05.html">ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例</a></li>
-    <li><a href="job-log-06.html">チーム開発経験の伝え方：調整役・課題解決をESで言語化する方法</a></li>
-    <li><a href="study-ai-jobhunting-01.html">ChatGPTで自己PRを書く方法【大学生向け・ES添削プロンプト付き】</a></li>
-  </ul>
+<p class="eyebrow">関連記事</p>
+<h3>AI就活ログ</h3>
+<ul>
+<li><a href="job-log-01.html">就活で最初にやるべきこと５つ【自己分析の前に整理する準備】</a></li>
+<li><a href="job-log-04.html">STAR法で就活の経験を整理する方法【ChatGPT活用プロンプト付き】</a></li>
+<li><a href="job-log-05.html">ガクチカの書き方：ChatGPTで実体験を掘り起こす手順とプロンプト例</a></li>
+<li><a href="job-log-06.html">チーム開発経験の伝え方：調整役・課題解決をESで言語化する方法</a></li>
+<li><a href="study-ai-jobhunting-01.html">ChatGPTで自己PRを書く方法【大学生向け・ES添削プロンプト付き】</a></li>
+</ul>
 </section>
-      </article>
-    </main>
-
-    <footer class="footer">
-      <nav class="footer-links" aria-label="サイト情報">
-        <a href="profile.html">プロフィール</a>
-        <a href="roadmap.html">ロードマップ</a>
-        <a href="tools.html">ツール</a>
-        <a href="contact.html">お問い合わせ</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="monetization.html">広告・運営方針</a>
-        <a href="https://x.com/webkabu_log" target="_blank" rel="noopener noreferrer">Xで更新を見る</a>
-      </nav>
-      <p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
-      <p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+</article>
+</main>
+<footer class="footer">
+<nav aria-label="サイト情報" class="footer-links">
+<a href="profile.html">プロフィール</a>
+<a href="roadmap.html">ロードマップ</a>
+<a href="tools.html">ツール</a>
+<a href="contact.html">お問い合わせ</a>
+<a href="privacy.html">プライバシーポリシー</a>
+<a href="monetization.html">広告・運営方針</a>
+<a href="https://x.com/webkabu_log" rel="noopener noreferrer" target="_blank">Xで更新を見る</a>
+</nav>
+<p>このサイトは投資助言ではありません。大学生個人の学習記録です。投資判断は自己責任で行ってください。</p>
+<p>広告を掲載する場合は、読者にわかる場所へPR表記を入れます。</p>
+</footer>
+<script src="script.js"></script>
+</body>
 </html>
