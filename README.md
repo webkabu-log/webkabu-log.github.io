@@ -24,5 +24,6 @@ python -m http.server 8000
 - [NEXT_ACTIONS.md](NEXT_ACTIONS.md): 次に行う作業と優先順位
 - [CONTENT_STYLE_GUIDE.md](CONTENT_STYLE_GUIDE.md): 記事の文章、構成、見せ方のルール
 - [spec.md](spec.md): 詳細仕様、ファイル構成、変更履歴
+- [research/README.md](research/README.md): 実資金0円のAI投資研究ルールと記録手順
 
 作業前に `PROJECT_RULES.md` と `NEXT_ACTIONS.md` を確認し、記事を編集するときは `CONTENT_STYLE_GUIDE.md` も参照してください。

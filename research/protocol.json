@@ -1,0 +1,61 @@
+{
+  "study_id": "ai-global-01",
+  "series": "AI投資研究",
+  "title": "AIは世界のどの企業を選ぶ？",
+  "subtitle": "攻めの5社・守りの5社・全世界平均を8週間比較",
+  "status": "preparing",
+  "weeks": 8,
+  "information_cutoff_utc": "2026-07-04T00:00:00Z",
+  "selection_window_jst": "2026-07-04 09:00以降、2026-07-05中に1回だけ実行・公開",
+  "week_1_start_date": "2026-07-06",
+  "week_1_start_policy": "2026年7月6日以降、各市場の最初の通常取引日の調整後終値を基準値とする",
+  "tracking_end_date": "2026-08-28",
+  "final_evaluation_cutoff_utc": "2026-08-29T00:00:00Z",
+  "evaluation_cutoff": "Saturday 00:00 UTC",
+  "information_cutoff": "選定日前日の23:59 UTCまでに一般公開された情報",
+  "virtual_capital_jpy_per_portfolio": 100000,
+  "portfolios": ["attack_ai", "defense_ai", "world_average"],
+  "benchmark_ticker": "VT",
+  "positions": {"attack_ai": 5, "defense_ai": 5, "world_average": 1},
+  "allocation": "equal_weight",
+  "holding_policy": "選定後8週間は入替なし",
+  "selection_universe": "参加資格を満たす世界の上場普通株から自由選抜",
+  "eligibility": [
+    "正規取引所に上場する普通株",
+    "選定時点で売買停止または上場廃止予定ではない",
+    "過去60営業日以上の価格データを取得できる",
+    "過去20営業日の売買代金中央値が円換算1億円以上",
+    "企業・市場・取引通貨を公式情報で確認できる",
+    "OTC、ETF、ADR、優先株、SPAC、暗号資産ではない",
+    "同一企業は主上場市場の1銘柄だけ"
+  ],
+  "invalid_selection_policy": "各順位の事前提出済み予備候補へ順に移る。再生成と人間による恣意的差替えは禁止し、誤りを公開する",
+  "overlap_policy": "攻めと守りの重複はAIの判断結果として許可する",
+  "ai_run_policy": "同じモデルと情報セットを使い、別コンテキストで各1回だけ実行。互いの回答は見せず、再生成しない",
+  "valuation": {
+    "primary_currency": "JPY",
+    "secondary_view": "local_currency",
+    "fx_hedged": false,
+    "price_basis": "取得時点で保存した調整後終値を開始時100として基準化",
+    "cost_rate_phase_1": 0,
+    "taxes": "excluded"
+  },
+  "data_policy": {
+    "primary_price_source": "yfinance",
+    "primary_fx_source": "yfinance",
+    "raw_snapshot_required": true,
+    "secondary_source_policy": "欠損時のみ取引所・発行会社・第二データ源で照合し、利用理由を記録",
+    "automatic_stop_conditions": ["価格または為替の欠損", "前回比30%以上の価格変化", "3営業日を超えて古い終値", "取引通貨が未確認"]
+  },
+  "primary_metric": "円換算の累積リターン",
+  "secondary_metrics": ["全世界平均との差", "最大下落率", "週次変動率", "プラス銘柄数", "最高・最低銘柄", "為替寄与", "現地通貨ベース成績", "選定理由の事後確認"],
+  "exception_policy": {
+    "suspension": "価格が付くまで直前評価額を維持し注記",
+    "delisting_or_acquisition": "確認可能な最終受取価値で現金化し以後現金保有",
+    "split_or_dividend": "調整後価格へ反映",
+    "missing_data": "第二情報源で照合し、補完内容を記録",
+    "major_event": "戦争、災害、不祥事が起きても銘柄変更しない"
+  },
+  "change_policy": "第1期の途中変更は禁止。変更案は第2期へ送る",
+  "disclaimer": "仮想検証であり、投資助言、将来の成果または利益を示すものではない"
+}
