@@ -361,6 +361,216 @@ h3 {
   color: var(--muted);
 }
 
+.research-pickup {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+  gap: 52px;
+  align-items: center;
+  width: min(calc(100% - 44px), 1120px);
+  margin: 42px auto;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--green);
+  border-radius: 18px;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background: var(--panel);
+  box-shadow: 0 24px 60px rgba(28, 37, 33, 0.12);
+}
+
+.research-pickup::before {
+  position: absolute;
+  top: -110px;
+  right: 22%;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(27, 122, 91, 0.12);
+  border-radius: 50%;
+  content: "";
+}
+
+.research-pickup-copy {
+  max-width: 720px;
+}
+
+.research-pickup-copy h2 {
+  margin: 12px 0 10px;
+  color: var(--ink);
+  font-size: clamp(38px, 5vw, 64px);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.research-pickup-copy > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.research-pickup-copy .research-pickup-lead {
+  margin: 0 0 10px;
+  color: var(--green-dark);
+  font-size: clamp(20px, 2.4vw, 27px);
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.research-pickup-topline {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.research-pickup-topline .eyebrow {
+  margin: 0;
+}
+
+.research-pickup-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: var(--green);
+  color: var(--panel);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.research-pickup-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 20px 0 26px;
+}
+
+.research-pickup-points span {
+  display: grid;
+  gap: 2px;
+  min-width: 112px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 13px;
+  background: var(--paper);
+  color: var(--green-dark);
+}
+
+.research-pickup-points small {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.research-pickup-points strong {
+  font-size: 17px;
+}
+
+.research-visual {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--ink);
+  box-shadow: 14px 16px 0 rgba(27, 122, 91, 0.12);
+  color: var(--panel);
+}
+
+.research-visual-head,
+.research-visual-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.research-visual-head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.research-live-dot {
+  color: var(--panel);
+}
+
+.research-live-dot::before {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.research-team-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.research-team-list span {
+  padding: 14px 8px;
+  background: var(--ink);
+  color: var(--panel);
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.research-week-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 22px 18px;
+}
+
+.research-week-grid > span {
+  display: grid;
+  place-items: center;
+  min-height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.research-week-grid small {
+  color: var(--panel);
+  font-size: 18px;
+}
+
+.research-visual-foot {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  letter-spacing: 0;
+}
+
+.research-visual-foot span {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.research-visual-foot strong {
+  color: var(--panel);
+}
+
+@media (max-width: 720px) {
+  .research-pickup {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    width: calc(100% - 28px);
+    margin: 22px auto;
+    padding: 38px 24px;
+  }
+
+  .research-pickup-points {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- Compact Timeline Stepper --- */
 .journey-steps-compact {
   display: flex;

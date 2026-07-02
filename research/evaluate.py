@@ -1,4 +1,4 @@
-"""Paper-lab CSV validator and return calculator (standard library only)."""
+"""Validate and summarize the AI Investment Research weekly ledger."""
 
 from __future__ import annotations
 
@@ -10,65 +10,75 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 
 
-def as_float(row: dict[str, str], key: str) -> float:
+def read_csv(name: str) -> list[dict[str, str]]:
+    with (ROOT / name).open(encoding="utf-8-sig", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def number(row: dict[str, str], key: str) -> float:
     value = row.get(key, "").strip()
     if not value:
-        raise ValueError(f"week {row.get('week')}, {row.get('method')}/{row.get('symbol')}: {key} is empty")
+        raise ValueError(f"{row.get('portfolio')}/{row.get('data_ticker')}: {key} is empty")
     return float(value)
+
+
+def validate_selections(rows: list[dict[str, str]], protocol: dict) -> None:
+    if not rows:
+        return
+    allowed = set(protocol["portfolios"])
+    seen: set[tuple[str, str]] = set()
+    weights = defaultdict(float)
+    counts = defaultdict(int)
+    for row in rows:
+        portfolio = row.get("portfolio", "").strip()
+        ticker = row.get("data_ticker", "").strip()
+        if portfolio not in allowed:
+            raise ValueError(f"unknown portfolio: {portfolio}")
+        if not ticker:
+            raise ValueError(f"{portfolio}: data_ticker is empty")
+        key = (portfolio, ticker)
+        if key in seen:
+            raise ValueError(f"duplicate selection: {key}")
+        seen.add(key)
+        counts[portfolio] += 1
+        weights[portfolio] += number(row, "weight")
+        if row.get("eligibility_status", "").strip() not in {"pass", "pending"}:
+            raise ValueError(f"invalid eligibility_status: {key}")
+    for portfolio in allowed:
+        expected = protocol["positions"][portfolio]
+        if counts[portfolio] != expected:
+            raise ValueError(f"{portfolio}: {counts[portfolio]} selections, expected {expected}")
+        if abs(weights[portfolio] - 1.0) > 0.001:
+            raise ValueError(f"{portfolio}: weights total {weights[portfolio]:.4f}, expected 1.0")
+
+
+def summarize(rows: list[dict[str, str]], protocol: dict) -> None:
+    if not rows:
+        print("No valuation rows yet. The study is still preparing; do not invent results.")
+        return
+    weekly = defaultdict(float)
+    coverage = defaultdict(int)
+    for row in rows:
+        if row.get("data_status", "").strip() != "ok":
+            raise ValueError(f"unverified valuation: {row.get('portfolio')}/{row.get('data_ticker')}")
+        key = (int(row["week"]), row["portfolio"])
+        weekly[key] += number(row, "value_jpy")
+        coverage[key] += 1
+    capital = float(protocol["virtual_capital_jpy_per_portfolio"])
+    print("week,portfolio,value_jpy,return_pct,coverage")
+    for (week, portfolio), value in sorted(weekly.items()):
+        print(f"{week},{portfolio},{value:.0f},{value / capital - 1:.4%},{coverage[(week, portfolio)]}")
 
 
 def main() -> int:
     protocol = json.loads((ROOT / "protocol.json").read_text(encoding="utf-8"))
-    rows = list(csv.DictReader((ROOT / "predictions.csv").open(encoding="utf-8-sig", newline="")))
-    settled = [row for row in rows if row.get("status", "").strip() == "settled"]
-    if not settled:
-        print("No settled rows yet. Add predictions first; do not invent prices.")
-        return 0
-
-    allowed_methods = set(protocol["methods"])
-    seen: set[tuple[str, str, str]] = set()
-    weekly: dict[tuple[str, str], list[tuple[float, float]]] = defaultdict(list)
-    evidence = defaultdict(lambda: {"pass": 0, "fail": 0, "pending": 0})
-
-    for row in settled:
-        method = row.get("method", "").strip()
-        direction = row.get("direction", "").strip()
-        key = (row.get("week", "").strip(), method, row.get("symbol", "").strip())
-        if method not in allowed_methods:
-            raise ValueError(f"unknown method: {method}")
-        if direction not in {"up", "cash"}:
-            raise ValueError(f"unknown direction: {direction}")
-        if key in seen:
-            raise ValueError(f"duplicate settled row: {key}")
-        seen.add(key)
-        weight = as_float(row, "weight")
-        if direction == "cash":
-            gross = 0.0
-            cost = 0.0
-        else:
-            entry = as_float(row, "entry_price")
-            exit_price = as_float(row, "exit_price")
-            gross = exit_price / entry - 1
-            cost = float(protocol["round_trip_cost_rate"])
-        weekly[(key[0], method)].append((weight, gross - cost))
-        check = row.get("evidence_check", "pending").strip() or "pending"
-        if check not in evidence[method]:
-            raise ValueError(f"unknown evidence_check: {check}")
-        evidence[method][check] += 1
-
-    cumulative = defaultdict(lambda: 1.0)
-    print("week,method,net_return")
-    for (week, method), values in sorted(weekly.items()):
-        total_weight = sum(weight for weight, _ in values)
-        if abs(total_weight - 1.0) > 0.001:
-            raise ValueError(f"week {week}, {method}: weights total {total_weight:.4f}, expected 1.0")
-        net_return = sum(weight * result for weight, result in values)
-        cumulative[method] *= 1 + net_return
-        print(f"{week},{method},{net_return:.4%}")
-
-    print("\nmethod,cumulative_return,evidence_failures")
-    for method in sorted(cumulative):
-        print(f"{method},{cumulative[method] - 1:.4%},{evidence[method]['fail']}")
+    selections = read_csv("predictions.csv")
+    if selections:
+        validate_selections(selections, protocol)
+        print(f"Validated {len(selections)} selections.")
+    else:
+        print("No selections yet. Run each fixed prompt once after the information cutoff is set.")
+    summarize(read_csv("valuations.csv"), protocol)
     return 0
 
 

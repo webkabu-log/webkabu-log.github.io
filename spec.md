@@ -28,7 +28,7 @@
 
 | ファイル名 | 役割・ページ内容 | 備考 |
 | :--- | :--- | :--- |
-| [research-lab.html](file:///c:/trader/research-lab.html) | 0円AI投資研究所 | AI・単純ルール・TOPIXを8週間比較する仮想研究の計画と公開窓口 |
+| [research-lab.html](file:///c:/trader/research-lab.html) | AI投資研究 | 世界から選ぶ攻めのAI・守りのAI・全世界平均を8週間比較する公開研究 |
 | `research/` | 研究データと評価コード | 固定ルール、予測CSV、標準ライブラリのみの評価スクリプト |
 | [index.html](file:///c:/trader/index.html) | トップページ | ヒーロー、現在地、3つの柱、進捗メーター、記事一覧レーン |
 | [hajimari.html](file:///c:/trader/hajimari.html) | Day 0: 挑戦のルールを決める | なぜこの挑戦を始めるのかと、生活費を使わないルールを決めた記録 |
@@ -119,9 +119,9 @@
 
 ## 5. 変更履歴（チェンジログ）
 
-### 第26期：0円AI投資研究所の準備（2026年7月2日実施）
+### 第26期：AI投資研究の準備（2026年7月2日実施）
 * **仮想研究の公開基盤を追加**:
-  - `research-lab.html` に、AI・単純ルール・TOPIXを8週間比較する研究目的、固定条件、公開項目、注意点を掲載。
+  - `research-lab.html` に、世界から自由選抜する攻めのAI・守りのAI・全世界平均を8週間比較する研究目的、固定条件、公開項目、注意点を掲載。
   - `research/protocol.json`、`research/predictions.csv`、`research/evaluate.py` を追加し、予測前の条件固定、CSV記録、コスト控除後リターンの検証手順を用意。
   - 実在しない予測や結果は作らず、準備中と明記。トップ、投資学習ロードマップ、サイトマップ、運営文書へ導線を追加。
 

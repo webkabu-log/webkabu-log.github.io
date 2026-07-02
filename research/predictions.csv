@@ -1,1 +1,1 @@
-study_id,week,predicted_at_jst,method,symbol,name,direction,weight,input_data_through,reason,evidence_check,entry_date,entry_price,exit_date,exit_price,status,notes
+study_id,portfolio,rank,selected_at_utc,company,country,mic,local_ticker,data_ticker,isin,currency,weight,rationale,main_risk,backup_rank,eligibility_status,evidence_check,status,notes
