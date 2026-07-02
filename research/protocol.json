@@ -1,0 +1,19 @@
+{
+  "study_id": "paper-lab-01",
+  "title": "AIは単純ルールとTOPIXを8週間で上回るか",
+  "status": "planned",
+  "weeks": 8,
+  "virtual_capital_jpy_per_method": 100000,
+  "methods": ["ai", "rule", "topix"],
+  "universe": "東証プライムの大型株。具体的な候補集合は第1週開始前に固定する",
+  "positions_per_method": 5,
+  "holding_period": "原則として月曜始値から金曜終値",
+  "allocation": "equal_weight",
+  "long_only": true,
+  "round_trip_cost_rate": 0.002,
+  "benchmark": "TOPIX",
+  "ai_inputs_phase_1": ["前週までの調整済み株価", "5日騰落率", "20日騰落率", "20日ボラティリティ", "出来高変化"],
+  "rule_method": "候補集合から20日騰落率上位5銘柄を均等保有",
+  "change_policy": "第1期の途中変更は禁止。欠損処理は注記し、条件変更は第2期として登録する",
+  "disclaimer": "仮想検証であり、投資助言、将来の成果または利益を示すものではない"
+}
